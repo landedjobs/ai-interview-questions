@@ -7,9 +7,9 @@
   <img src="assets/banner-light.svg" alt="AI Interview Questions — real questions, real sources, ideal answers" width="100%">
 </picture>
 
-![Questions](https://img.shields.io/badge/261%20real%20questions-ff5b29?style=flat-square) ![Banks](https://img.shields.io/badge/4%20question%20banks-6C2BD9?style=flat-square) ![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) [![Stars](https://img.shields.io/github/stars/landedjobs/ai-interview-questions?style=social)](https://github.com/landedjobs/ai-interview-questions)
+![Questions](https://img.shields.io/badge/325%20real%20questions-ff5b29?style=flat-square) ![Banks](https://img.shields.io/badge/5%20question%20banks-6C2BD9?style=flat-square) ![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) [![Stars](https://img.shields.io/github/stars/landedjobs/ai-interview-questions?style=social)](https://github.com/landedjobs/ai-interview-questions)
 
-**261+ questions actually asked in AI interviews — with where they were asked, what's being tested, and the answer a strong candidate gives.**
+**325+ questions actually asked in AI interviews — with where they were asked, what's being tested, and the answer a strong candidate gives.**
 
 No invented "top 50 questions" filler: every entry traces to a public candidate report, and the answers are hidden behind spoilers so you can attempt first.
 
@@ -22,7 +22,7 @@ No invented "top 50 questions" filler: every entry traces to a public candidate 
 | | Bank | What's inside | Questions |
 |---|---|---|---:|
 | 🧠 | **[LLM & ML Concepts](banks/llm-and-ml-concepts.md)** | Transformers, fine-tuning, RAG, agents, evals, inference, classic ML breadth — the knowledge round. | **62** |
-| 💻 | **Coding & ML System Design** | Implement attention from scratch, build a RAG app, design an LLM serving stack — the hands-on rounds. | 🔜 |
+| 💻 | **[Coding & ML System Design](banks/coding-and-system-design.md)** | Implement attention from scratch, build a RAG app, design an LLM serving stack — the hands-on rounds. | **64** |
 | 🚀 | **[Frontier AI Labs](banks/frontier-ai-labs.md)** | What OpenAI, Anthropic, DeepMind, xAI, Mistral, Meta and Cohere actually ask, by lab and by round. | **67** |
 | 🤝 | **[FDE, AI Product & GTM](banks/fde-product-and-gtm.md)** | Decomposition cases, customer scenarios, product sense and GTM engineering — the customer-facing loops. | **66** |
 | 📊 | **[Data & Applied Science](banks/data-and-applied-science.md)** | ML breadth/depth, experimentation, applied LLM and science presentations — Amazon AS loops and beyond. | **66** |
