@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-000.svg)](LICENSE)
 [![Updated](https://img.shields.io/badge/updated-regularly-00A86B)](https://github.com/landedjobs)
 
-*Maintained by [Landed](https://landed.jobs) — scout AI-native roles, get **referred**, prep, and land the job.*
+*Maintained by [Landed](https://landed.jobs) — daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
 </div>
 
@@ -25,7 +25,7 @@ _Being compiled. Each question is labeled **✅ Reported** (from public sources 
 
 ## How to actually land one
 
-The roles here usually go to people who get **referred**. With [Landed](https://landed.jobs) you can scout every opening, find a connection at the company and auto-draft a referral message, prep with company-specific mock interviews, and track every application.
+Fewer, better applications beat the spray. [Landed](https://landed.jobs) brings you matched roles daily, drafts your answers to each application's questions, and preps you with courses and voice mock interviews.
 
 **[Get started free → https://landed.jobs](https://landed.jobs)**
 
