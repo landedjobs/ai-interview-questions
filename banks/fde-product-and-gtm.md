@@ -105,7 +105,7 @@ Two FDE archetypes emerged in 2025-2026: [FDE Hub's conversation with Kanav Bhat
 
 These are 60-minute whiteboard rounds where the interviewer gives an ambiguous domain and the candidate must produce a first-pass system design end-to-end, weighing users, data, workflows, priorities, and tradeoffs. Grading is on discovery, structuring, breadth before depth, and explicit prioritization of v1.
 
-### Reduce 9-1-1 emergency response times in a major city
+### 1. Reduce 9-1-1 emergency response times in a major city
 
 > "A major city wants to reduce 9-1-1 emergency response times. They have call data, traffic data, and ambulance GPS data. You have 60 minutes. Go."
 
@@ -123,7 +123,7 @@ Open by restating the problem and asking 3-5 clarifying questions: what is the b
 
 **Difficulty:** Mid-to-senior. Signaled as the hardest round for candidates who default to algorithmics rather than discovery.
 
-### Reduce airport security wait times
+### 2. Reduce airport security wait times
 
 > "How would you design a technology to help reduce airport security wait times? You have TSA staffing data, flight manifests, and historical throughput data."
 
@@ -141,7 +141,7 @@ Frame stakeholders (TSA, airlines, passengers, airport ops). Surfaces (e.g., loa
 
 **Difficulty:** Mid. Most candidates fail on prioritization, not on identifying entities.
 
-### Design a system for a hospital to allocate beds
+### 3. Design a system for a hospital to allocate beds
 
 > "Decompose hospital resource allocation. How would you model beds, staff, patients, urgency, transfers, and conflicting priorities?"
 
@@ -159,7 +159,7 @@ Named entities (Patient, Bed, Unit, StaffShift, TransferRequest, SeverityScore).
 
 **Difficulty:** Senior. Co-designed with Palantir's Foundry/Hospital offering.
 
-### Design a disaster-response coordination system
+### 4. Design a disaster-response coordination system
 
 > "Design a disaster response coordination system. Identify the users, incoming data, workflows, permissions, and the first version you would build."
 
@@ -177,7 +177,7 @@ Users: incident commander, operations chiefs (fire/police/medical), field respon
 
 **Difficulty:** Senior. Tests breadth under time pressure.
 
-### Model a supply-chain tracking system
+### 5. Model a supply-chain tracking system
 
 > "Model a supply-chain tracking system. What entities, events, alerts, and user actions are needed for operators to make decisions?"
 
@@ -195,7 +195,7 @@ Entities: Supplier, SKU, PO, Shipment, Container, Warehouse, CustomsEvent. Event
 
 **Difficulty:** Mid.
 
-### Emergency bed allocation for a 1100-bed hospital (Palantir TGH deployment)
+### 6. Emergency bed allocation for a 1100-bed hospital (Palantir TGH deployment)
 
 > "How would you design a system to help a 1100-bed hospital allocate ~1200-1300 patients daily across departments, similar to Palantir's TGH deployment?" (paraphrased from the Palantir for Hospitals offering and FDE candidate walkthroughs)
 
@@ -213,7 +213,7 @@ Reference the actual Palantir Foundry pattern (data integration → ontology →
 
 **Difficulty:** Senior (FDE).
 
-### Rescue a "data quality degrades every Tuesday" pipeline
+### 7. Rescue a "data quality degrades every Tuesday" pipeline
 
 > "A customer's data pipeline feeds your model but data quality degrades every Tuesday. What do you build to detect and handle this?"
 
@@ -237,7 +237,7 @@ The weekly Tuesday pattern strongly implies a Monday-night batch job (e.g., invo
 
 These rounds simulate a live customer interaction or scenario. The interviewer acts as CIO/CTO/VP and the candidate must scope, push back, translate, and rescue.
 
-### The deployment slipped by three weeks — tell the customer's CTO
+### 8. The deployment slipped by three weeks — tell the customer's CTO
 
 > "The deployment slipped by three weeks. The customer's CTO is on the call. Tell them."
 
@@ -255,7 +255,7 @@ Open with the headline ("I'm calling because the milestone we committed to has s
 
 **Difficulty:** Mid. Tests accountability language.
 
-### Customer wants a feature that would compromise data governance — push back
+### 9. Customer wants a feature that would compromise data governance — push back
 
 > "The customer wants a feature that would compromise data governance. Push back without losing the relationship."
 
@@ -273,7 +273,7 @@ Acknowledge the underlying goal ("you want a unified view"). State the specific 
 
 **Difficulty:** Senior.
 
-### Explain why your RAG system can't guarantee 100% accuracy to a non-technical VP
+### 10. Explain why your RAG system can't guarantee 100% accuracy to a non-technical VP
 
 > "Explain why your RAG system can't guarantee 100% accuracy to a non-technical VP."
 
@@ -291,7 +291,7 @@ Use a non-software analogy (think of a junior research analyst). State the syste
 
 **Difficulty:** Senior.
 
-### Customer's IT team wants to deploy in their VPC but won't give production credentials
+### 11. Customer's IT team wants to deploy in their VPC but won't give production credentials
 
 > "The customer's IT team wants to deploy in their VPC but won't give you production credentials. How do you unblock yourself?"
 
@@ -309,7 +309,7 @@ Don't fight the constraint — fold it into the design. Propose a deployment mod
 
 **Difficulty:** Mid-senior.
 
-### Rapid scoping: a company wants to use AI to solve "X business problem"
+### 12. Rapid scoping: a company wants to use AI to solve "X business problem"
 
 > Open-ended customer scenario with the framing "a company wants to use AI to solve X business problem," followed by "what questions would you ask the customer before designing anything?"
 
@@ -327,7 +327,7 @@ Spend the first 10-15 minutes asking: who is the user, what is the workflow toda
 
 **Difficulty:** Senior.
 
-### CSM interview — long-term value delivery and expansion
+### 13. CSM interview — long-term value delivery and expansion
 
 > The Anthropic CSM round tests "the candidate's thought process around long-term value delivery; how you handle difficult customer situations and drive expansion revenue." (verbatim intent)
 
@@ -345,7 +345,7 @@ Walk through a real customer where usage plateaued. State what you did to diagno
 
 **Difficulty:** Senior.
 
-### Anthropic case study — go-to-market challenge
+### 14. Anthropic case study — go-to-market challenge
 
 > "Approach a complex customer scenario or go-to-market challenge." (verbatim intent)
 
@@ -363,7 +363,7 @@ Use a simple structure: (1) frame the goal and the metric; (2) identify the buye
 
 **Difficulty:** Senior.
 
-### Healthcare client adoption is at 12% after 90 days
+### 15. Healthcare client adoption is at 12% after 90 days
 
 > "A healthcare client has deployed your AI platform but adoption is at 12% after 90 days. They are blaming the product. What do you do?"
 
@@ -381,7 +381,7 @@ Refuse to take the bait — investigate before drawing conclusions. Data: (a) us
 
 **Difficulty:** Mid-senior.
 
-### Logistics firm wants an AI agent for automated shipment rerouting
+### 16. Logistics firm wants an AI agent for automated shipment rerouting
 
 > "A logistics firm wants an AI agent to handle automated shipment rerouting. They have SAP data, real-time weather APIs, and 500 warehouse managers on different regional systems. How do you build an eval suite to ensure the agent does not overspend on shipping while maintaining a 99% delivery rate?"
 
@@ -399,7 +399,7 @@ Eval framework: (a) a held-out scenario set of historical disruption events (hur
 
 **Difficulty:** Senior.
 
-### Rescuing a failing deployment at 2 AM
+### 17. Rescuing a failing deployment at 2 AM
 
 > "You are mid-deployment at a customer. The integration breaks at 2 AM on the day of the customer's all-hands demo. Walk me through the next 4 hours." (representative prompt at multiple FDE employers)
 
@@ -421,7 +421,7 @@ Eval framework: (a) a held-out scenario set of historical disruption events (hur
 
 ## 3. Technical Depth for Customer-Facing Engineers
 
-### Auth bridge: client on OAuth 1.0, your platform on OAuth 2.0
+### 18. Auth bridge: client on OAuth 1.0, your platform on OAuth 2.0
 
 > "Design an integration between a client CRM and your platform's API. The client uses OAuth 1.0 and yours uses OAuth 2.0. Walk through your approach."
 
@@ -439,7 +439,7 @@ Introduce a thin middleware adapter. Token mapping: OAuth 1.0 signed requests �
 
 **Difficulty:** Mid.
 
-### AI agent inconsistent in production but worked in staging
+### 19. AI agent inconsistent in production but worked in staging
 
 > "A deployed AI agent returns inconsistent results in production but worked correctly in staging. How do you debug this?"
 
@@ -457,7 +457,7 @@ Three categories of causes: data drift (input distribution changed — new topic
 
 **Difficulty:** Mid-senior.
 
-### Multi-tenant SaaS monitoring with per-client SLAs
+### 20. Multi-tenant SaaS monitoring with per-client SLAs
 
 > "Design a monitoring system for a multi-tenant SaaS deployment where each client has different SLA requirements."
 
@@ -475,7 +475,7 @@ Tenant-scoped metrics with label propagation. Dynamic thresholds per tier (gold 
 
 **Difficulty:** Senior.
 
-### Reliable webhook integration with a flapping client
+### 21. Reliable webhook integration with a flapping client
 
 > "Walk through how you would set up a reliable webhook integration with a client system that frequently goes offline."
 
@@ -493,7 +493,7 @@ Exponential backoff up to a cap. Idempotent event IDs keyed on client-side event
 
 **Difficulty:** Mid.
 
-### Diagnose high latency in an LLM inference pipeline
+### 22. Diagnose high latency in an LLM inference pipeline
 
 > "Walk me through how you'd diagnose high latency in an LLM inference pipeline."
 
@@ -511,7 +511,7 @@ Stack-by-stack: TTFT (time to first token) vs. inter-token latency. Bucket by ca
 
 **Difficulty:** Mid.
 
-### How do you know your AI system is actually working well?
+### 23. How do you know your AI system is actually working well?
 
 > "How do you know your AI system is actually working well?"
 
@@ -529,7 +529,7 @@ Define eval tiers: (1) unit tests for the prompt system (does the prompt assembl
 
 **Difficulty:** Senior.
 
-### RAG embedding selection, chunking, retrieval, reranking tradeoffs
+### 24. RAG embedding selection, chunking, retrieval, reranking tradeoffs
 
 > OpenAI FDE Technical Deep Dive probes "RAG architecture (embedding selection, chunking, retrieval methods, reranking)."
 
@@ -547,7 +547,7 @@ Chunking: hybrid (recursive char + sentence) with overlap; structure-aware for t
 
 **Difficulty:** Mid-senior.
 
-### Fine-tune vs. RAG vs. prompt engineering
+### 25. Fine-tune vs. RAG vs. prompt engineering
 
 > OpenAI FDE Technical Deep Dive: "fine-tuning tradeoffs (when to fine-tune versus RAG versus prompt engineering), and guardrails for production LLM applications."
 
@@ -565,7 +565,7 @@ Decision tree: out-of-the-box prompt first; then RAG when knowledge is external;
 
 **Difficulty:** Mid-senior.
 
-### Guardrails for production LLM apps
+### 26. Guardrails for production LLM apps
 
 > OpenAI FDE Technical Deep Dive: "guardrails for production LLM applications."
 
@@ -583,7 +583,7 @@ Input validation (jailbreak detection, PII redaction), output validation (schema
 
 **Difficulty:** Mid-senior.
 
-### Constitutional AI, prompt injections, guardrailing (Anthropic SE)
+### 27. Constitutional AI, prompt injections, guardrailing (Anthropic SE)
 
 > "Be ready to talk about concepts like constitutional AI, prompt injections, guardrailing, data privacy in the enterprise and model steering." (verbatim intent)
 
@@ -601,7 +601,7 @@ For each, give a 30-second definition + a real-world failure mode + a mitigation
 
 **Difficulty:** Senior.
 
-### Distributed inference at high request volume
+### 28. Distributed inference at high request volume
 
 > "Distributed inference API handling high request volume."
 
@@ -619,7 +619,7 @@ Stateful inference server pool with autoscaling wrapper (HPA on queue depth + GP
 
 **Difficulty:** Senior.
 
-### GPU scheduling and batching for LLM inference workloads
+### 29. GPU scheduling and batching for LLM inference workloads
 
 > "GPU scheduling and batching for LLM inference workloads."
 
@@ -637,7 +637,7 @@ Continuous batching (vs. static), paged attention (vLLM-style), prefix-cache reu
 
 **Difficulty:** Senior.
 
-### Real-time streaming architecture with fault tolerance and observability
+### 30. Real-time streaming architecture with fault tolerance and observability
 
 > "Real-time streaming architecture with fault tolerance and observability."
 
@@ -655,7 +655,7 @@ Event-driven with backpressure (e.g., Kafka / NATS), idempotent consumers, DLQ, 
 
 **Difficulty:** Senior.
 
-### Verify the functional correctness of an LLM-based recommendation system
+### 31. Verify the functional correctness of an LLM-based recommendation system
 
 > "How would you verify the functional correctness of a recommendation system that uses an LLM?" (paraphrased, representative of OpenAI SWE practice questions)
 
@@ -677,7 +677,7 @@ Build a labeling rubric with 4-5 dimensions (relevance, freshness, novelty, dive
 
 ## 4. Rapid Prototyping and Practical Rounds
 
-### OpenAI FDE take-home: ~5-hour build using OpenAI's APIs
+### 32. OpenAI FDE take-home: ~5-hour build using OpenAI's APIs
 
 > "A substantial take-home project, about five hours of work, building something with OpenAI's APIs." Deliverables: "code and a video walkthrough explaining your solution."
 
@@ -695,7 +695,7 @@ Choose a tight, tasteful use case (e.g., a Slack-integrated "incident postmortem
 
 **Difficulty:** Mid.
 
-### Clay GTM Engineering take-home (20-40 hours)
+### 33. Clay GTM Engineering take-home (20-40 hours)
 
 > "A deliverable, a video walkthrough of the deliverable, and a presentation." Scope is "intentionally open-ended" and takes "20-40 hours."
 
@@ -713,7 +713,7 @@ Choose a Clay-native outbound problem (e.g., inbound company → enriched accoun
 
 **Difficulty:** Mid-senior. Reported as a significant time investment.
 
-### Sierra AI-native Plan → Build → Review (2-hour build with AI tooling)
+### 34. Sierra AI-native Plan → Build → Review (2-hour build with AI tooling)
 
 > "Plan: A working session with the candidate to define a product to build"; "Build: The candidate brings the idea to life over 2 hours, using the AI tooling and frameworks of their choice, with complete freedom to pivot or adjust scope as they go"; "Review: A session where the candidate demos what they've built ... interviewers debate the key product flows and choices they made, review the code to understand their technical judgment (data model, abstractions, extensibility, etc.), discuss the path to production, and dig into how they used AI along the way."
 
@@ -731,7 +731,7 @@ Pick a meaningful-but-tractable problem (e.g., a small cohort analysis tool, an 
 
 **Difficulty:** Senior.
 
-### Sierra debugging interview: review and improve a peer's draft PR
+### 35. Sierra debugging interview: review and improve a peer's draft PR
 
 > "Given a medium-sized codebase and a draft PR from a colleague that introduces a cross-cutting feature," the task is to "review and improve it — pulling down the code, inspecting the output, and iterating with coding agents to make it better."
 
@@ -749,7 +749,7 @@ Read the PR top to bottom first. List 4-6 issues (correctness, naming, abstracti
 
 **Difficulty:** Senior.
 
-### Salesforce Agentforce demo prep
+### 36. Salesforce Agentforce demo prep
 
 > "Prepare an Agentforce demo, showing your technical skills around [building conversational AI agents]."
 
@@ -767,7 +767,7 @@ Build a narrow but realistic use case (e.g., a refund-status conversational agen
 
 **Difficulty:** Mid.
 
-### Rapid-prototyping interview: 50-minute build under time pressure
+### 37. Rapid-prototyping interview: 50-minute build under time pressure
 
 > The interview itself is "time-limit, about 50 minutes or so, during a 60 min interview round"; the prompt is for the candidate to "rapidly build a working prototype."
 
@@ -791,7 +791,7 @@ Spend 5 minutes defining the simplest possible success criteria (one input → o
 
 For AI PM and AI Product Engineer loops.
 
-### Define success metrics for a new AI product
+### 38. Define success metrics for a new AI product
 
 > "How do you define success metrics for X new AI feature?"
 
@@ -809,7 +809,7 @@ Use a layer-cake model: top-line North Star (e.g., task completion), supporting 
 
 **Difficulty:** Mid-senior.
 
-### Design an eval strategy for a new LLM feature
+### 39. Design an eval strategy for a new LLM feature
 
 > "Design an evaluation strategy for a new LLM feature shipped to enterprise customers."
 
@@ -827,7 +827,7 @@ Start with 200 hand-labeled examples; grow the set from production failures. Def
 
 **Difficulty:** Senior.
 
-### Model vs. product tradeoff
+### 40. Model vs. product tradeoff
 
 > "Where do you draw the line between a model improvement and a product improvement?" (verbatim intent)
 
@@ -845,7 +845,7 @@ Test the model's behavior in a clean, isolated harness first. If the model is wr
 
 **Difficulty:** Mid-senior.
 
-### Bring a new AI feature to market
+### 41. Bring a new AI feature to market
 
 > "How would you bring a new AI feature to market?"
 
@@ -863,7 +863,7 @@ Frame the user, the value, the cost (compute / engineering), the GTM wedge, the 
 
 **Difficulty:** Senior.
 
-### Launch an AI feature into an existing product
+### 42. Launch an AI feature into an existing product
 
 > "Design a launch plan for an AI feature within an existing OpenAI product line." (consistent with OpenAI PM Glassdoor prep)
 
@@ -881,7 +881,7 @@ Cohort-by-cohort rollout. Define the canary criteria (eval set, hallucination ra
 
 **Difficulty:** Senior.
 
-### Anthropic PM analytical: "How would you measure X?"
+### 43. Anthropic PM analytical: "How would you measure X?"
 
 > "How would you measure success for X enterprise feature?" (recurring Anthropic PM analytical question, verbatim intent)
 
@@ -899,7 +899,7 @@ Step 1: define the user outcome. Step 2: decompose into a leading indicator (usa
 
 **Difficulty:** Senior.
 
-### Design for a model failure mode
+### 44. Design for a model failure mode
 
 > "Pick a common failure mode of an LLM in production and design a product response to it."
 
@@ -917,7 +917,7 @@ Pick a specific failure mode (e.g., hallucinated citation). Design a UX response
 
 **Difficulty:** Senior.
 
-### Design an AI agent for a streaming service
+### 45. Design an AI agent for a streaming service
 
 > "Design an AI agent for a streaming service."
 
@@ -935,7 +935,7 @@ Define the user's top 3 jobs (e.g., "I want to find a movie the whole family wil
 
 **Difficulty:** Mid-senior.
 
-### AI safety tradeoff debate
+### 46. AI safety tradeoff debate
 
 > AI safety tradeoffs and ethical decision-making in ambiguous deployment scenarios are recurring.
 
@@ -953,7 +953,7 @@ State the risk explicitly (e.g., "the model can be misused to generate X if we d
 
 **Difficulty:** Senior.
 
-### Model rollback strategy
+### 47. Model rollback strategy
 
 > "A new model version launched and you observe a 1% drop in quality on your North Star metric. Walk me through your next 10 days." (verbatim intent, consistent with OpenAI PM past loops)
 
@@ -975,7 +975,7 @@ Triangulate: is the regression real? (statistical power, segmentation). Is it co
 
 ## 6. GTM Engineering
 
-### Clay first interview: talk about Clay workflow experience
+### 48. Clay first interview: talk about Clay workflow experience
 
 > Recurring Clay first-screen question cluster: "Talk about understanding of outbound workflows, time bottlenecks for reps, understanding of CRMs, experience with Clay and automation tools." (verbatim intent; the Summer 2026 r/Cluely report confirms the same motif)
 
@@ -993,7 +993,7 @@ Be specific about a workflow you have built or owned. Name the stages (data inge
 
 **Difficulty:** Mid.
 
-### Clay hiring manager: GTM workflow design + platform fluency
+### 49. Clay hiring manager: GTM workflow design + platform fluency
 
 > The Hiring Manager round walks through the take-home and asks "questions on your technical decisions, how you think about GTM workflows, and your familiarity with the Clay platform itself."
 
@@ -1011,7 +1011,7 @@ Walk through the take-home linearly. For each major decision, name the alternati
 
 **Difficulty:** Mid-senior.
 
-### Design an enrichment pipeline
+### 50. Design an enrichment pipeline
 
 > "Design an enrichment pipeline that takes raw company names and outputs revenue range, employee count, industry, recent funding, decision-maker contacts." (verbatim intent, also circulating on r/gtmengineering 2025-2026)
 
@@ -1029,7 +1029,7 @@ Treat as a data engineering problem: input → validation → waterfall enrichme
 
 **Difficulty:** Mid-senior.
 
-### Design an AI-driven outbound motion
+### 51. Design an AI-driven outbound motion
 
 > "Design an AI-driven outbound motion: which accounts to target, when, what angle, with what personalization, what guardrails." (verbatim intent, reported across Clay / 11x / Artisan GTM Eng loops)
 
@@ -1047,7 +1047,7 @@ Start with ICP definition (firmographics, intent signal, technographic). Then pr
 
 **Difficulty:** Senior.
 
-### Clay take-home: purpose and grading
+### 52. Clay take-home: purpose and grading
 
 > The take-home is "intentionally open-ended" and "deep platform knowledge and a clean, well-reasoned submission matter more than any other part of the process."
 
@@ -1065,7 +1065,7 @@ A "clean, well-reasoned" submission means: a short brief that names the problem 
 
 **Difficulty:** Mid-senior.
 
-### Anthropic GTM: research and persona depth
+### 53. Anthropic GTM: research and persona depth
 
 > The Anthropic GTM interview tests "research on market and personas (their business goals, impacts today, areas Anthropic could add value, positive implications), competitors, adoption challenges."
 
@@ -1089,7 +1089,7 @@ Show 3-5 hours of work in 30 minutes. Pick a target industry (e.g., life science
 
 Travel, embed, ambiguity, ownership.
 
-### Why FDE and not "regular SWE"?
+### 54. Why FDE and not "regular SWE"?
 
 > "Why Forward Deployed Engineer, not a regular SWE role?"
 
@@ -1107,7 +1107,7 @@ Be honest and specific. Cite a time you chose to ship something ugly-but-working
 
 **Difficulty:** Mid.
 
-### Most technically challenging project you've owned end-to-end
+### 55. Most technically challenging project you've owned end-to-end
 
 > "Walk me through the most technically challenging project you've owned end-to-end."
 
@@ -1125,7 +1125,7 @@ Pick a project where you crossed multiple boundaries (engineering, customer, ops
 
 **Difficulty:** Mid.
 
-### A deployment that went badly
+### 56. A deployment that went badly
 
 > "Tell me about a time a deployment went badly. What did you do?"
 
@@ -1143,7 +1143,7 @@ Show ownership — not "the QA team missed it." Show what you told the customer 
 
 **Difficulty:** Mid.
 
-### Delivering bad news to a customer
+### 57. Delivering bad news to a customer
 
 > "Tell me about a time you had to deliver bad news to a customer."
 
@@ -1161,7 +1161,7 @@ Pick a real example (not "ideally I would..."). Walk through what you said, what
 
 **Difficulty:** Mid.
 
-### Disagreeing with a customer and holding the line
+### 58. Disagreeing with a customer and holding the line
 
 > "Tell me about a time you disagreed with a customer and held the line."
 
@@ -1179,7 +1179,7 @@ Pick a case where you refused a workaround that would have hurt reliability. Sho
 
 **Difficulty:** Senior.
 
-### Spotting a pattern across customers and changing how your team worked
+### 59. Spotting a pattern across customers and changing how your team worked
 
 > "Tell me about a time you spotted a pattern across customers and changed how your team worked."
 
@@ -1197,7 +1197,7 @@ Name the pattern (e.g., "every regulated customer wanted X within week 2"). Name
 
 **Difficulty:** Senior.
 
-### Operating in an environment you didn't fully understand
+### 60. Operating in an environment you didn't fully understand
 
 > "Tell me about a time you operated in an environment you didn't fully understand."
 
@@ -1215,7 +1215,7 @@ Pick an example where you had to absorb a vertical (e.g., supply chain, defense,
 
 **Difficulty:** Mid.
 
-### A technical decision you reversed
+### 61. A technical decision you reversed
 
 > "What's a technical decision you reversed, and what did you learn?"
 
@@ -1233,7 +1233,7 @@ Pick a real reversal that hurt (not a fake reversal). Show the original reasonin
 
 **Difficulty:** Senior.
 
-### Your first 30/60/90 days in a new FDE role
+### 62. Your first 30/60/90 days in a new FDE role
 
 > "Describe your first 30/60/90 days in a new FDE role."
 
@@ -1251,7 +1251,7 @@ Pick a real reversal that hurt (not a fake reversal). Show the original reasonin
 
 **Difficulty:** Mid.
 
-### Why this company specifically?
+### 63. Why this company specifically?
 
 > "Why this company specifically?"
 
@@ -1269,7 +1269,7 @@ Cite 2-3 concrete company artifacts (a recent post, a customer outcome, a produc
 
 **Difficulty:** Mid.
 
-### Anthropic Culture round: safety and responsible deployment
+### 64. Anthropic Culture round: safety and responsible deployment
 
 > The Anthropic Culture Interview tests "what's got you excited about their mission and how does it align with your experiences" and looks for those who "think seriously about safety and responsible deployment."
 
@@ -1287,7 +1287,7 @@ Have 2-3 examples where you put safety/ethics ahead of velocity (e.g., chose a s
 
 **Difficulty:** Senior.
 
-### Rippling allows AI in the technical interview — what that signals
+### 65. Rippling allows AI in the technical interview — what that signals
 
 > The recruiter screen says "this is the first interview which allows AI to be used during the interview process."
 
@@ -1305,7 +1305,7 @@ Show how you used AI as a co-pilot (e.g., to generate candidate approaches to a 
 
 **Difficulty:** Mid-senior. Important company signal: be ready if more companies follow.
 
-### BCG X / QuantumBlack: deploy-consulting case framing
+### 66. BCG X / QuantumBlack: deploy-consulting case framing
 
 > The BCG X Forward Deployed AI Scientist case framing blends management consulting structure with ML deployment specifics. (verbatim intent)
 

@@ -4,7 +4,7 @@
 
 # 💻 Coding Exercises & ML System Design — Real AI Interview Questions
 
-![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/64%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/66%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
 
 **Every exercise below was reported by a real candidate, with the company, stage, and source. Answers are what a strong candidate actually does.**
 
@@ -28,7 +28,7 @@ The pattern across 2024–2026 loops is consistent: less LeetCode, more "build o
 
 ## A1. Tokenization, attention and transformers
 
-### Implement a BPE tokenizer from scratch
+### 1. Implement a BPE tokenizer from scratch
 
 > Implement a Byte Pair Encoding (BPE) tokenizer. Write `train(corpus, vocab_size)` that learns the merge rules, and `encode(text)` / `decode(ids)` that apply them. No external tokenizer libraries.
 
@@ -97,7 +97,7 @@ Narrate the two things interviewers listen for: (1) encode must apply merges **i
 
 </details>
 
-### Implement scaled dot-product self-attention
+### 2. Implement scaled dot-product self-attention
 
 > Given matrices Q, K, V of shape `(seq_len, d_k)`, implement scaled dot-product attention in NumPy or PyTorch — no `nn.MultiheadAttention`, no `F.scaled_dot_product_attention`. Support an optional causal mask.
 
@@ -132,7 +132,7 @@ Say out loud *why* each line exists: the √d_k scaling keeps dot-product varian
 
 </details>
 
-### Implement multi-head self-attention correctly
+### 3. Implement multi-head self-attention correctly
 
 > "Implement a multi-head self-attention layer (forward pass) using PyTorch or NumPy that: Projects inputs into queries (Q), keys (K), and values (V)…" — PracHub records that this evaluates "practical implementation skills and conceptual understanding of multi-head self-attention, including query/key/value projections, head-wise tensor reshaping, masking behavior, and considerations for numerical stability and computational complexity."
 
@@ -159,7 +159,7 @@ Gotchas separating strong from weak: (1) failing to scale by `1/sqrt(D_head)` ca
 
 </details>
 
-### Implement a Transformer block from scratch
+### 4. Implement a Transformer block from scratch
 
 > Implement a full transformer block in PyTorch: multi-head attention, feed-forward network, residual connections, and layer norm. You may use `nn.Linear` but nothing higher-level.
 
@@ -214,7 +214,7 @@ Call out the design choices as you go: pre-norm (GPT-2 onward) trains more stabl
 
 </details>
 
-### Implement FlashAttention-style tiled attention
+### 5. Implement FlashAttention-style tiled attention
 
 > Implement attention without ever materializing the full N×N attention matrix — process K/V in tiles and keep a running softmax, FlashAttention-style.
 
@@ -258,7 +258,7 @@ Explain the systems framing: standard attention is O(N²) HBM traffic; tiling ke
 
 ## A2. Sampling and decoding
 
-### Implement temperature, top-k, and top-p sampling
+### 6. Implement temperature, top-k, and top-p sampling
 
 > "Implement a sampling routine that supports temperature, top-k, and top-p (nucleus) filtering."
 
@@ -299,7 +299,7 @@ Gotchas: forgetting to apply temperature *before* top-k/p; masking tokens to 0 i
 
 </details>
 
-### Implement beam search decoding
+### 7. Implement beam search decoding
 
 > Implement beam search decoding for an autoregressive language model: given `model(prefix) -> log_probs`, return the highest-scoring sequence with beam width k.
 
@@ -349,7 +349,7 @@ Explain length normalization unprompted: raw log-prob sums penalize long sequenc
 
 ## A3. Debugging ML systems
 
-### Debug a transformer with 4 failing tests, then train a classifier (OpenAI)
+### 8. Debug a transformer with 4 failing tests, then train a classifier (OpenAI)
 
 > "You are given a transformer-based ML model with four failing unit tests — two bugs are known, two are novel. Identify, debug, and fix each bug so the model trains and evaluates correctly. Given a labeled dataset, write code to train a classifier, analyze the dataset (class balance, feature distributions), and report key performance metrics."
 
@@ -377,7 +377,7 @@ Gotchas that sink candidates: chasing the "novel" frame and missing that a known
 
 </details>
 
-### Debug an actual LLM inference step in a 20–30 line Colab skeleton (Anthropic)
+### 9. Debug an actual LLM inference step in a 20–30 line Colab skeleton (Anthropic)
 
 > "The weirdest part was the final round: they dropped me into a Google Colab notebook with maybe 20 to 30 lines of skeleton Python and asked me to debug an actual LLM inference step" — and was "explicitly told not to use an LLM." Preceded by a 15-minute "open-ended alignment brainstorm". Other rounds: "database-style CodeSignal rounds designed to test raw coding implementation speed."
 
@@ -399,7 +399,7 @@ Stretch-time signal: notice when an apparent bug is actually a *correct* numeric
 
 </details>
 
-### Implement backprop for a tiny network (OpenAI)
+### 10. Implement backprop for a tiny network (OpenAI)
 
 > "Implement Backprop for a Tiny Network" (rated hard, 137 candidate reports) and the sibling prompt "Debug MiniGPT and Backpropagate Matmul" (rated medium, 58 candidate reports).
 
@@ -428,7 +428,7 @@ Gotchas: forgetting a transposed weight during matmul backward; using `.T` on a 
 
 ## A4. Classic ML from scratch
 
-### Implement k-means from scratch
+### 11. Implement k-means from scratch
 
 > "ML Coding Interview: K-Means — K-Means is an unsupervised learning algorithm used for clustering data points into groups based on similarity."
 
@@ -468,7 +468,7 @@ Gotchas: empty cluster after an update (re-seed from the farthest point); label 
 
 </details>
 
-### Implement logistic regression from scratch
+### 12. Implement logistic regression from scratch
 
 > "Implementation of Logistic Regression from Scratch using Python" — the classic implementation request: sigmoid, binary cross-entropy loss, gradient computation, and a vectorized gradient-descent training loop. No ML libraries.
 
@@ -503,7 +503,7 @@ Gotchas: log(0) in cross-entropy without `eps`; not clipping logits, causing NaN
 
 </details>
 
-### Compute entropy and implement 1-NN (OpenAI)
+### 13. Compute entropy and implement 1-NN (OpenAI)
 
 > "Compute entropy and implement 1-NN" (rated medium, 62 candidate reports) and "Implement 1NN with NumPy" (rated medium, 204 candidate reports).
 
@@ -530,7 +530,7 @@ Gotchas: applying `log2` to `p=0` without `eps`; storing the full `n×m×d` dist
 
 ## A5. Training-loop engineering
 
-### Write a training loop with gradient accumulation and mixed precision
+### 14. Write a training loop with gradient accumulation and mixed precision
 
 > "Implement a training loop that supports mixed-precision, gradient accumulation, gradient clipping, cosine LR schedule with warmup, and deterministic reproducibility." A common live variant: "This training loop OOMs at batch size 32; only batch size 8 fits. Modify it to train with an effective batch size of 32, then add mixed precision. Explain every change."
 
@@ -570,7 +570,7 @@ Explain *why* GradScaler exists: fp16 has a tiny exponent range, so small gradie
 
 ## A6. Retrieval and RAG coding
 
-### Implement cosine-similarity search from scratch
+### 15. Implement cosine-similarity search from scratch
 
 > "Implement cosine similarity, dot product, and Euclidean distance functions from scratch" and "Build a simple vector similarity search from scratch."
 
@@ -601,7 +601,7 @@ Gotchas: forgetting `eps` in the denominator; using 32-bit float for 1024-d embe
 
 </details>
 
-### Implement semantic search using embeddings
+### 16. Implement semantic search using embeddings
 
 > "Implement semantic search using embeddings and cosine similarity."
 
@@ -625,7 +625,7 @@ Learn `alpha` per domain offline. Pre-normalize the corpus at index time; use `a
 
 </details>
 
-### Build a small RAG app (chunking, embedding, retrieval, answer)
+### 17. Build a small RAG app (chunking, embedding, retrieval, answer)
 
 > "Implement a basic RAG pipeline using an embedding model and a vector database", "Build a basic document parser that extracts text from PDFs and splits it into chunks", and "Implement a simple re-ranker for search results."
 
@@ -651,7 +651,7 @@ Gotchas: no overlap means lost context across chunk boundaries; ignoring chunk m
 
 </details>
 
-### Write a chunking strategy module (fixed-size / recursive / semantic)
+### 18. Write a chunking strategy module (fixed-size / recursive / semantic)
 
 > "Write code for different text chunking strategies (fixed-size, recursive, semantic)."
 
@@ -671,7 +671,7 @@ Gotchas: ignoring whitespace; a recursive splitter that doesn't respect Markdown
 
 </details>
 
-### Implement a simple re-ranker for search results
+### 19. Implement a simple re-ranker for search results
 
 > "Implement a simple re-ranker for search results."
 
@@ -697,7 +697,7 @@ For a cross-encoder, score `(query, doc)` pairs directly. Gotchas: not handling 
 
 ## A7. Agents, LLM APIs and production plumbing
 
-### Build a simple AI agent with tool use
+### 20. Build a simple AI agent with tool use
 
 > "Build a simple AI agent with tool use (e.g., calculator, web search)" and "Write a function calling (tool use) handler for an LLM API."
 
@@ -725,7 +725,7 @@ Gotchas: infinite loops ("never reaches done" — need a max-step cap, a "final 
 
 </details>
 
-### Build a sliding-window + summary conversation memory
+### 21. Build a sliding-window + summary conversation memory
 
 > "Implement a conversation memory system for a chatbot (sliding window, summary, buffer)."
 
@@ -745,7 +745,7 @@ Gotchas: the summary hallucinating facts; mixing buffered and summarized message
 
 </details>
 
-### Implement a streaming response handler for an LLM API
+### 22. Implement a streaming response handler for an LLM API
 
 > "Implement streaming responses for an LLM API."
 
@@ -769,7 +769,7 @@ Use `httpx.AsyncClient` with `timeout=httpx.Timeout(connect=5, read=60)`. Gotcha
 
 </details>
 
-### Implement retry with exponential backoff for LLM API calls
+### 23. Implement retry with exponential backoff for LLM API calls
 
 > "Implement a retry mechanism with exponential backoff for LLM API calls."
 
@@ -796,7 +796,7 @@ Gotchas: retrying on 401 (the token is dead); using a sleep that doesn't compose
 
 </details>
 
-### Build a rate-limited async LLM API client
+### 24. Build a rate-limited async LLM API client
 
 > "Day 1-2: Pick your language and write five infrastructure utilities from scratch. Rate limiter, LRU cache with TTL, batch aggregator, retry-with-backoff…"
 
@@ -825,7 +825,7 @@ Gotchas: ignoring 429 silently; firing concurrent requests past the limit (a loc
 
 </details>
 
-### Implement an async task queue with a concurrency limit
+### 25. Implement an async task queue with a concurrency limit
 
 > Implement an async task queue: tasks can be submitted at any time, at most N run concurrently, each submission returns a promise/future of its result. (JS/TS or Python asyncio.)
 
@@ -884,7 +884,7 @@ The graded subtleties: release in `finally` so failures don't leak slots; wake e
 
 </details>
 
-### Implement a rate limiter for an LLM API gateway
+### 26. Implement a rate limiter for an LLM API gateway
 
 > Implement a rate limiter for an LLM API gateway: each user gets X requests/minute and Y tokens/minute. `allow(user, tokens)` returns whether the request may proceed. Then make it work across multiple gateway instances.
 
@@ -939,7 +939,7 @@ Name the LLM-specific wrinkle unprompted: you don't know the *output* token coun
 
 </details>
 
-### Implement token counting and context window management
+### 27. Implement token counting and context window management
 
 > "Write code to implement token counting and context window management."
 
@@ -959,7 +959,7 @@ Gotchas: counting characters not tokens; using `len(text.split())`; off-by-one f
 
 </details>
 
-### Build a prompt template system with variable substitution
+### 28. Build a prompt template system with variable substitution
 
 > "Implement a prompt template system with variable substitution."
 
@@ -983,7 +983,7 @@ Add strict-undefined mode in production and protection against prompt injection.
 
 </details>
 
-### Implement an eval pipeline with LLM-as-a-judge
+### 29. Implement an eval pipeline with LLM-as-a-judge
 
 > "Build an evaluation pipeline for LLM outputs using LLM-as-a-judge."
 
@@ -1003,7 +1003,7 @@ Gotchas: a judge prompt with no rubric; non-blind comparison; a single judge.
 
 </details>
 
-### Detect and handle hallucinations in LLM outputs
+### 30. Detect and handle hallucinations in LLM outputs
 
 > "Write code to detect and handle hallucinations in LLM outputs."
 
@@ -1025,7 +1025,7 @@ Gotchas: a single threshold collapses all failure modes; "asking the LLM if it's
 
 ## A8. Systems, performance and take-homes
 
-### Optimize a Python-simulated TPU kernel to beat 1487 cycles (Anthropic performance take-home)
+### 31. Optimize a Python-simulated TPU kernel to beat 1487 cycles (Anthropic performance take-home)
 
 > "This repo contains a version of Anthropic's original performance take-home, before Claude Opus 4.5 started doing better than humans given only 2 hours." The README adds: "If you optimize below 1487 cycles, beating Claude Opus 4.5's best performance at launch, email us at performance-recruiting@anthropic.com with your code (and ideally a resume) so we can be appropriately impressed and perhaps discuss interviewing." A previous iteration provided starter code that achieved "18532 cycles (7.97x faster than this repo starts you)" and warned "Multicore is disabled intentionally in this version."
 
@@ -1049,7 +1049,7 @@ The hardest-signal move: notice the competing metric — instruction count vs wa
 
 </details>
 
-### Generate outputs for images and pipelines (Anthropic)
+### 32. Generate outputs for images and pipelines (Anthropic)
 
 > "This question evaluates algorithmic and systems engineering skills related to batch image processing, parallelization, I/O versus CPU trade-offs, and deterministic output association within the Coding & Algorithms domain."
 
@@ -1082,7 +1082,7 @@ Gotchas that separate strong from weak: blocking the event loop on numpy decode;
 
 </details>
 
-### LRU cache implementation (OpenAI onsite)
+### 33. LRU cache implementation (OpenAI onsite)
 
 > The "classic LRU Cache implementation question", reported at OpenAI's platform SWE onsite.
 
@@ -1102,7 +1102,7 @@ Gotchas: forgetting move-to-end on *update*, not just on *get*; off-by-one on ca
 
 </details>
 
-### In-memory file system coding challenge (Perplexity)
+### 34. In-memory file system coding challenge (Perplexity)
 
 > "Perplexity Interview Experience: In-Memory File System Coding Challenge. Verified candidate reports — coding."
 
@@ -1131,7 +1131,7 @@ Gotchas: not handling `..` from root; case sensitivity (decide the policy upfron
 
 </details>
 
-### Cohere infrastructure utilities (5-in-1 take-home)
+### 35. Cohere infrastructure utilities (5-in-1 take-home)
 
 > "Day 1-2: Pick your language and write five infrastructure utilities from scratch. Rate limiter, LRU cache with TTL, batch aggregator, retry-with-backoff…"
 
@@ -1151,7 +1151,7 @@ Gotchas: timeouts that don't compose; mixing `time.sleep` and `asyncio.sleep`; `
 
 </details>
 
-### Cursor 8-hour paid take-home build session
+### 36. Cursor 8-hour paid take-home build session
 
 > Cursor candidate report: "They basically gave me access to part of their codebase and were like, 'Figure it out, see anything you want to build, and just build it.' For eight hours I worked out of a Sl…" Cursor's loop: "four stages: a 30-minute recruiter screen, two 60-minute technical phone screens, and an 8-hour paid [onsite build]."
 
@@ -1171,7 +1171,7 @@ Gotchas: getting stuck on a sprawling subsystem; over-engineering; shipping with
 
 </details>
 
-### Mistral 60-minute live coding (algorithm + practical AI utility)
+### 37. Mistral 60-minute live coding (algorithm + practical AI utility)
 
 > "Coding & Algorithms: A 60-minute live coding session" within a 6-round loop — ML-flavored algorithmic coding plus practical AI utilities (tokenizer, streaming HTTP client, eval harness glue).
 
@@ -1191,7 +1191,7 @@ Gotchas: edge cases (empty input, Unicode, overflow); missing docstring on the p
 
 </details>
 
-### Coding exercises reported by multiple employers (cross-reference)
+### 38. Coding exercises reported by multiple employers (cross-reference)
 
 | Exercise | Companies confirmed | Difficulty | Typical time |
 | --- | --- | --- | --- |
@@ -1220,7 +1220,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 ## B1. LLM serving and inference
 
-### Design ChatGPT to handle 100 million users
+### 39. Design ChatGPT to handle 100 million users
 
 > "How would you design ChatGPT to handle 100 million users?" — paired with "system reliability and fault tolerance" and "how to scale machine learning workloads."
 
@@ -1254,7 +1254,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design an LLM inference platform (vLLM-as-a-Service)
+### 40. Design an LLM inference platform (vLLM-as-a-Service)
 
 > "Design an LLM Inference Platform (vLLM-as-a-Service)."
 
@@ -1286,7 +1286,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design an on-device AI assistant
+### 41. Design an on-device AI assistant
 
 > "Design an On-Device AI Assistant."
 
@@ -1314,7 +1314,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 ## B2. RAG, search and retrieval
 
-### Design a RAG system with evaluation
+### 42. Design a RAG system with evaluation
 
 > "You are asked to design a Retrieval-Augmented Generation (RAG) system that answers user questions using a private corpus (e.g., internal docs…)" — PracHub: "This question evaluates expertise in designing RAG systems, covering end-to-end architecture, document ingestion and preprocessing, embedding and indexing strategies, retrieval and reranking, prompt/context assembly, safety/fallbacks, and per-component evaluation."
 
@@ -1348,7 +1348,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design a semantic search system at scale
+### 43. Design a semantic search system at scale
 
 > "Design semantic search for [a domain]: blends vector + lexical, low-latency under a billion docs."
 
@@ -1380,7 +1380,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design a multimodal search system (text + image + video)
+### 44. Design a multimodal search system (text + image + video)
 
 > "Design a Multimodal Search System (Text, Image, Video)."
 
@@ -1408,7 +1408,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design an AI search engine for an e-commerce platform
+### 45. Design an AI search engine for an e-commerce platform
 
 > "Design an AI-powered search engine for an e-commerce platform."
 
@@ -1432,7 +1432,7 @@ In 2026, system-design prompts at AI employers orbit a small number of archetype
 
 </details>
 
-### Design an AI tutoring platform with RAG-based Q&A
+### 46. Design an AI tutoring platform with RAG-based Q&A
 
 > Design an AI tutoring platform where students ask questions and get answers grounded in course materials — with follow-up conversations, per-student progress, and safeguards against just giving away homework answers.
 
@@ -1463,7 +1463,7 @@ Requirements first: which subjects (math needs different handling than history �
 
 ## B3. Training, fine-tuning and alignment
 
-### Design a distributed training pipeline for an LLM with fault tolerance
+### 47. Design a distributed training pipeline for an LLM with fault tolerance
 
 > "Design a distributed training pipeline for a large language model. How would you handle fault tolerance?"
 
@@ -1497,7 +1497,7 @@ Requirements first: which subjects (math needs different handling than history �
 
 </details>
 
-### Design a fine-tuning platform (instruction / PEFT / RLHF)
+### 48. Design a fine-tuning platform (instruction / PEFT / RLHF)
 
 > "Design a fine-tuning platform for a large language model." Variant: "How would you design an end-to-end fine-tuning system for [domain] with quality evaluation?"
 
@@ -1529,7 +1529,7 @@ Requirements first: which subjects (math needs different handling than history �
 
 </details>
 
-### Design an RLHF pipeline
+### 49. Design an RLHF pipeline
 
 > Design the post-training pipeline that aligns a base LLM with human preferences: SFT, reward modeling, and RL fine-tuning — data collection, infrastructure, and how you know it worked.
 
@@ -1563,7 +1563,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 ## B4. Evaluation and safe deployment
 
-### Design an LLM evaluation platform
+### 50. Design an LLM evaluation platform
 
 > "Design an LLM Evaluation Platform." Live variant: "Your team ships an LLM product and changes prompts/models weekly. Design the evaluation system that decides whether a change is safe to ship — offline and online."
 
@@ -1593,7 +1593,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a system for safe deployment of AI models in production
+### 51. Design a system for safe deployment of AI models in production
 
 > "How would you approach designing a system to ensure the safe deployment of AI models in production?"
 
@@ -1621,7 +1621,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a content moderation system using AI
+### 52. Design a content moderation system using AI
 
 > "Design a content moderation system using AI."
 
@@ -1655,7 +1655,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 ## B5. Agents and AI products
 
-### Design a Deep Research agent
+### 53. Design a Deep Research agent
 
 > "Design a Deep Research Agent." (Reference implementations: OpenAI Deep Research, Anthropic Research, Perplexity Deep Research — the question has been reported at all three.)
 
@@ -1689,7 +1689,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a multi-agent customer support system
+### 54. Design a multi-agent customer support system
 
 > "Design a Multi-Agent Customer Support System."
 
@@ -1719,7 +1719,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design an AI coding agent (Cursor / Copilot / Claude Code style)
+### 55. Design an AI coding agent (Cursor / Copilot / Claude Code style)
 
 > "Design an AI Coding Agent."
 
@@ -1749,7 +1749,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design memory for a personal AI assistant
+### 56. Design memory for a personal AI assistant
 
 > "Design Memory for a Personal AI Assistant."
 
@@ -1777,7 +1777,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design an AI gateway/proxy for org-wide LLM access
+### 57. Design an AI gateway/proxy for org-wide LLM access
 
 > "Design an AI gateway/proxy for managing LLM access across an organization."
 
@@ -1803,7 +1803,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design an AI-powered email assistant
+### 58. Design an AI-powered email assistant
 
 > "Design an AI-powered email assistant."
 
@@ -1829,7 +1829,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a multi-tenant AI chatbot platform
+### 59. Design a multi-tenant AI chatbot platform
 
 > "Design a multi-tenant AI chatbot platform where each business gets a custom chatbot."
 
@@ -1853,7 +1853,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a medical diagnosis assistant using AI
+### 60. Design a medical diagnosis assistant using AI
 
 > "Design a medical diagnosis assistant using AI."
 
@@ -1879,7 +1879,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 ## B6. Applied ML systems
 
-### Design a real-time recommendation system
+### 61. Design a real-time recommendation system
 
 > "Design a real-time AI recommendation system."
 
@@ -1911,7 +1911,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a feed-ranking system
+### 62. Design a feed-ranking system
 
 > "Design the ranking pipeline for a social feed at [company] scale."
 
@@ -1941,7 +1941,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a real-time fraud / abuse-detection ML system
+### 63. Design a real-time fraud / abuse-detection ML system
 
 > "Design a fraud detection system powered by LLMs" / "Design a real-time fraud detection system."
 
@@ -1973,7 +1973,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design an ML feature store
+### 64. Design an ML feature store
 
 > "Design an ML feature store and online/offline serving."
 
@@ -2005,7 +2005,7 @@ Present the three-stage pipeline, then go deep where the interviewer steers.
 
 </details>
 
-### Design a centralized ML training and management platform
+### 65. Design a centralized ML training and management platform
 
 > Design a centralized platform for your company's ML teams: training-job orchestration, experiment tracking, a feature store, a model registry, deployment, and monitoring — the internal "ML platform" round.
 
@@ -2034,7 +2034,7 @@ The senior move: discuss *adoption* — platforms fail socially, not technically
 
 </details>
 
-### System design prompts reported by multiple employers (cross-reference)
+### 66. System design prompts reported by multiple employers (cross-reference)
 
 | Question | Top employers confirmed | Common depth signal |
 | --- | --- | --- |

@@ -18,7 +18,7 @@
 
 ## Transformer & LLM Fundamentals
 
-### Why divide by sqrt(d_k) in scaled dot-product attention?
+### 1. Why divide by sqrt(d_k) in scaled dot-product attention?
 
 > "Walk me through why scaled dot-product attention divides by sqrt(d_k). What would happen during training if you removed that scaling factor?"
 
@@ -37,7 +37,7 @@ Scaled dot-product attention computes Attention(Q, K, V) = softmax(QK^T / sqrt(d
 
 **Difficulty:** Mid
 
-### Why multi-head attention instead of one big head?
+### 2. Why multi-head attention instead of one big head?
 
 > "Multi-head attention splits the model dimension into h heads each of dimension d_k = d_model / h. An interviewer asks: why not just use a single attention head with the full d_model dimension?"
 
@@ -56,7 +56,7 @@ With one full-dimension head, a single softmax over the whole d_model mixes all 
 
 **Difficulty:** Mid
 
-### Sinusoidal positional encodings vs RoPE
+### 3. Sinusoidal positional encodings vs RoPE
 
 > "Compare sinusoidal positional encodings with Rotary Position Embeddings (RoPE). Which would you recommend for a modern autoregressive LLM and why?"
 
@@ -75,7 +75,7 @@ Sinusoidal encodings from "Attention is All You Need" are absolute, fixed functi
 
 **Difficulty:** Senior
 
-### Why do transformers need positional embeddings at all?
+### 4. Why do transformers need positional embeddings at all?
 
 > "Why do transformers need positional embeddings at all? What would happen if you removed them completely? Why? Why not use simpler and more intuitive approaches like bag-of-words?"
 
@@ -94,7 +94,7 @@ Self-attention is permutation-equivariant: it treats the input as a set of token
 
 **Difficulty:** Mid
 
-### What is KV cache and how does it speed up inference?
+### 5. What is KV cache and how does it speed up inference?
 
 > "Explain KV cache and how it speeds up autoregressive inference. Why does memory scale with sequence length?"
 
@@ -113,7 +113,7 @@ During autoregressive decoding, recomputing all key and value projections for th
 
 **Difficulty:** Mid - Senior
 
-### BPE vs SentencePiece vs WordPiece tokenization
+### 6. BPE vs SentencePiece vs WordPiece tokenization
 
 > "Walk through tokenizer choices for a multilingual LLM - BPE vs WordPiece vs SentencePiece vs Unigram. Which would you pick and why?"
 
@@ -132,7 +132,7 @@ Tokenization splits raw text into integer IDs; it determines vocabulary size, se
 
 **Difficulty:** Mid
 
-### Top-k, top-p (nucleus) and temperature sampling
+### 7. Top-k, top-p (nucleus) and temperature sampling
 
 > "What is top-k vs top-p sampling? When do you adjust temperature vs top-p? What trade-offs do you make for code vs creative writing?"
 
@@ -151,7 +151,7 @@ Greedy decoding (always pick the argmax) is deterministic but loops and boring. 
 
 **Difficulty:** Mid
 
-### The "lost in the middle" phenomenon
+### 8. The "lost in the middle" phenomenon
 
 > "How does increasing the context window affect model performance? What is the 'Lost in the Middle' phenomenon and how do you mitigate it?"
 
@@ -170,7 +170,7 @@ Liu et al. (2023) "Lost in the Middle" showed that even at long context lengths,
 
 **Difficulty:** Senior
 
-### Context windows and their practical limits
+### 9. Context windows and their practical limits
 
 > "LLM context windows are increasing. They can handle millions of tokens now with smaller nimble models that run on commodity hardware. What does this mean for how we build products?"
 
@@ -189,7 +189,7 @@ A context window is the maximum total tokens (input + output) a model can attend
 
 **Difficulty:** Mid
 
-### What are embeddings, beyond similarity search?
+### 10. What are embeddings, beyond similarity search?
 
 > "What is an embedding? Why do embeddings matter in production AI systems beyond just similarity search?"
 
@@ -212,7 +212,7 @@ An embedding is a dense vector representation of an entity (token, sentence, doc
 
 ## Fine-tuning & Post-training
 
-### LoRA vs full fine-tuning
+### 11. LoRA vs full fine-tuning
 
 > "What is LoRA, and how is it different from full fine-tuning?"
 
@@ -231,7 +231,7 @@ LoRA (Low-Rank Adaptation, Hu et al. 2021) freezes the pretrained weight matrix 
 
 **Difficulty:** Mid
 
-### QLoRA vs LoRA
+### 12. QLoRA vs LoRA
 
 > "What is QLoRA and how does it differ from LoRA?"
 
@@ -250,7 +250,7 @@ QLoRA (Dettmers et al., 2023) combines 4-bit (NF4) quantization of the frozen ba
 
 **Difficulty:** Senior
 
-### RLHF in plain terms: what does it solve that SFT cannot?
+### 13. RLHF in plain terms: what does it solve that SFT cannot?
 
 > "I am interviewing for a company who is heavily focused on post training processes for training an agent. They do great deal of SFT and RL with human feedback. What should I study?"
 
@@ -269,7 +269,7 @@ SFT (supervised fine-tuning) teaches a base model to imitate demonstrations, but
 
 **Difficulty:** Senior
 
-### DPO vs RLHF/PPO: when would you pick each?
+### 14. DPO vs RLHF/PPO: when would you pick each?
 
 > "What is DPO, and how does it differ from RLHF/PPO? When would you choose each?"
 
@@ -288,7 +288,7 @@ DPO (Rafailov et al., 2023) reformulates the RLHF objective as a closed-form sup
 
 **Difficulty:** Senior
 
-### What is instruction tuning and why does it matter?
+### 15. What is instruction tuning and why does it matter?
 
 > "What is instruction tuning? How does it differ from continued pretraining?"
 
@@ -307,7 +307,7 @@ Instruction tuning is supervised fine-tuning on (instruction, response) pairs. T
 
 **Difficulty:** Mid
 
-### Knowledge distillation for LLMs
+### 16. Knowledge distillation for LLMs
 
 > "Walk through knowledge distillation. How would you distill a 70B teacher into a 7B student for a domain-specific chatbot?"
 
@@ -326,7 +326,7 @@ Distillation transfers a larger "teacher" model's behavior into a smaller "stude
 
 **Difficulty:** Senior
 
-### Catastrophic forgetting during fine-tuning
+### 17. Catastrophic forgetting during fine-tuning
 
 > "How do you fine-tune an LLM on a new domain without catastrophic forgetting of general capabilities?"
 
@@ -345,7 +345,7 @@ Catastrophic forgetting is the tendency of a fine-tuned model to lose previously
 
 **Difficulty:** Senior
 
-### The lineage from PPO to DPO to GRPO
+### 18. The lineage from PPO to DPO to GRPO
 
 > "Walk through the algorithmic lineage from PPO to DPO to GRPO. What changed and why?"
 
@@ -364,7 +364,7 @@ Classic RLHF (Ouyang et al. 2022) uses PPO with reward model + KL constraint. Pr
 
 **Difficulty:** Senior
 
-### Fine-tuning vs RAG vs prompt engineering
+### 19. Fine-tuning vs RAG vs prompt engineering
 
 > "How do you decide between RAG, fine-tuning, and prompt engineering for a given product feature?"
 
@@ -387,7 +387,7 @@ Decision heuristic 2025-2026: (1) prompt engineering first: try structures like 
 
 ## RAG (Retrieval-Augmented Generation)
 
-### The main parts of a RAG system
+### 20. The main parts of a RAG system
 
 > "Explain the main parts of a RAG system and how they work."
 
@@ -406,7 +406,7 @@ A RAG system has four stages. Ingestion: documents are loaded, chunked (fixed-si
 
 **Difficulty:** Junior - Mid
 
-### Document chunking strategies for RAG
+### 21. Document chunking strategies for RAG
 
 > "I find the semantic search the greatest part of RAG. Building a good retrieval system (proper chunking, context-awareness, decent pre-retrieval)..."
 
@@ -425,7 +425,7 @@ Chunking determines what the retriever sees, so it determines what's retrievable
 
 **Difficulty:** Mid
 
-### Dense vs sparse (BM25) vs hybrid retrieval
+### 22. Dense vs sparse (BM25) vs hybrid retrieval
 
 > "Dense vs sparse vs hybrid retrieval - when does each shine?"
 
@@ -444,7 +444,7 @@ Sparse (BM25/TF-IDF): lexical overlap, fast, exact-match friendly, no model need
 
 **Difficulty:** Mid - Senior
 
-### Why rerank after retrieval?
+### 23. Why rerank after retrieval?
 
 > "Why do we rerank after initial retrieval in RAG? Doesn't the retriever already give good results?"
 
@@ -463,7 +463,7 @@ Cross-encoder rerankers (Cohere Rerank 3, ColBERT, monoT5) score query-document 
 
 **Difficulty:** Senior
 
-### How do you evaluate a RAG system?
+### 24. How do you evaluate a RAG system?
 
 > "How would you evaluate the performance of a RAG system?"
 
@@ -482,7 +482,7 @@ Evaluate RAG in three layers: (1) Retrieval quality: Recall@k, MRR, nDCG@k again
 
 **Difficulty:** Senior
 
-### Mitigating hallucinations in RAG
+### 25. Mitigating hallucinations in RAG
 
 > "How should we evaluate hallucinations in RAG systems when semantically similar context may still be irrelevant or incorrect... and the real failure may lie in retrieval or source quality, not the model itself?"
 
@@ -501,7 +501,7 @@ Hallucinations in RAG have three root causes: (1) generator hallucination despit
 
 **Difficulty:** Senior
 
-### Monitoring RAG in production
+### 26. Monitoring RAG in production
 
 > "How do you monitor a RAG system once it goes to production? What signals tell you retrieval or generation quality is degrading?"
 
@@ -520,7 +520,7 @@ Production RAG monitoring has five pillars: (1) Logs: capture (query, retrieved_
 
 **Difficulty:** Senior
 
-### RAGAS: why it's popular and where it breaks
+### 27. RAGAS: why it's popular and where it breaks
 
 > "How do you measure RAG quality without expensive human eval?"
 
@@ -539,7 +539,7 @@ RAGAS (Reference-free Augmented Generation Assessment) is an open-source framewo
 
 **Difficulty:** Mid
 
-### Retrieval over structured data: tables, code, JSON
+### 28. Retrieval over structured data: tables, code, JSON
 
 > "When you have structured knowledge (tables, code, JSON schemas, SQL), is a vanilla RAG stack with BM25 or dense retriever enough?"
 
@@ -562,7 +562,7 @@ Vanilla dense retrievers over chunked text can find conceptually similar tables 
 
 ## Agents
 
-### What is an AI agent vs a prompt vs a chain?
+### 29. What is an AI agent vs a prompt vs a chain?
 
 > "What is an AI agent? What is the 'Agentic Ops' problem?"
 
@@ -581,7 +581,7 @@ An AI agent is an LLM-driven system that can perceive, plan, and act in an envir
 
 **Difficulty:** Junior - Mid
 
-### The ReAct framework
+### 30. The ReAct framework
 
 > "What is the ReAct framework, and why is it important for Agentic AI?"
 
@@ -600,7 +600,7 @@ ReAct (Yao et al., 2022) interleaves Thought -> Action -> Observation steps: the
 
 **Difficulty:** Mid
 
-### Planning and decomposition in multi-step agent tasks
+### 31. Planning and decomposition in multi-step agent tasks
 
 > "How do you handle planning and decomposition in multi-step tasks for an AI agent?"
 
@@ -619,7 +619,7 @@ Two main approaches: (1) one-shot plan: have the LLM produce a full DAG of subta
 
 **Difficulty:** Senior
 
-### Tools in agentic AI and how agents pick them
+### 32. Tools in agentic AI and how agents pick them
 
 > "What are 'tools' in the context of Agentic AI? How does the agent decide which to use?"
 
@@ -638,7 +638,7 @@ Tools are typed functions the agent can invoke: search_web, query_database, send
 
 **Difficulty:** Junior - Mid
 
-### Multi-agent orchestration: when does it help?
+### 33. Multi-agent orchestration: when does it help?
 
 > "Can you explain the concept of 'Multi-Agent Systems' and their advantages?"
 
@@ -657,7 +657,7 @@ Multi-agent systems split work across specialized roles (planner agent, research
 
 **Difficulty:** Senior
 
-### How do you evaluate an agent?
+### 34. How do you evaluate an agent?
 
 > "How do you evaluate an agent? What evaluation metrics make sense?"
 
@@ -676,7 +676,7 @@ Agent eval has 4 layers: (1) Step-level: did each tool call succeed, was the too
 
 **Difficulty:** Senior
 
-### Common agent failure modes in production
+### 35. Common agent failure modes in production
 
 > "What are the most common agent failure modes? How do you mitigate them?"
 
@@ -695,7 +695,7 @@ Top failure modes 2024-2026: (1) tool hallucination: calling wrong tool or with 
 
 **Difficulty:** Senior
 
-### Guardrails for agents that call external APIs
+### 36. Guardrails for agents that call external APIs
 
 > "Tell me about a time you made a safety-first decision in a project, even if it meant a trade-off."
 
@@ -714,7 +714,7 @@ Guardrail pattern: (1) tool classification: mark each tool as read-only / revers
 
 **Difficulty:** Senior
 
-### Agent memory: short-term vs long-term
+### 37. Agent memory: short-term vs long-term
 
 > "When discussing agents, what kinds of memory exist and how would you architect them?"
 
@@ -733,7 +733,7 @@ Three layers: (1) short-term / working memory: the LLM context window holding re
 
 **Difficulty:** Senior
 
-### Model Context Protocol (MCP)
+### 38. Model Context Protocol (MCP)
 
 > "Explain MCP and how it changes tool-use."
 
@@ -756,7 +756,7 @@ MCP (Model Context Protocol, Anthropic 2024) is a standardized client-server pro
 
 ## Evals & Observability
 
-### LLM-as-judge: when it works, when it fails
+### 39. LLM-as-judge: when it works, when it fails
 
 > "How do you use LLMs to judge other LLMs? What are its failure modes?"
 
@@ -775,7 +775,7 @@ LLM-as-judge uses a (usually stronger) LLM to score, classify, or compare output
 
 **Difficulty:** Senior
 
-### LLM observability vs classical ML observability
+### 40. LLM observability vs classical ML observability
 
 > "How do you monitor and debug an LLM system in production?"
 
@@ -794,7 +794,7 @@ LLM observability requires: (1) full trajectory logs: prompt, retrieved context,
 
 **Difficulty:** Senior
 
-### Regression testing before model/prompt changes ship
+### 41. Regression testing before model/prompt changes ship
 
 > "How do you make LLM/agent behavior measurable and regressions debuggable?"
 
@@ -813,7 +813,7 @@ Build a frozen eval set of 200-2000 representative tasks with ground-truth label
 
 **Difficulty:** Senior
 
-### Designing LLM benchmarks: MMLU, GSM8K, HELM
+### 42. Designing LLM benchmarks: MMLU, GSM8K, HELM
 
 > "What benchmarks should one use to evaluate LLMs and why?"
 
@@ -832,7 +832,7 @@ MMLU: 57 multi-domain academic knowledge tests, multi-choice, measures capabilit
 
 **Difficulty:** Senior
 
-### Detecting distribution shift in production LLM traffic
+### 43. Detecting distribution shift in production LLM traffic
 
 > "How would you monitor for input distribution shift in an LLM app?"
 
@@ -851,7 +851,7 @@ Three layers: (1) embedding-based topic shift: sample incoming queries, embed, c
 
 **Difficulty:** Senior
 
-### Measuring hallucination rate without expensive human eval
+### 44. Measuring hallucination rate without expensive human eval
 
 > "How do you measure and monitor hallucination?"
 
@@ -870,7 +870,7 @@ Hallucination rate is the fraction of outputs that contain content not supported
 
 **Difficulty:** Senior
 
-### A/B testing LLM products
+### 45. A/B testing LLM products
 
 > "How would you A/B test two prompts or two models in production?"
 
@@ -889,7 +889,7 @@ Best practice 2025-2026: (1) interleaved A/B testing: randomly assign user reque
 
 **Difficulty:** Senior
 
-### Evaluating reasoning models vs chat models
+### 46. Evaluating reasoning models vs chat models
 
 > "Reasoning models behave differently in eval - how do you adjust your methodology?"
 
@@ -912,7 +912,7 @@ Reasoning models (o1, o3, DeepSeek-R1) generate internal chain-of-thought tokens
 
 ## Inference & Serving
 
-### Speculative decoding: when it helps, when it fails
+### 47. Speculative decoding: when it helps, when it fails
 
 > "Explain speculative decoding. Under what conditions does it speed up inference?"
 
@@ -931,7 +931,7 @@ Speculative decoding uses a small "draft" model to generate K candidate tokens a
 
 **Difficulty:** Senior
 
-### Dynamic batching strategies for LLM inference
+### 48. Dynamic batching strategies for LLM inference
 
 > "Dynamic Batching Strategies: LLM inference is iterative and can benefit greatly from batching multiple requests together. How would you design batching policies?"
 
@@ -950,7 +950,7 @@ LLM decoding is iterative (token-by-token) and requests share structure: they al
 
 **Difficulty:** Senior
 
-### Quantization: INT8, INT4, FP8, AWQ, GPTQ
+### 49. Quantization: INT8, INT4, FP8, AWQ, GPTQ
 
 > "When would you pick INT8 vs GPTQ vs AWQ vs FP8 for serving an LLM?"
 
@@ -969,7 +969,7 @@ PTQ (post-training quantization) trades memory and latency for some accuracy los
 
 **Difficulty:** Senior
 
-### Paged attention (vLLM)
+### 50. Paged attention (vLLM)
 
 > "What is vLLM's paged attention, and how does it improve serving throughput?"
 
@@ -988,7 +988,7 @@ Paged attention (Kwon et al., SOSP 2023) borrows virtual-memory paging for KV ca
 
 **Difficulty:** Senior
 
-### Latency vs throughput vs cost: choosing batch sizes
+### 51. Latency vs throughput vs cost: choosing batch sizes
 
 > "How would you evaluate the latency-throughput sweet spot and adjust the system as load patterns change?"
 
@@ -1007,7 +1007,7 @@ Three objectives are typically in tension: (1) p50/p99 latency (TTFT + TPOT) for
 
 **Difficulty:** Senior
 
-### Scaling LLM inference for traffic spikes
+### 52. Scaling LLM inference for traffic spikes
 
 > "How do you provision LLM serving infrastructure for variable demand?"
 
@@ -1026,7 +1026,7 @@ Strategy stack 2025-2026: (1) autoscaling GPU pools (Kubernetes + custom metrics
 
 **Difficulty:** Senior
 
-### FlashAttention and why it matters
+### 53. FlashAttention and why it matters
 
 > "Explain FlashAttention. Why is it the backbone of modern LLM training and serving?"
 
@@ -1045,7 +1045,7 @@ FlashAttention (Dao et al., 2022; v2 in 2023; v3 in 2024) is an IO-aware exact a
 
 **Difficulty:** Senior
 
-### Prompt caching and KV cache prefix sharing
+### 54. Prompt caching and KV cache prefix sharing
 
 > "How do you cut prompt-token cost in production?"
 
@@ -1068,7 +1068,7 @@ Many production prompts have large static prefixes (system prompt, tool definiti
 
 ## Classic ML Breadth
 
-### Bias-variance tradeoff: practical rules of thumb
+### 55. Bias-variance tradeoff: practical rules of thumb
 
 > "Summarize practical rules of thumb an ML engineer can follow when deciding whether an observed generalization gap is primarily due to model bias or model variance. Include specific metric thresholds, experiment types, and quick tests that can be run under time pressure."
 
@@ -1087,7 +1087,7 @@ Bias is error from wrong assumptions (underfitting); variance is sensitivity to 
 
 **Difficulty:** Mid - Senior
 
-### L1 vs L2 regularization
+### 56. L1 vs L2 regularization
 
 > "When should you use L1 vs L2 regularization? Walk through Ridge vs Lasso."
 
@@ -1106,7 +1106,7 @@ L2 (weight decay) adds a quadratic penalty on weights: lambda * sum(w^2). It shr
 
 **Difficulty:** Junior - Mid
 
-### Precision vs recall vs F1 vs AUC
+### 57. Precision vs recall vs F1 vs AUC
 
 > "Distinguish precision, recall, F1, ROC-AUC, PR-AUC. When does each shape a decision?"
 
@@ -1125,7 +1125,7 @@ Precision = TP/(TP+FP): "of what I predicted positive, how many are right". Reca
 
 **Difficulty:** Junior - Mid
 
-### Handling severe class imbalance in production
+### 58. Handling severe class imbalance in production
 
 > "How would you handle imbalanced classes during model training?"
 
@@ -1144,7 +1144,7 @@ Layered approach: (1) data-level: resampling (oversample minority via SMOTE/ADAS
 
 **Difficulty:** Mid
 
-### Word embeddings, from classic to modern retrieval
+### 59. Word embeddings, from classic to modern retrieval
 
 > "What are the most common word embedding methods?"
 
@@ -1163,7 +1163,7 @@ Embeddings are dense vectors representing items (words, sentences, users, produc
 
 **Difficulty:** Mid
 
-### Overfitting: detection and prevention
+### 60. Overfitting: detection and prevention
 
 > "How do you detect and prevent overfitting in production ML systems?"
 
@@ -1182,7 +1182,7 @@ Overfitting = model captures noise/idiosyncrasies in training data, fails to gen
 
 **Difficulty:** Junior - Mid
 
-### Diagnosing bias vs variance by experiment
+### 61. Diagnosing bias vs variance by experiment
 
 > "You are given a tabular dataset where the model underperforms. Walk through diagnosing bias vs variance by training at multiple data sizes."
 
@@ -1201,7 +1201,7 @@ Workflow: (1) Plot learning curves: train and validation error vs training set s
 
 **Difficulty:** Mid - Senior
 
-### Grid search vs random search vs Bayesian optimization
+### 62. Grid search vs random search vs Bayesian optimization
 
 > "Compare hyperparameter search strategies."
 

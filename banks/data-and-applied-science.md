@@ -22,7 +22,7 @@
 
 > **Genre intel:** 2024-2026 breadth rounds are still dominated by 7 recyclable fundamentals - bias/variance, L1 vs L2, bagging/boosting/RF, class imbalance, metric selection, supervised/unsupervised/RL, and dimensionality reduction - reported at Amazon ([IGotAnOffer](https://igotanoffer.com/en/advice/amazon-applied-scientist-interview)), Microsoft ([HireReady 2026 guide](https://www.gethireready.com/interview-guides/applied-scientist-microsoft)), Google DS prep ([r/datascience](https://www.reddit.com/r/datascience/comments/1gukca0/google_data_science_interview_prep/)), Netflix ([TryExponent](https://www.tryexponent.com/guides/netflix-data-scientist-interview)), Pinterest and Uber. Mine these first. Breadth-only preparation gets you rejected at L4, but weakness on any of these when asked live drops you out of contention.
 
-### Bias-variance trade-off
+### 1. Bias-variance trade-off
 
 > "Explain the bias-variance trade-off."
 
@@ -41,7 +41,7 @@ Expected test error decomposes into irreducible noise plus bias-squared plus var
 
 **Difficulty:** Phone-screen breadth (L4) to Bar Raiser (L7)
 
-### L1 vs L2 regularization
+### 2. L1 vs L2 regularization
 
 > "How do L1 and L2 regularization differ in logistic regression? When do you pick each?"
 
@@ -60,7 +60,7 @@ L2 adds the squared-weight penalty to the loss - it shrinks weights smoothly but
 
 **Difficulty:** Breadth round (L4-L5)
 
-### Bagging vs boosting vs Random Forest
+### 3. Bagging vs boosting vs Random Forest
 
 > "What is the difference between bagging, boosting and Random Forest?"
 
@@ -79,7 +79,7 @@ Bagging (e.g., Random Forest) trains M models on bootstrap samples and averages 
 
 **Difficulty:** Breadth, mid
 
-### Handling imbalanced data
+### 4. Handling imbalanced data
 
 > "How do you handle imbalanced data?"
 
@@ -98,7 +98,7 @@ Imbalance isn't a modeling problem until metrics say it is: pick a metric that r
 
 **Difficulty:** Breadth, mid
 
-### Metric choice for a 0.1%-positive fraud model
+### 5. Metric choice for a 0.1%-positive fraud model
 
 > "How does class imbalance interact with metrics selection? Which metric do you choose for a fraud model with 0.1% positives?"
 
@@ -117,7 +117,7 @@ ROC-AUC stays high because the vast negative pool gives easy true-negatives; PR-
 
 **Difficulty:** Depth (L6)
 
-### Supervised vs unsupervised vs reinforcement learning
+### 6. Supervised vs unsupervised vs reinforcement learning
 
 > "Explain the differences between supervised, unsupervised, and reinforcement learning."
 
@@ -136,7 +136,7 @@ Supervised: paired (x, y) - minimize prediction loss against ground-truth labels
 
 **Difficulty:** Breadth
 
-### Closed-form linear regression vs gradient descent
+### 7. Closed-form linear regression vs gradient descent
 
 > "What is the closed-form solution of linear regression, and when is it better to use gradient descent?"
 
@@ -155,7 +155,7 @@ Closed-form: beta_hat = (X^T X)^(-1) X^T y. Works when n >> p and X^T X is well-
 
 **Difficulty:** Breadth-mid
 
-### Prove logistic loss has a global minimum
+### 8. Prove logistic loss has a global minimum
 
 > "Write the loss function for logistic regression and prove that it has a global minimum."
 
@@ -174,7 +174,7 @@ NLL with sigmoid: J(theta) = -sum [y_i log sigma(theta x_i) + (1-y_i) log (1 - s
 
 **Difficulty:** Provenance breadth (L6+)
 
-### KL divergence vs cross-entropy
+### 9. KL divergence vs cross-entropy
 
 > "How is KL divergence loss different from cross-entropy loss?"
 
@@ -193,7 +193,7 @@ KL(p || q) = sum p log(p/q). Cross-entropy H(p, q) = -sum p log q = H(p) + KL(p 
 
 **Difficulty:** Breadth-mid
 
-### Dimensionality reduction methods
+### 10. Dimensionality reduction methods
 
 > "What are methods for reducing dimensionality in a dataset, and how do they work?"
 
@@ -212,7 +212,7 @@ Linear methods project onto directions of maximal variance (PCA), maximal class 
 
 **Difficulty:** Breadth
 
-### BiLSTM vs Transformer
+### 11. BiLSTM vs Transformer
 
 > "How does a BiLSTM work? How does that compare to a Transformer?"
 
@@ -231,7 +231,7 @@ BiLSTM = two LSTMs run forward and backward over the same sequence; their hidden
 
 **Difficulty:** Mid
 
-### Transformer vs gradient-boosted trees on tabular data
+### 12. Transformer vs gradient-boosted trees on tabular data
 
 > "How would you decide between a transformer-based neural model and a gradient-boosted tree model on a tabular task?"
 
@@ -256,7 +256,7 @@ On tabular features, default to GBM (LightGBM, XGBoost, CatBoost) - known to dom
 
 > **Rubric intel:** Amazon's depth round rubric is "walk through a project, follow-ups on modeling trade-offs and outcomes" ([IGotAnOffer](https://igotanoffer.com/en/advice/amazon-applied-scientist-interview)) - it grades communication, ownership, and technical judgment, not trivia. Microsoft's Applied Scientist 2 loop is the outlier on mathematical depth: a single [r/developersIndia debrief](https://www.reddit.com/r/developersIndia/comments/1ot60wt/insane_interview_with_microsoft_applied_scientist/) enumerates 20+ questions including pure proofs, and the candidate "washed out in the ML round" on the nearest-neighbor proof. If you prep for Microsoft AS, expect a real probability of deriving a theorem on a whiteboard; if you prep for Amazon AS, expect the rubric to grade you on Communication, Bias for Action, Ownership, and Stretch Assignments.
 
-### The project you're most proud of
+### 13. The project you're most proud of
 
 > "Walk through a project you are most proud of."
 
@@ -275,7 +275,7 @@ Pick one project where you made non-obvious decisions with measurable impact. Le
 
 **Difficulty:** All levels
 
-### Why that loss function?
+### 14. Why that loss function?
 
 > "Why did you pick X loss function? What would you have used if the cost were asymmetric?"
 
@@ -294,7 +294,7 @@ Connect loss to the operating decision. Default MSE under symmetric Gaussian noi
 
 **Difficulty:** Depth (L6+)
 
-### Why is a GPU faster than a CPU? Why is NumPy faster than a list?
+### 15. Why is a GPU faster than a CPU? Why is NumPy faster than a list?
 
 > "Why CPU is slower than GPU? Why is NumPy faster than a Python list multiplication?"
 
@@ -313,7 +313,7 @@ CPUs execute a small handful of wide threads with deep caches and branch-predict
 
 **Difficulty:** Depth (L5+)
 
-### Prove MSE is non-convex for logistic regression
+### 16. Prove MSE is non-convex for logistic regression
 
 > "Prove why MSE is non-convex for logistic regression."
 
@@ -332,7 +332,7 @@ The logistic model is sigma(theta x). The MSE surrogate is J(theta) = 1/2n sum (
 
 **Difficulty:** Depth research (L7+)
 
-### Prove 1-NN error is at most twice the Bayes error
+### 17. Prove 1-NN error is at most twice the Bayes error
 
 > "Prove that 1-Nearest Neighbor has error rate at most twice the Bayes error."
 
@@ -351,7 +351,7 @@ Cover and Hart (1967). As n -> infinity, the nearest neighbor in metric space co
 
 **Difficulty:** Depth research (L8)
 
-### Code conv2d from scratch
+### 18. Code conv2d from scratch
 
 > "Code conv2d from scratch."
 
@@ -370,7 +370,7 @@ Use a four-loop naive implementation (batch, out-channel, y, x -> sum over in_ch
 
 **Difficulty:** Depth mid-to-senior
 
-### Design and evaluate a book recommender
+### 19. Design and evaluate a book recommender
 
 > "How would you design and evaluate a recommendation system that suggests books (or items) to users?"
 
@@ -389,7 +389,7 @@ Decide the user goal: discovery vs continuation vs cold-start. Architect in two 
 
 **Difficulty:** Depth + business (L6)
 
-### Driver fraud: SQL plus modeling pipeline
+### 20. Driver fraud: SQL plus modeling pipeline
 
 > "If you wanted to detect fraud for drivers, design the SQL and the modeling pipeline."
 
@@ -408,7 +408,7 @@ SQL: window functions to score each driver's 7-day, 30-day velocity and behavior
 
 **Difficulty:** Depth (L5+)
 
-### Fine-tune a pre-trained LLM for a product feature
+### 21. Fine-tune a pre-trained LLM for a product feature
 
 > "Walk through how you would fine-tune a pre-trained language model for a Microsoft product feature."
 
@@ -427,7 +427,7 @@ Pick base model by task: encoder (RoBERTa) for classification, encoder-decoder (
 
 **Difficulty:** Depth mid-to-senior
 
-### Your favorite ML paper
+### 22. Your favorite ML paper
 
 > "What is your favorite ML paper? Summarize it and explain how the method could apply to our problem."
 
@@ -446,7 +446,7 @@ Pick a paper with a transferable method (e.g. DPO for preference optimization, L
 
 **Difficulty:** All levels
 
-### ML system design in the "MLE 2.0" research-eng round
+### 23. ML system design in the "MLE 2.0" research-eng round
 
 > "ML system design: feature stores, distributed training, online serving."
 
@@ -462,7 +462,7 @@ Pick a paper with a transferable method (e.g. DPO for preference optimization, L
 
 > **Genre intel:** A/B testing interviews now require estimand discipline, not just p-values. [PracHub's Apr 21, 2026 Airbnb prompt](https://prachub.com/interview-questions/design-an-a-b-test-with-causal-inference) gives all numbers and constraints in advance and asks for ITT vs TOT, design-effect-adjusted sample size, SRM checks, DiD/CUPED fall-backs, O'Brien-Fleming sequential boundaries and a ship/no-ship decision. Netflix's framework has shifted to sequential, multi-metric decisions - see the [Netflix tech blog on sequential A/B testing](https://netflixtechblog.com/sequential-a-b-testing-keeps-the-world-streaming-netflix-part-1-continuous-data-cba6c7ed49df) and [TryExponent's Netflix DS guide](https://www.tryexponent.com/guides/netflix-data-scientist-interview).
 
-### Design and evaluate an A/B test
+### 24. Design and evaluate an A/B test
 
 > "Explain how you would design and evaluate an A/B test."
 
@@ -481,7 +481,7 @@ Hypothesize: one-sentence "if-then" prediction of the treatment effect's directi
 
 **Difficulty:** All levels
 
-### Netflix homepage experiment with conflicting metrics
+### 25. Netflix homepage experiment with conflicting metrics
 
 > "You ran a Netflix homepage experiment testing a new row-ranking algorithm for 28 days with member-level randomization. Weekly Viewing Hours per Member +0.30% (95% CI -0.10% to +0.70%, p=0.14); Title Starts per Member +0.90% (95% CI +0.30% to +1.50%, p=0.004); Completion Rate -0.60% (95% CI -1.10% to -0.10%, p=0.02). Guardrails flat. TV is biggest share. Business goal: improve member satisfaction with what they watch to drive long-term retention. How would you advise product leadership on what to do next?"
 
@@ -500,7 +500,7 @@ Primary disagreeing with secondaries (CI crosses zero, p=0.14) means we cannot r
 
 **Difficulty:** Depth (L6+)
 
-### Airbnb checkout nudge: the full A/B design
+### 26. Airbnb checkout nudge: the full A/B design
 
 > "You own experimentation for an e-commerce checkout nudge. Design a 28-day A/B test randomized at guest_id with primary metric = 7-day completed orders, guardrails = bounce rate and p95 page latency. Baseline 7-day per-guest conversion 5%; MDE 8% relative lift; two-sided alpha=0.05; power=0.80; avg 1.6 sessions/guest; ICC=0.05; 5% bot traffic; cookie resets causing cross-arm contamination."
 
@@ -519,7 +519,7 @@ Estimand: ITT as primary because the business decision is "do we ship?" TOT as s
 
 **Difficulty:** Depth (L6+)
 
-### Randomization and p-values
+### 27. Randomization and p-values
 
 > "Why is randomization important in experimental setups? What is a p-value? How would you interpret it in the context of an A/B test?"
 
@@ -538,7 +538,7 @@ Randomization balances observed and unobserved confounders across arms in expect
 
 **Difficulty:** Breadth
 
-### Sequential tests and simultaneous experiments
+### 28. Sequential tests and simultaneous experiments
 
 > "Design sequential tests that demote underperforming variations; manage multiple simultaneous A/B tests."
 
@@ -557,7 +557,7 @@ Use mSPRT or Always-Valid Sequential Tests for binary and continuous metrics to 
 
 **Difficulty:** Depth (L6+)
 
-### Compute the lift, SE and CI: ship or not?
+### 29. Compute the lift, SE and CI: ship or not?
 
 > "Your A/B test shows control conv 5.0% (n=120,000) and treatment conv 5.6% (n=120,000). Compute the lift, its SE and 95% CI properly accounting for two-proportion comparison. Would you ship under these constraints?"
 
@@ -576,7 +576,7 @@ Lift = (0.056 - 0.05)/0.05 = +12% relative. SE_pooled = sqrt(p_pool(1-p_pool)(1/
 
 **Difficulty:** Depth mid-to-senior
 
-### Statistical methods you've actually used
+### 30. Statistical methods you've actually used
 
 > "What statistical methods have you used in past projects, and why did you choose them?"
 
@@ -595,7 +595,7 @@ Walk through a representative arc - "we used mixed-effects models to capture per
 
 **Difficulty:** Depth
 
-### Causal inference without randomization
+### 31. Causal inference without randomization
 
 > "If you only have pre/post windows (no randomization), formulate a credible causal strategy (DiD with covariates/CUPED, PSM/IPW), state the identifying assumptions, write the ATE estimator, and describe how you'd test parallel trends and overlap."
 
@@ -620,7 +620,7 @@ ATE = E[Y_post(1) - Y_post(0) | treat]. DiD: ATE = (Y_post, treat - Y_post, cont
 
 > **Genre intel:** Applied LLM questions now target the RAG-vs-fine-tune-vs-prompt decision tree in addition to hands-on debugging. The ["15 AI Engineer interviews" r/deeplearning debrief](https://www.reddit.com/r/deeplearning/comments/1swxb2k/i_did_15_ai_engineer_interviews_in_the_last_6/) (late 2025) confirms live coding exercises like "build a simple retriever" and "fix a hallucination"; the [aipmguru Feb 2026 mock prep](https://aipmguru.substack.com/p/what-i-learned-preparing-to-explain) reproduces the canonical RAG-vs-fine-tuning prompt verbatim.
 
-### RAG vs fine-tuning
+### 32. RAG vs fine-tuning
 
 > "What's the difference between RAG and fine-tuning? When would you use each?"
 
@@ -639,7 +639,7 @@ Fine-tuning adjusts the weights of an existing LLM on a task-specific dataset to
 
 **Difficulty:** Mid
 
-### Defend your RAG choice and your hallucination eval
+### 33. Defend your RAG choice and your hallucination eval
 
 > "Why RAG instead of fine-tuning for this product? How did you actually evaluate the hallucinations?"
 
@@ -658,7 +658,7 @@ Explain that fine-tuning was cost-prohibitive on the dataset, so we used MiniLM 
 
 **Difficulty:** Mid-senior
 
-### Prompt vs fine-tune vs RAG for a search-and-answer system
+### 34. Prompt vs fine-tune vs RAG for a search-and-answer system
 
 > "Design the LLM feature for a customer-facing search-and-answer system. Decide prompt vs. fine-tune vs. RAG and justify the cost."
 
@@ -677,7 +677,7 @@ Architect the funnel: cheap embedding retrieval (top-50) -> rerank with cross-en
 
 **Difficulty:** Mid
 
-### Implement a simple retriever
+### 35. Implement a simple retriever
 
 > "Implement a simple retriever."
 
@@ -696,7 +696,7 @@ Naive baseline: TF-IDF with cosine over tokenized docs, returning top-k. Vectori
 
 **Difficulty:** Mid-senior
 
-### Fix a hallucination
+### 36. Fix a hallucination
 
 > "Fix a hallucination in this output."
 
@@ -715,7 +715,7 @@ Diagnose in three steps: (1) is the retrieval returning the relevant chunk? Insp
 
 **Difficulty:** Mid-senior
 
-### Cut inference cost by 60%
+### 37. Cut inference cost by 60%
 
 > "Cut inference cost by 60% using a hybrid local/cloud setup with phi-3.5-mini and aggressive request caching."
 
@@ -734,7 +734,7 @@ Architect: simple and short queries routed to phi-3.5-mini on local GPU; long-co
 
 **Difficulty:** Mid-senior
 
-### What LLM-native companies actually ask
+### 38. What LLM-native companies actually ask
 
 > "What topics and questions are LLM/NLP-focused interviewers asking at places like Hugging Face, Scale, Perplexity?"
 
@@ -759,7 +759,7 @@ Expect: tokenization & vocab choices; pretraining and continued pretraining trad
 
 > **Genre intel:** Pandas transformations, SQL window functions and implement-from-scratch are table stakes across the board - but per the cross-company synthesis, coding-only preparation gets you rejected at senior levels. The 2026 "MLE 2.0" round set (per [Yuan Meng](https://www.yuan-meng.com/posts/mle_interviews_2.0/)) adds multi-level OOP toy systems and AI-assisted coding with an LLM in the loop.
 
-### Third transaction of every user (SQL)
+### 39. Third transaction of every user (SQL)
 
 > "Write the third transaction of every user."
 
@@ -778,7 +778,7 @@ Expect: tokenization & vocab choices; pretraining and continued pretraining trad
 
 **Difficulty:** Mid
 
-### Stadium with 3+ consecutive high-attendance days (SQL)
+### 40. Stadium with 3+ consecutive high-attendance days (SQL)
 
 > "Find dates where a stadium had three or more consecutive days of attendance >=100."
 
@@ -797,7 +797,7 @@ Approach: self-join with day-1 and day-2 to find any day that is the third in a 
 
 **Difficulty:** Mid
 
-### Top 3 unique salaries per department (SQL)
+### 41. Top 3 unique salaries per department (SQL)
 
 > "Find the top 3 unique salaries in each department and list all employees who have those salaries."
 
@@ -816,7 +816,7 @@ Approach: self-join with day-1 and day-2 to find any day that is the third in a 
 
 **Difficulty:** Mid
 
-### Push notifications before conversion
+### 42. Push notifications before conversion
 
 > "Write a function that returns total push notifications before user conversion from a user-event log."
 
@@ -835,7 +835,7 @@ LEFT JOIN user_events on (user_id) where event = 'notification' AND ts < convert
 
 **Difficulty:** Mid
 
-### Logistic regression from scratch (Python)
+### 43. Logistic regression from scratch (Python)
 
 > "Implement logistic regression from scratch (Python)."
 
@@ -854,7 +854,7 @@ LEFT JOIN user_events on (user_id) where event = 'notification' AND ts < convert
 
 **Difficulty:** Mid
 
-### Cumulative weekly retention (SQL)
+### 44. Cumulative weekly retention (SQL)
 
 > "Design a SQL query to find the cumulative weekly retention of users."
 
@@ -873,7 +873,7 @@ GROUP BY cohort_week, then DATE_DIFF('week', cohort_week, activity_week) AS week
 
 **Difficulty:** Mid
 
-### Cohort funnel in pandas
+### 45. Cohort funnel in pandas
 
 > "Implement a metric in pandas: cohort funnel from impression to click to purchase."
 
@@ -892,7 +892,7 @@ GROUP BY cohort_week, then DATE_DIFF('week', cohort_week, activity_week) AS week
 
 **Difficulty:** Mid
 
-### Derive the logistic loss on a whiteboard
+### 46. Derive the logistic loss on a whiteboard
 
 > "Derive logistic regression loss under a mildly constrained setting on the whiteboard."
 
@@ -911,7 +911,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Difficulty:** Senior
 
-### Merge intervals plus ML fundamentals probe
+### 47. Merge intervals plus ML fundamentals probe
 
 > "A merge-interval style coding question, plus an ML fundamentals probe on Precision/Recall vs ROC-AUC and what perplexity means."
 
@@ -921,7 +921,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Difficulty:** Mid
 
-### Two SQL plus one Python on trust & safety data
+### 48. Two SQL plus one Python on trust & safety data
 
 > "Trust & safety domain funnel in SQL with retention, plus a Python question on pandas dataframe transformation for CTR."
 
@@ -931,7 +931,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Difficulty:** Mid
 
-### Parse data and compute statistics
+### 49. Parse data and compute statistics
 
 > "Parse data and compute statistics transformations (coding round); ML concepts, LLMs, and debugging (ML coding round)."
 
@@ -941,7 +941,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Difficulty:** Mid-senior
 
-### OOP toy system (MLE 2.0 round)
+### 50. OOP toy system (MLE 2.0 round)
 
 > "Implement a toy system mimicking a database, a KV store, a chat room, a game."
 
@@ -951,7 +951,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Difficulty:** Mid-senior
 
-### AI-assisted coding (MLE 2.0 round)
+### 51. AI-assisted coding (MLE 2.0 round)
 
 > "Given a toy codebase plus unit tests, you are allowed to use an LLM to debug and complete the implementation."
 
@@ -967,7 +967,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 > **Rubric intel:** Amazon's "Science Presentation" / "Tech Talk" round is graded on a presentation rubric, not topic depth - the loop structure is documented on [amazon.jobs](https://amazon.jobs/content/en/how-we-hire/applied-scientist-interview-prep) and [IGotAnOffer](https://igotanoffer.com/en/advice/amazon-applied-scientist-interview). Per the cross-company synthesis, candidates who can present a single project for 15 minutes and answer three probing follow-ups outperform candidates who ace coding rounds but can't narrate their work.
 
-### The 15-20 minute science talk
+### 52. The 15-20 minute science talk
 
 > "Give a 15-20 minute presentation of a paper, project, or past applied work."
 
@@ -986,7 +986,7 @@ Pick a project with measurable impact, internal or external. Structure: 1) the b
 
 **Difficulty:** All levels - the rubric is a presentation rubric, not necessarily topic depth
 
-### How did you debug your ML project?
+### 53. How did you debug your ML project?
 
 > "Tell me about a past ML project deep in implementation: how did you debug it?"
 
@@ -1005,7 +1005,7 @@ Pick a project with a non-trivial decision timeline: a multi-month ranking model
 
 **Difficulty:** Senior
 
-### Know your own project inside-out
+### 54. Know your own project inside-out
 
 > "Present a past data science project - and know your own project's technicalities in and out."
 
@@ -1028,7 +1028,7 @@ Choose a project that had technical risk and a measured outcome. Foreground the 
 
 ## Product & Metrics Cases
 
-### Measure engagement for a productivity app
+### 55. Measure engagement for a productivity app
 
 > "How would you measure engagement for a productivity app, including features or behaviors to track?"
 
@@ -1047,7 +1047,7 @@ Pair a north-star with hygiene metrics. North-star: weekly active creators with 
 
 **Difficulty:** Mid
 
-### 1M users drop off at 6 months
+### 56. 1M users drop off at 6 months
 
 > "Why are 1M users dropping off around 6 months after signing up, and how would you address it?"
 
@@ -1066,7 +1066,7 @@ Hypothesis space: (1) user-mix drift (new cohorts are different), (2) experienti
 
 **Difficulty:** Mid
 
-### Investigate a 15% CTR drop
+### 57. Investigate a 15% CTR drop
 
 > "A 15% click-through-rate decrease shows up on the new ranking. Investigate."
 
@@ -1085,7 +1085,7 @@ First, instrument: did the model roll out cleanly to 100%? Did server latency sh
 
 **Difficulty:** Senior
 
-### Classify products into categories
+### 58. Classify products into categories
 
 > "How would you classify products into categories and sub-categories?"
 
@@ -1110,7 +1110,7 @@ Two-stage approach: (1) hierarchical zero-shot or few-shot LLM-based candidate c
 
 > **Rubric intel:** Behavioral questions in science loops are tied to Amazon's Leadership Principles. [IGotAnOffer's 2026 LP guide](https://igotanoffer.com/en/advice/amazon-leadership-principles) lists 60+ LP-tagged prompts (Ownership, Bias for Action, Customer Obsession, Dive Deep, Have Backbone / Disagree & Commit, Frugality, Earn Trust) with STAR instruction, and the [Bar Raiser round](https://igotanoffer.com/blogs/tech/amazon-behavioral-interview) is grounded in these and described as making the actual hire/no-hire call. Rehearse three STAR stories per principle.
 
-### Outside-the-box simplification (Invent & Simplify)
+### 59. Outside-the-box simplification (Invent & Simplify)
 
 > "Tell me about a time when you had to use outside-the-box thinking to simplify a task."
 
@@ -1129,7 +1129,7 @@ STAR. Situation: a 6-week-each-quarter compliance review was consuming the team.
 
 **Difficulty:** All levels
 
-### Company vs client interests misaligned
+### 60. Company vs client interests misaligned
 
 > "Tell me about a time when the company's interest and the client's interest were not aligned."
 
@@ -1148,7 +1148,7 @@ STAR. A vendor partner wanted to disproportionately harm a low-margin product li
 
 **Difficulty:** All levels
 
-### Delivered something customers didn't know they needed
+### 61. Delivered something customers didn't know they needed
 
 > "Tell me about a time you delivered something for a customer that they didn't know they needed."
 
@@ -1167,7 +1167,7 @@ STAR. Buyer-survey data showed repeat-cart abandonment; we hypothesized that pre
 
 **Difficulty:** Senior
 
-### Missing a long-term commitment (Ownership)
+### 62. Missing a long-term commitment (Ownership)
 
 > "Tell me about a time you realized you would not meet a long-term commitment and how you navigated it."
 
@@ -1186,7 +1186,7 @@ STAR. I was the sole owner of an annual forecast rollout; an acquisition delayed
 
 **Difficulty:** All levels
 
-### Technical deep-dive on an issue (Dive Deep)
+### 63. Technical deep-dive on an issue (Dive Deep)
 
 > "Tell me about a time you had to give a technical deep-dive (Dive Deep) on an issue."
 
@@ -1205,7 +1205,7 @@ STAR. A spike in checkout error rate correlated with an ML feature-version skew.
 
 **Difficulty:** Senior
 
-### Urgent decision with incomplete information (Bias for Action)
+### 64. Urgent decision with incomplete information (Bias for Action)
 
 > "Tell me about a time you had to make an urgent decision with incomplete information."
 
@@ -1224,7 +1224,7 @@ STAR. Trust & Safety spike on a category at 02:00. I convinced on-call to roll b
 
 **Difficulty:** Mid-senior
 
-### Disagreeing with your manager
+### 65. Disagreeing with your manager
 
 > "Tell me about a time when you disagreed with your manager's decision."
 
@@ -1243,7 +1243,7 @@ STAR. Manager proposed A/B-testing a UX rework. I thought the team could learn m
 
 **Difficulty:** All levels
 
-### Your ML approach didn't work
+### 66. Your ML approach didn't work
 
 > "Describe a time when your initial ML approach didn't work and you had to pivot."
 

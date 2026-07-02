@@ -1,0 +1,42 @@
+name: ➕ Add an interview question
+description: Share a real question you were asked (or found reported)
+title: "[q] "
+labels: ["new-question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question
+      description: As close to verbatim as you can remember.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where was it asked?
+      description: Company · role · round (e.g. "Anthropic · MTS · technical screen").
+    validations:
+      required: true
+  - type: dropdown
+    id: bank
+    attributes:
+      label: Which bank does it belong in?
+      options:
+        - LLM & ML Concepts
+        - Coding & ML System Design
+        - Frontier AI Labs
+        - FDE / Product / GTM
+        - Data & Applied Science
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (optional)
+      description: A link (Glassdoor/Blind/Reddit/blog), or "first-hand — my own interview".
+  - type: textarea
+    id: answer
+    attributes:
+      label: How would you answer it? (optional)
+      description: Even rough notes help us write the ideal answer.

@@ -4,7 +4,7 @@
 
 # 🚀 Frontier AI Labs — Real Interview Questions
 
-![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/67%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
+![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/71%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
 
 **What OpenAI, Anthropic, DeepMind, xAI and the other labs actually ask — reported by real candidates, with sources.**
 
@@ -41,7 +41,7 @@ Cross-lab comparison tables (AI-coding policy, loop length, safety presence) are
 - The platform SWE loop is described as 6 stages: recruiter screen → technical phone screen → take-home work trial → onsite technical → behavioral / mission → offer [[33]](https://www.interviewcoder.co/blog/openai-interview-process).
 - Top 3 load-bearing prep moves: (a) rehearse a documented 48-h take-home (tests + eval + README), (b) rehearse the system-design staple ("in-memory DB with basic SQL… JOINs") [[32]](https://www.reddit.com/r/InterviewCoderHQ/comments/1rhfjpw/openai_swe_interview_experience_full_loop/), (c) prep the two-way mission-fit bar — "why OpenAI over Anthropic, DeepMind, xAI, Meta FAIR" [[33]](https://www.interviewcoder.co/blog/openai-interview-process).
 
-### In-memory database with basic SQL
+### 1. In-memory database with basic SQL
 
 > "Design an in-memory database with basic SQL (CREATE TABLE, INSERT, SELECT with WHERE, JOINs)"
 
@@ -59,7 +59,7 @@ Lay out the storage as a catalog of tables, each a list of typed row dictionarie
 
 **Difficulty:** Medium. Frequently appears in OpenAI SWE system design.
 
-### Webhook delivery system (the paid work trial)
+### 2. Webhook delivery system (the paid work trial)
 
 > "Build a Webhook Delivery System: register endpoints, receive events, deliver reliably, retries with backoff, dead letter queue for permanently failed stuff, and an API to check status"
 
@@ -77,7 +77,7 @@ Split the work into a REST layer (register endpoint, status API), an in-memory q
 
 **Difficulty:** Medium-hard; this is the work trial, evaluated like a real artifact.
 
-### Coding pairing: cache / tokenizer / reservation service
+### 3. Coding pairing: cache / tokenizer / reservation service
 
 > "Implement a thread-safe cache with configurable eviction policy" / "Debug a performance bottleneck in a streaming tokenization system" / "Design and implement a reservation service with concurrency constraints"
 
@@ -95,7 +95,7 @@ Cache around an `OrderedDict` for LRU with a configurable policy hook (FIFO / LF
 
 **Difficulty:** Medium-hard. Common to all frontier labs.
 
-### Walk me through your favorite paper
+### 4. Walk me through your favorite paper
 
 > "Walk me through your favorite paper"
 
@@ -113,7 +113,7 @@ Pick a non-canonical paper. Frame: gap → insight → evidence → limitations 
 
 **Difficulty:** Medium.
 
-### Most important OpenAI ship of the past year
+### 5. Most important OpenAI ship of the past year
 
 > "What is the most important paper or product OpenAI has shipped in the last year and why?"
 
@@ -131,7 +131,7 @@ Ground the answer in something specific (e.g. o-series reasoning, Operator, the 
 
 **Difficulty:** Medium.
 
-### The mission-contradiction test
+### 6. The mission-contradiction test
 
 > "What would you say to someone who thinks OpenAI's mission is contradictory?"
 
@@ -149,7 +149,7 @@ Name the contradiction explicitly (governance vs. commercial pace; closed-deploy
 
 **Difficulty:** Hard, values-test.
 
-### AI safety trade-offs in your work
+### 7. AI safety trade-offs in your work
 
 > "How do you think about AI safety tradeoffs in your work?"
 
@@ -167,7 +167,7 @@ Name a concrete shipping decision you held the line on (e.g. refused to launch a
 
 **Difficulty:** Medium-hard.
 
-### Inference serving under strict latency budgets
+### 8. Inference serving under strict latency budgets
 
 > "Design an inference serving system for GPT-class models with strict latency budgets"
 
@@ -185,7 +185,7 @@ Discuss request batching (static vs continuous), KV-cache sizing math (`2 * n_la
 
 **Difficulty:** Hard.
 
-### Why OpenAI over the other labs
+### 9. Why OpenAI over the other labs
 
 > "Why OpenAI over Anthropic, DeepMind, xAI, Meta FAIR?"
 
@@ -199,7 +199,7 @@ Differentiate by lab culture (OpenAI's shipping-first pace), by current technica
 
 **Difficulty:** Medium.
 
-### Behavioral cluster: ownership, disagreement, failure, bad news
+### 10. Behavioral cluster: ownership, disagreement, failure, bad news
 
 > Projects end-to-end + senior disagreement + biggest failure + delivering bad news *(behavioral cluster, verbatim set)*
 
@@ -223,7 +223,7 @@ Use STAR for each. OpenAI's bar is "collaboration, effective communication, open
 - AI-coding policy is explicit and public: "candidates can use AI for brainstorming, refining your thinking, and general preparation, but are prohibited from using it to generate code solutions for CodeSignal or during interviews" [[9]](https://igotanoffer.com/en/advice/anthropic-interview-process).
 - Top 3 load-bearing prep moves: (a) CodeSignal OA — produce your own solutions, don't paste; (b) rehearse concurrency-heavy SWE problems ("Build a thread-safe cache", "reservation service") [[6]](https://www.reddit.com/r/InterviewCoderHQ/comments/1tirugm/anthropic_swe_interview_experience_2025_l4_remote/); (c) prepare a STAR story on a real safety-first decision even if it cost you [[10]](https://jobright.ai/blog/anthropic-technical-interview-questions-complete-guide-2026/).
 
-### Thread-safe cache with configurable eviction
+### 11. Thread-safe cache with configurable eviction
 
 > "Build a thread-safe cache with configurable eviction policy"
 
@@ -241,7 +241,7 @@ Design a `Cache` class with a pluggable `Policy` strategy; LRU via `OrderedDict.
 
 **Difficulty:** Medium-hard.
 
-### Streaming tokenization bottleneck
+### 12. Streaming tokenization bottleneck
 
 > "Debug a performance bottleneck in a streaming tokenization system"
 
@@ -259,7 +259,7 @@ Profile first with `py-spy`; suspect hot loops (regex, BPE merges, allocator chu
 
 **Difficulty:** Medium-hard.
 
-### Reservation service under contention
+### 13. Reservation service under contention
 
 > "Design and implement a reservation service with concurrency constraints"
 
@@ -277,7 +277,7 @@ Version-stamped reservations, retry-on-conflict, optional 2-phase commit; cover 
 
 **Difficulty:** Medium-hard.
 
-### ML fundamentals rapid-fire
+### 14. ML fundamentals rapid-fire
 
 > "How do you diagnose underfitting vs overfitting?" / "When would you choose one architecture over another?" / "How do you evaluate model performance beyond accuracy?" / "What are common failure modes in large language models?"
 
@@ -291,7 +291,7 @@ Underfitting = train and val plateau low (more capacity, longer training); overf
 
 **Difficulty:** Medium.
 
-### Design an experiment for emergent behavior
+### 15. Design an experiment for emergent behavior
 
 > "How would you design an experiment to test for a specific emergent behavior?"
 
@@ -305,7 +305,7 @@ Pick a specific, falsifiable hypothesis; define a probing task; define a control
 
 **Difficulty:** Medium-hard.
 
-### Model behavior that poses risk (signature question)
+### 16. Model behavior that poses risk (signature question)
 
 > "How would you respond to a model behavior that poses risk?"
 
@@ -321,7 +321,7 @@ Refuse deployment, document the failure mode, escalate to the red-team / policy 
 
 **Difficulty:** Hard, signature Anthropic question.
 
-### Acceptable deployment trade-offs
+### 17. Acceptable deployment trade-offs
 
 > "What trade-offs are acceptable when deploying powerful models?"
 
@@ -333,7 +333,7 @@ Name the trade-offs (capability, transparency, dual-use) and put forward a defen
 
 </details>
 
-### Long-term responsibility as an engineer
+### 18. Long-term responsibility as an engineer
 
 > "How do you think about long-term responsibility as an engineer?"
 
@@ -345,7 +345,7 @@ Name a concrete behavior — write evals before product, leave removal paths in 
 
 </details>
 
-### The most pressing unsolved alignment problem
+### 19. The most pressing unsolved alignment problem
 
 > "What do you see as the most pressing unsolved problem in AI alignment?"
 
@@ -361,7 +361,7 @@ Pick a real, specific problem (e.g. scalable oversight / reward hacking / situat
 
 **Difficulty:** Hard.
 
-### System design triple: inference API, GPU scheduling, streaming
+### 20. System design triple: inference API, GPU scheduling, streaming
 
 > "Distributed inference API handling high request volume" / "GPU scheduling and batching for LLM inference workloads" / "Real-time streaming architecture with fault tolerance and observability"
 
@@ -373,7 +373,7 @@ Continuous batching, prefix cache sharing, KV-cache math, scheduler with p99 SLO
 
 </details>
 
-### Decisions under uncertainty
+### 21. Decisions under uncertainty
 
 > "How would you make decisions under uncertainty?" / "How do you weigh risk?" / "Do you think about long-term consequences?"
 
@@ -396,7 +396,7 @@ Produce a framework: list the decision, list the worst-case + reversibility, lis
 - The ML oral is "basically your PhD oral syllabus" — covering transformers, scaling laws, RLHF, classical ML [[50]](https://www.reddit.com/r/cscareerquestions/comments/1sa38x2/anyone_go_through_ml_fundamentals_step_at_deepmind/).
 - Top 3 load-bearing prep moves: (a) PhD-oral preparation across ML fundamentals; (b) rehearse paper critique plus failure-mode discussion [[58]](https://www.sundeepteki.org/advice/the-ultimate-ai-research-engineer-interview-guide-cracking-openai-anthropic-google-deepmind-top-ai-labs); (c) sharpen DS&A to "medium" LeetCode per IGotAnOffer [[39]](https://igotanoffer.com/en/advice/google-deepmind-research-engineer-interview).
 
-### Longest path in an experiment-dependency graph
+### 22. Longest path in an experiment-dependency graph
 
 > "You are given a directed graph of dependencies between ML experiments; given the graph, return the longest path from any starting node" — plus standard medium LeetCode DS&A *(set reported verbatim in IGotAnOffer's companion Meta pages and applied to DeepMind RE)*
 
@@ -412,7 +412,7 @@ DFS with memoization + topological sort.
 
 **Difficulty:** Medium.
 
-### Transformer architecture & multi-head attention
+### 23. Transformer architecture & multi-head attention
 
 > "Explain the architecture of the Transformer model and the role of multi-head attention" *(also reported as an xAI tracker question; both labs use the same probe)*
 
@@ -428,7 +428,7 @@ Residual + LayerNorm + multi-head attention decomposition; explain Q/K/V split, 
 
 **Difficulty:** Medium.
 
-### Scaling-laws critique (Chinchilla re-approach)
+### 24. Scaling-laws critique (Chinchilla re-approach)
 
 > "New Scaling Laws for Large Language Models" — critique the Hoffmann vs DeepMind Chinchilla re-approach
 
@@ -442,7 +442,7 @@ Explain the three independent fitting methods (cross-entropy loss projection, Mi
 
 **Difficulty:** Medium-hard.
 
-### RLHF / DPO post-training
+### 25. RLHF / DPO post-training
 
 > RLHF / DPO / RLHF post-training *(central to DeepMind's ML oral)*
 
@@ -456,7 +456,7 @@ PPO with reward model + KL term; DPO as closed-form equivalent under Bradley-Ter
 
 **Difficulty:** Medium-hard.
 
-### Paper critique round
+### 26. Paper critique round
 
 > Candidate pre-reads a paper, then defends it on-site *(format well-established for AI research interviews)*
 
@@ -470,7 +470,7 @@ Structure as "gap + hypothesis + method + result + reproducible limitation + ext
 
 > **Safety note:** DeepMind's safety bar is documented at the research-scientist level rather than through candidate reports. A representative generic safety probe cited across guides: *"How would you weigh releasing a model with a known jailbreak against delaying deployment?"* — treat as DeepMind-flavored, ethically probing release-vs-harm decisions.
 
-### Distributed training across 1000 GPUs
+### 27. Distributed training across 1000 GPUs
 
 > "How do you coordinate distributed training across 1000 GPUs; what happens when one node fails?"
 
@@ -484,7 +484,7 @@ Data vs model vs pipeline parallelism; ZeRO-style optimizer sharding; elastic tr
 
 **Difficulty:** Medium-hard.
 
-### Project deep-dive + cross-functional disagreement
+### 28. Project deep-dive + cross-functional disagreement
 
 > Project deep-dive + cross-functional disagreement — standard behaviorals cited across DeepMind RE loop reports
 
@@ -500,7 +500,7 @@ Data vs model vs pipeline parallelism; ZeRO-style optimizer sharding; elastic tr
 - The front of the loop is a 15-minute phone screen — short technical call + background review per xAI's careers page [[21]](https://x.ai/careers).
 - Top 3 load-bearing prep moves: (a) 30-second project pitch ready for the 15-min call; (b) Trie+DFS, LRU, in-memory DB with nested transactions ready at the whiteboard; (c) prepare an "XAI theory" answer (SHAP/LIME, local vs global explanations) and an intensity-fit answer ("a time you solved something others thought was impossible", "designing an AI system with limited compute") [[24]](https://dev.to/net_programhelp_e160eef28/xai-software-engineer-interview-2026-full-recap-pitfalls-real-prep-tips-2fl0).
 
-### The 15-minute phone screen
+### 29. The 15-minute phone screen
 
 > "Explain your most technical project in 30 seconds" / "Which two programming languages are you strongest in?" / "What production-level work have you done in C++ and Python?"
 
@@ -516,7 +516,7 @@ Name the project, the stack, the production scale, the trade-off you managed, an
 
 **Difficulty:** Medium.
 
-### Word search on grid (Trie + DFS)
+### 30. Word search on grid (Trie + DFS)
 
 > "Word Search on Grid (Trie + DFS) — given an N x N character board and a dictionary, find all valid words that can be formed by adjacent letters"
 
@@ -534,7 +534,7 @@ Build the Trie; DFS with `visited` mask; prune by prefix non-existence.
 
 **Difficulty:** Medium-hard.
 
-### LRU cache — classic but dangerous
+### 31. LRU cache — classic but dangerous
 
 > "Implement an LRU Cache (Classic but Dangerous) — implement `get(key)` and `put(key, value)` in O(1)"
 
@@ -552,7 +552,7 @@ Build the Trie; DFS with `visited` mask; prune by prefix non-existence.
 
 **Difficulty:** Medium.
 
-### In-memory DB with nested transactions
+### 32. In-memory DB with nested transactions
 
 > "System Design — In-Memory DB with Nested Transactions, supporting SET, GET, BEGIN, ROLLBACK, COMMIT — and nested transactions"
 
@@ -564,7 +564,7 @@ Stack-based transaction log; each `BEGIN` pushes a new log frame; `COMMIT` merge
 
 </details>
 
-### PPO vs DPO trade-offs
+### 33. PPO vs DPO trade-offs
 
 > "Discuss the trade-offs between different RLHF algorithms like PPO and DPO"
 
@@ -576,7 +576,7 @@ PPO is online, stability-sensitive, requires a reference policy; DPO is offline,
 
 </details>
 
-### LLM inference latency optimization
+### 34. LLM inference latency optimization
 
 > "How do you optimize a large language model for inference latency?"
 
@@ -590,7 +590,7 @@ Continuous batching, KV-cache memory math, FlashAttention, speculative decoding,
 
 **Difficulty:** Medium-hard.
 
-### AI system with limited compute
+### 35. AI system with limited compute
 
 > "Designing an AI system from scratch with limited compute"
 
@@ -602,7 +602,7 @@ Compute-aware architecture choice (MoE vs dense), dataset curation, distillation
 
 </details>
 
-### Societal impact and xAI's mission
+### 36. Societal impact and xAI's mission
 
 > "Your view on AI's societal impact and xAI's mission"
 
@@ -614,7 +614,7 @@ Name a real concern (concentration of power, dual-use of frontier weights); name
 
 </details>
 
-### The "XAI theory" round (explainability)
+### 37. The "XAI theory" round (explainability)
 
 > "Explainability in production systems — what is XAI? Local vs global explanations, why explainability matters"
 
@@ -626,7 +626,7 @@ SHAP (game-theoretic, consistent, local), LIME (linear surrogate, local), global
 
 </details>
 
-### Intensity-fit behaviorals
+### 38. Intensity-fit behaviorals
 
 > "A time you solved something others thought was impossible" / "Biggest cross-team collaboration challenge" / "Why xAI over OpenAI / Google / Anthropic?"
 
@@ -648,7 +648,7 @@ xAI's bar is intensity + urgency + frontier ambition; name the high-cost failure
 - Distinctive elements: "an LLM knowledge quiz that goes deeper than most ML courses, a transformer you'll implement from scratch, and a take-home that reads like a research paper" [[4]](https://jobsbyculture.com/blog/mistral-interview-prep-2026).
 - Top 3 load-bearing prep moves: (a) implement a small Transformer in PyTorch ahead of time; (b) read & critique one Mistral paper (Mixtral, Mistral 7B); (c) rehearse Python pair-programming with a third-party API + Mistral API in front of you [[2]](https://www.jointaro.com/interviews/companies/mistral-ai/experiences/applied-ai-engineer-france-october-15-2025-no-offer-negative-5a1aac6b/).
 
-### Real-time abuse / rate-limit detection
+### 39. Real-time abuse / rate-limit detection
 
 > "Given a stream of user queries to our LLM API, design an algorithm to detect and flag potentially abusive or rate-limiting requests in real-time. You can assume queries have user IDs and timestamps."
 
@@ -660,7 +660,7 @@ Sliding-window counters per `user_id`, rate-limiter with token bucket, regex + c
 
 </details>
 
-### p95 latency function
+### 40. p95 latency function
 
 > "Implement a function that takes a list of API endpoint response times (in milliseconds) and returns the p95 latency. Handle potential errors like empty lists or non-numeric values."
 
@@ -672,7 +672,7 @@ Sort + 0.95 * n index; corner cases (n==0, non-numeric).
 
 </details>
 
-### Pattern search over a document corpus
+### 41. Pattern search over a document corpus
 
 > "Write a function to efficiently search for a specific string pattern within a large corpus of text documents. Assume documents are stored as a list of strings."
 
@@ -684,7 +684,7 @@ Aho-Corasick multi-pattern; or suffix array for single-long-pattern; mention str
 
 </details>
 
-### Nested JSON schema validation
+### 42. Nested JSON schema validation
 
 > "Validate a nested JSON configuration against a predefined schema, handling nested structures and various data types."
 
@@ -696,7 +696,7 @@ Recursive validator; precompute schema once; typed errors.
 
 </details>
 
-### Sorted-list intersection
+### 43. Sorted-list intersection
 
 > "Find the intersection of two large, sorted lists of user IDs efficiently, returning a new sorted list."
 
@@ -708,7 +708,7 @@ Two-pointer merge, O(N+M).
 
 </details>
 
-### Transformer from scratch
+### 44. Transformer from scratch
 
 > "Implement a transformer from scratch" *(during the LLM knowledge quiz)*
 
@@ -722,7 +722,7 @@ A single-block decoder with RoPE, GQA, SwiGLU; pre-norm residual; explain why th
 
 **Difficulty:** Medium-hard.
 
-### RAG, embeddings, reranking walk-through
+### 45. RAG, embeddings, reranking walk-through
 
 > "Walk through your understanding of RAG, embeddings, reranking" *(pair-programming)*
 
@@ -736,7 +736,7 @@ Coarse-to-fine retrieval (hybrid lexical + dense), rerank with cross-encoder; ab
 
 **Difficulty:** Medium.
 
-### The research-paper take-home
+### 46. The research-paper take-home
 
 > Take-home "that reads like a research paper"
 
@@ -750,7 +750,7 @@ Produce an exploratory-data + hypothesis-driven notebook/report, with an explici
 
 > **Safety note:** Mistral's safety bar is less explicit at the candidate-report level; expect a values probe around open-weights posture and EU / AI Act posture. Where probed, follow the JobsByCulture prep advice: read Mistral's public stance toward model weights and the regulatory context [[4]](https://jobsbyculture.com/blog/mistral-interview-prep-2026).
 
-### LLM response cache design
+### 47. LLM response cache design
 
 > "Design a system to cache responses from our LLM API to reduce latency and cost for frequently asked questions. Consider cache invalidation strategies."
 
@@ -762,7 +762,7 @@ Response cache keyed on `(prompt_hash, model_version)`, write-through + TTL, sem
 
 </details>
 
-### LLM health & performance monitoring
+### 48. LLM health & performance monitoring
 
 > "Design a system for monitoring the health and performance of our deployed LLM models."
 
@@ -774,7 +774,7 @@ Latency histograms, token throughput, eval-job drift dashboards, canary traffic 
 
 </details>
 
-### Behavioral: disagreement + hard constraints
+### 49. Behavioral: disagreement + hard constraints
 
 > "Tell me about a time you had a significant disagreement with a cross-functional team member" + "Tell me about a time you had to work with a difficult technical constraint"
 
@@ -790,7 +790,7 @@ Latency histograms, token throughput, eval-job drift dashboards, canary traffic 
 - The Meta ML Research Scientist loop now includes the new "Coding with AI" round: "Here is a full breakdown of my loop for the ML Research Scientist role, including the new 'Coding with AI' round" [[27]](https://www.reddit.com/r/leetcode/comments/1r37w7q/meta_ml_research_scientist_interview_experience/).
 - Top 3 load-bearing prep moves: (a) read the AI-coding round rules — AI use is "optional" but interview design leaks "what should be delegated to AI" per interviewing.io [[65]](https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples); (b) come prepared for "personal superintelligence" framing — "build personal superintelligence applications" per AIOfferly 2025/2026 ML Guide [[26]](https://www.aiofferly.com/career-guide/meta-ml-interview-questions); (c) rehearse ML system-design staples (decoding, retrieval, ranking, alignment).
 
-### AI-enabled coding round
+### 50. AI-enabled coding round
 
 > "Given a directed graph of ML experiments, deliver a working solution with AI assistance in 60 minutes"
 
@@ -806,7 +806,7 @@ A "what's mine / what's AI's" contract up front; write tests first to verify AI 
 
 **Difficulty:** Medium.
 
-### Coding & design hybrid: longest dependency path
+### 51. Coding & design hybrid: longest dependency path
 
 > "Given a directed graph… return the longest dependency path" *(sample format)*
 
@@ -818,7 +818,7 @@ DFS with memoization / DP; topological sort.
 
 </details>
 
-### Personal superintelligence application
+### 52. Personal superintelligence application
 
 > "How would you build a personal superintelligence application for [domain]?" *(the Meta framing)*
 
@@ -830,7 +830,7 @@ Ground in a real user problem, name the agentic capabilities (multi-step, tool-u
 
 </details>
 
-### Research Scientist loop: ML system design + applied research
+### 53. Research Scientist loop: ML system design + applied research
 
 > Extensive ML system design + applied research, full loop
 
@@ -842,7 +842,7 @@ Pick up ML-system staples — training pipeline reliability, eval harness design
 
 </details>
 
-### Most important research contribution
+### 54. Most important research contribution
 
 > "Walk me through your most important research contribution"
 
@@ -854,7 +854,7 @@ Problem, contribution (novelty), result, limitations, what you'd do next. Meta's
 
 </details>
 
-### Safety, misuse & content-harm probe
+### 55. Safety, misuse & content-harm probe
 
 > Safety + misuse / content harm probe *(references Meta's published Acceptable Use Policy and Llama license restrictions)*
 
@@ -866,7 +866,7 @@ Name the concrete harm class, the mitigations stack (pre-training, post-training
 
 </details>
 
-### ML system design round
+### 56. ML system design round
 
 > Training pipeline, eval harness, ranking — ML System Design round
 
@@ -918,7 +918,7 @@ End-to-end production ML: training pipeline reliability, eval harness, retrieval
 - AI Researcher / MLE paths feature "two live rounds: a 90-minute discussion on core machine learning and deep learning concepts" and "an extensive 3-hour technical assessment" covering language modeling, advanced mathematics, and practical coding [[67]](https://www.datainterview.com/blog/cohere-ai-researcher-interview) · [[68]](https://www.datainterview.com/blog/cohere-machine-learning-engineer-interview).
 - AI-coding policy: not officially published; a Linkjob 2026 candidate reports using an "undetectable" AI assistant during technical rounds (an implicit risk for honesty) [[46]](https://www.linkjob.ai/interview-questions/cohere-interview-process-and-questions/).
 
-### Binary string reduction (OA)
+### 57. Binary string reduction (OA)
 
 > "A binary string S encodes a value V; reduce V to 0 by subtracting 1 if odd or dividing by 2 if even"
 
@@ -930,7 +930,7 @@ Bit-twiddling / loop until V==0; O(log V) ops.
 
 </details>
 
-### Streaming dedup without storing the stream
+### 58. Streaming dedup without storing the stream
 
 > "Implement a function that takes a stream of strings and removes duplicates in real time, without storing the entire stream in memory"
 
@@ -942,7 +942,7 @@ Bloom filter with epsilon-bounded FPR; backup hash table for deletes; memory-bud
 
 </details>
 
-### Longest substring without repeating characters
+### 59. Longest substring without repeating characters
 
 > "Design the longest substring without repeating characters"
 
@@ -954,7 +954,7 @@ Sliding-window over a `last_seen` dict; O(N).
 
 </details>
 
-### 3-hour technical assessment: BERT dataset
+### 60. 3-hour technical assessment: BERT dataset
 
 > "Create a dataset for sentence completion using BERT" + math/transformer probes
 
@@ -966,7 +966,7 @@ Dataset design (corpus source, length stats, train/val/test split, potential ove
 
 </details>
 
-### Post-cutoff knowledge with reliability
+### 61. Post-cutoff knowledge with reliability
 
 > "Design a mechanism for an LLM-based system that allows it to answer questions about events or knowledge that occurred after its training cutoff, while maintaining reliability and transparency"
 
@@ -978,7 +978,7 @@ Retrieval-augmented generation over an external KB, with provenance surfacing; a
 
 </details>
 
-### Batch embedding pipeline throughput
+### 62. Batch embedding pipeline throughput
 
 > "You are building a batch inference pipeline for embedding a batch of sequences with a max token and max batch size limit. How would you optimize throughput?"
 
@@ -990,7 +990,7 @@ Pad-aware batching, sort by length, dynamic batching, FlashAttention, kernel fus
 
 </details>
 
-### Research presentation
+### 63. Research presentation
 
 > "Concise and engaging presentation (e.g., 15-20 slides) on 1-2 significant research projects"
 
@@ -1002,7 +1002,7 @@ Gap → contribution → methodology → results → limitations → next steps;
 
 </details>
 
-### Paper-reading deep dive
+### 64. Paper-reading deep dive
 
 > Paper reading deep dive: experiment design, paper limitations, results applicability (~2026)
 
@@ -1016,7 +1016,7 @@ State the central hypothesis, the experimental design's threat model, the result
 
 > **Safety note:** Cohere's safety profile is enterprise-grade (Command models, evals). Interview probes are likely to focus on dual-use and red-teaming — not verbatim in reports but inferable from the company's published model cards and enterprise posture.
 
-### URL shortener
+### 65. URL shortener
 
 > "Design a URL shortening service like bit.ly"
 
@@ -1028,7 +1028,7 @@ Hash function (base-62), ID generator (Snowflake-style), write-heavy DB, cache, 
 
 </details>
 
-### Real-time fraud detection
+### 66. Real-time fraud detection
 
 > "Design a system to detect fraudulent transactions in real-time"
 
@@ -1040,7 +1040,7 @@ Feature store, online model scoring, rule-engine veto layer, retroactive feedbac
 
 </details>
 
-### Behavioral with the hiring manager
+### 67. Behavioral with the hiring manager
 
 > "Tell me about a time you faced a major challenge in a project" + "Describe a situation where you had to collaborate with a team member who had a different approach than you"
 
@@ -1056,7 +1056,7 @@ STAR; emphasize behavioral fit [[67]](https://www.datainterview.com/blog/cohere-
 
 ## Comparative Analysis Across Labs
 
-### AI-assisted coding policy (verified current state)
+### 68. AI-assisted coding policy (verified current state)
 
 | Lab | Coding policy in 2025–2026 | Source |
 |---|---|---|
@@ -1072,7 +1072,7 @@ STAR; emphasize behavioral fit [[67]](https://www.datainterview.com/blog/cohere-
 
 **Takeaway:** only Anthropic has published an explicit rule (prohibition on CodeSignal / live interview); Meta has structurally changed the round itself to one where AI is part of the evaluation. Other labs sit between those poles.
 
-### Loop length and intensity
+### 69. Loop length and intensity
 
 | Lab | Loop length (reported) | Core signature element | Source |
 |---|---|---|---|
@@ -1086,7 +1086,7 @@ STAR; emphasize behavioral fit [[67]](https://www.datainterview.com/blog/cohere-
 | Thinking Machines | Short 2-stage | Video screen + tech round | [[18]](https://www.glassdoor.com/Interview/Thinking-Machines-Interview-Questions-E4092343.htm) |
 | Cohere | ~4 weeks | HR → OA → 48-h take-home → 4-round VO | [[46]](https://www.linkjob.ai/interview-questions/cohere-interview-process-and-questions/) |
 
-### Safety / alignment presence in the loop
+### 70. Safety / alignment presence in the loop
 
 | Lab | Safety round presence | Sample probe |
 |---|---|---|
@@ -1100,7 +1100,7 @@ STAR; emphasize behavioral fit [[67]](https://www.datainterview.com/blog/cohere-
 | Thinking Machines | Mission alignment implicit | Inferred |
 | Cohere | Enterprise + dual-use probes | Inferred from published model cards |
 
-### What the patterns mean for your prep
+### 71. What the patterns mean for your prep
 
 1. **AI-assisted coding is bifurcating the field — labs are choosing opposite corners.** Anthropic drew a sharp line in 2025 by prohibiting AI-generated solutions on the CodeSignal OA and live interviews [[9]](https://igotanoffer.com/en/advice/anthropic-interview-process); Meta did the opposite in October 2025 with a brand-new "AI-Enabled Coding" round whose design assumes the candidate will use the AI [[28]](https://www.hellointerview.com/blog/meta-ai-enabled-coding) · [[65]](https://interviewing.io/blog/how-to-use-ai-in-meta-s-ai-assisted-coding-interview-with-real-prompts-and-examples). Each lab is implicitly answering: do we hire someone whose value is their typing speed, or someone who can compose solutions with an agent?
 2. **Take-homes are re-emerging as the primary signal of "can-ship-it-ness."** Three labs use them in 2026 (OpenAI's paid 48-h, Cohere's applied take-home, Mistral's "research paper" style), and each rewards shipping discipline, test coverage, and a decision log [[33]](https://www.interviewcoder.co/blog/openai-interview-process) · [[46]](https://www.linkjob.ai/interview-questions/cohere-interview-process-and-questions/) · [[4]](https://jobsbyculture.com/blog/mistral-interview-prep-2026). The real screening test: not whether you can answer questions, but whether you can ship an artifact a colleague will trust.
