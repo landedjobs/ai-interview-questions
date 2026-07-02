@@ -72,10 +72,9 @@ def main():
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="AI Interview Questions — real questions, real sources, ideal answers" width="100%">
-</picture>
+<a href="{SITE}"><img src="https://static.b100x.ai/email/landed-wordmark.png" alt="Landed" width="200"></a>
+
+<img src="https://static.b100x.ai/github-repos/images/ai-interview-questions/banner.svg" alt="AI Interview Questions" width="100%">
 
 ![Questions](https://img.shields.io/badge/{total}%20real%20questions-ff5b29?style=flat-square) ![Banks](https://img.shields.io/badge/{live}%20question%20banks-6C2BD9?style=flat-square) ![Updated](https://img.shields.io/badge/updated-{today}-00A86B?style=flat-square) [![Stars](https://img.shields.io/github/stars/landedjobs/ai-interview-questions?style=social)]({ORG}/ai-interview-questions)
 
@@ -109,9 +108,20 @@ Interviewed recently? The best questions come from people fresh out of the loop.
 
 ## Related
 
-- 📘 [ai-interview-guides]({ORG}/ai-interview-guides) — company-by-company loops, comp, and rejection patterns
-- 🧭 [awesome-ai-native-jobs]({ORG}/awesome-ai-native-jobs) — the umbrella for the whole family
+Part of the [Landed]({SITE}) AI-native job-search family:
+
+- 🧭 [awesome-ai-native-jobs]({ORG}/awesome-ai-native-jobs) — the umbrella that maps the whole AI-native job landscape
+- 📘 [ai-interview-guides]({ORG}/ai-interview-guides) — 33 company-by-company interview guides
+- 🔥 [whos-hiring-in-ai]({ORG}/whos-hiring-in-ai) — real hiring posts from founders on X
+- 💸 [recently-funded-ai-startups-hiring]({ORG}/recently-funded-ai-startups-hiring) — fresh-capital startups staffing up now
 - 🚀 [ai-engineer-jobs]({ORG}/ai-engineer-jobs) — 300 live AI engineer roles, auto-updated
+- 🤝 [forward-deployed-engineer-jobs]({ORG}/forward-deployed-engineer-jobs) — FDE & customer-facing engineering
+- 📈 [gtm-engineer-jobs]({ORG}/gtm-engineer-jobs) — GTM engineering roles
+- 🎓 [ai-fellowships-and-residencies]({ORG}/ai-fellowships-and-residencies) — 75 fellowships, residencies & programs
+- 🧪 [projects-to-land-an-ai-job]({ORG}/projects-to-land-an-ai-job) — portfolio projects that actually get you hired
+- 📦 [ai-engineer-portfolio-projects]({ORG}/ai-engineer-portfolio-projects) — 80+ buildable portfolio projects
+- 🗺️ [ai-product-engineer-roadmap]({ORG}/ai-product-engineer-roadmap) — the AI product engineer roadmap
+- 🎯 [become-a-gtm-engineer]({ORG}/become-a-gtm-engineer) — the GTM engineer roadmap
 
 ---
 
