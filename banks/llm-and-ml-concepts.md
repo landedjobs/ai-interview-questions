@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🧠 LLM & ML Concepts — Real AI Interview Questions
+# 🧠 LLM & ML Concepts: Real AI Interview Questions
 
 ![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/62%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
 
@@ -35,7 +35,7 @@ Scaled dot-product attention computes Attention(Q, K, V) = softmax(QK^T / sqrt(d
 
 **Follow-ups:** Why multi-head? How does this interact with FlashAttention? Why does softmax(QK^T) without scaling still work sometimes in inference?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-why-divide-by-sqrtd-k-in-scaled-dot-product-attention?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-why-divide-by-sqrtd-k-in-scaled-dot-product-attention)
 
 ### 2. Why multi-head attention instead of one big head?
 
@@ -54,7 +54,7 @@ With one full-dimension head, a single softmax over the whole d_model mixes all 
 
 **Follow-ups:** What is Grouped Query Attention? How does MQA differ? Why not just use more layers instead?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-why-multi-head-attention-instead-of-one-big-head?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-why-multi-head-attention-instead-of-one-big-head)
 
 ### 3. Sinusoidal positional encodings vs RoPE
 
@@ -73,7 +73,7 @@ Sinusoidal encodings from "Attention is All You Need" are absolute, fixed functi
 
 **Follow-ups:** What is YaRN? How does RoPE interact with KV cache reuse? When would you choose ALiBi?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-sinusoidal-positional-encodings-vs-rope?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-sinusoidal-positional-encodings-vs-rope)
 
 ### 4. Why do transformers need positional embeddings at all?
 
@@ -92,7 +92,7 @@ Self-attention is permutation-equivariant: it treats the input as a set of token
 
 **Follow-ups:** What about NoPE / attention sinks? How does this interact with relative vs absolute attention?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-why-do-transformers-need-positional-embeddings-at-all?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-why-do-transformers-need-positional-embeddings-at-all)
 
 ### 5. What is KV cache and how does it speed up inference?
 
@@ -111,7 +111,7 @@ During autoregressive decoding, recomputing all key and value projections for th
 
 **Follow-ups:** How does FlashDecoding work? What is paged attention? How does GQA reduce KV cache 4-8x?
 
-**Difficulty:** Mid - Senior
+**Difficulty:** Mid - Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-what-is-kv-cache-and-how-does-it-speed-up-inference?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-what-is-kv-cache-and-how-does-it-speed-up-inference)
 
 ### 6. BPE vs SentencePiece vs WordPiece tokenization
 
@@ -130,7 +130,7 @@ Tokenization splits raw text into integer IDs; it determines vocabulary size, se
 
 **Follow-ups:** Why are some languages tokenized 5-10x less efficiently? What is the "dollar sign in code" problem (GPT-2, Llama)?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-bpe-vs-sentencepiece-vs-wordpiece-tokenization?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-bpe-vs-sentencepiece-vs-wordpiece-tokenization)
 
 ### 7. Top-k, top-p (nucleus) and temperature sampling
 
@@ -149,7 +149,7 @@ Greedy decoding (always pick the argmax) is deterministic but loops and boring. 
 
 **Follow-ups:** What is contrastive search? When does beam search beat sampling? How does min-p sampling compare?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-top-k-top-p-nucleus-and-temperature-sampling?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-top-k-top-p-nucleus-and-temperature-sampling)
 
 ### 8. The "lost in the middle" phenomenon
 
@@ -168,7 +168,7 @@ Liu et al. (2023) "Lost in the Middle" showed that even at long context lengths,
 
 **Follow-ups:** How do attention sinks help? What's the typical loss pattern? Does it change with instruction tuning?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-the-lost-in-the-middle-phenomenon?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-the-lost-in-the-middle-phenomenon)
 
 ### 9. Context windows and their practical limits
 
@@ -187,7 +187,7 @@ A context window is the maximum total tokens (input + output) a model can attend
 
 **Follow-ups:** How does FlashAttention-2 enable long context? What is ToT / attention sink? How would you test a model's effective context window?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-context-windows-and-their-practical-limits?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-context-windows-and-their-practical-limits)
 
 ### 10. What are embeddings, beyond similarity search?
 
@@ -206,7 +206,7 @@ An embedding is a dense vector representation of an entity (token, sentence, doc
 
 **Follow-ups:** How do you evaluate embedding quality? What's a good way to finetune for a vertical domain?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-what-are-embeddings-beyond-similarity-search?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-what-are-embeddings-beyond-similarity-search)
 
 ---
 
@@ -229,7 +229,7 @@ LoRA (Low-Rank Adaptation, Hu et al. 2021) freezes the pretrained weight matrix 
 
 **Follow-ups:** What is QLoRA? How do you choose rank? Can you compose multiple LoRAs?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-lora-vs-full-fine-tuning?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-lora-vs-full-fine-tuning)
 
 ### 12. QLoRA vs LoRA
 
@@ -248,7 +248,7 @@ QLoRA (Dettmers et al., 2023) combines 4-bit (NF4) quantization of the frozen ba
 
 **Follow-ups:** When does QLoRA hurt quality? What is NF4 vs FP4? How does QLoRA compare to GPTQ-LoRA?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-qlora-vs-lora?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-qlora-vs-lora)
 
 ### 13. RLHF in plain terms: what does it solve that SFT cannot?
 
@@ -267,7 +267,7 @@ SFT (supervised fine-tuning) teaches a base model to imitate demonstrations, but
 
 **Follow-ups:** Why doesn't SFT already do this? What is reward hacking? How do you scale RLHF to 70B+?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-rlhf-in-plain-terms-what-does-it-solve-that-sft-cannot?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-rlhf-in-plain-terms-what-does-it-solve-that-sft-cannot)
 
 ### 14. DPO vs RLHF/PPO: when would you pick each?
 
@@ -286,7 +286,7 @@ DPO (Rafailov et al., 2023) reformulates the RLHF objective as a closed-form sup
 
 **Follow-ups:** What is GRPO? When does online DPO beat offline DPO? Why isn't DPO universally better than PPO?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-dpo-vs-rlhfppo-when-would-you-pick-each?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-dpo-vs-rlhfppo-when-would-you-pick-each)
 
 ### 15. What is instruction tuning and why does it matter?
 
@@ -305,7 +305,7 @@ Instruction tuning is supervised fine-tuning on (instruction, response) pairs. T
 
 **Follow-ups:** How do you curate instruction data? What is Alpaca/Tulu/OpenHermes? Why does alignment tax exist?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-what-is-instruction-tuning-and-why-does-it-matter?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-what-is-instruction-tuning-and-why-does-it-matter)
 
 ### 16. Knowledge distillation for LLMs
 
@@ -324,7 +324,7 @@ Distillation transfers a larger "teacher" model's behavior into a smaller "stude
 
 **Follow-ups:** What's the role of temperature in logits distillation? When does distillation underperform naive SFT?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-knowledge-distillation-for-llms?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-knowledge-distillation-for-llms)
 
 ### 17. Catastrophic forgetting during fine-tuning
 
@@ -343,7 +343,7 @@ Catastrophic forgetting is the tendency of a fine-tuned model to lose previously
 
 **Follow-ups:** At what data mix does this stop working? What metrics detect forgetting?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-catastrophic-forgetting-during-fine-tuning?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-catastrophic-forgetting-during-fine-tuning)
 
 ### 18. The lineage from PPO to DPO to GRPO
 
@@ -362,7 +362,7 @@ Classic RLHF (Ouyang et al. 2022) uses PPO with reward model + KL constraint. Pr
 
 **Follow-ups:** How does GRPO handle reward variance? Why does DeepSeek-R1 use GRPO?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-the-lineage-from-ppo-to-dpo-to-grpo?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-the-lineage-from-ppo-to-dpo-to-grpo)
 
 ### 19. Fine-tuning vs RAG vs prompt engineering
 
@@ -381,7 +381,7 @@ Decision heuristic 2025-2026: (1) prompt engineering first: try structures like 
 
 **Follow-ups:** How do you measure fine-tuning ROI? What size of data do you need?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-fine-tuning-vs-rag-vs-prompt-engineering?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-fine-tuning-vs-rag-vs-prompt-engineering)
 
 ---
 
@@ -404,7 +404,7 @@ A RAG system has four stages. Ingestion: documents are loaded, chunked (fixed-si
 
 **Follow-ups:** Hybrid search vs pure vector? Why do pipelines deteriorate in production?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-the-main-parts-of-a-rag-system?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-the-main-parts-of-a-rag-system)
 
 ### 21. Document chunking strategies for RAG
 
@@ -423,7 +423,7 @@ Chunking determines what the retriever sees, so it determines what's retrievable
 
 **Follow-ups:** What is parent-document retriever? How do multi-granular indexes help?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-document-chunking-strategies-for-rag?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-document-chunking-strategies-for-rag)
 
 ### 22. Dense vs sparse (BM25) vs hybrid retrieval
 
@@ -442,7 +442,7 @@ Sparse (BM25/TF-IDF): lexical overlap, fast, exact-match friendly, no model need
 
 **Follow-ups:** What is RRF? Why does hybrid help even when dense is strong alone? What about SPLADE?
 
-**Difficulty:** Mid - Senior
+**Difficulty:** Mid - Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-dense-vs-sparse-bm25-vs-hybrid-retrieval?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-dense-vs-sparse-bm25-vs-hybrid-retrieval)
 
 ### 23. Why rerank after retrieval?
 
@@ -461,7 +461,7 @@ Cross-encoder rerankers (Cohere Rerank 3, ColBERT, monoT5) score query-document 
 
 **Follow-ups:** What is ColBERT? How do you train a custom reranker on domain data?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-why-rerank-after-retrieval?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-why-rerank-after-retrieval)
 
 ### 24. How do you evaluate a RAG system?
 
@@ -480,7 +480,7 @@ Evaluate RAG in three layers: (1) Retrieval quality: Recall@k, MRR, nDCG@k again
 
 **Follow-ups:** How do you build a RAG eval set? What are RAGAS limitations?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-how-do-you-evaluate-a-rag-system?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-how-do-you-evaluate-a-rag-system)
 
 ### 25. Mitigating hallucinations in RAG
 
@@ -499,7 +499,7 @@ Hallucinations in RAG have three root causes: (1) generator hallucination despit
 
 **Follow-ups:** How do you detect "lost in the middle"? What is claim-level scoring?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-mitigating-hallucinations-in-rag?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-mitigating-hallucinations-in-rag)
 
 ### 26. Monitoring RAG in production
 
@@ -518,7 +518,7 @@ Production RAG monitoring has five pillars: (1) Logs: capture (query, retrieved_
 
 **Follow-ups:** How do you re-evaluate after doc changes? What is drift detection on embeddings?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-monitoring-rag-in-production?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-monitoring-rag-in-production)
 
 ### 27. RAGAS: why it's popular and where it breaks
 
@@ -537,7 +537,7 @@ RAGAS (Reference-free Augmented Generation Assessment) is an open-source framewo
 
 **Follow-ups:** How do you calibrate the judge? When does RAGAS mislead?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-ragas-why-its-popular-and-where-it-breaks?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-ragas-why-its-popular-and-where-it-breaks)
 
 ### 28. Retrieval over structured data: tables, code, JSON
 
@@ -556,7 +556,7 @@ Vanilla dense retrievers over chunked text can find conceptually similar tables 
 
 **Follow-ups:** What is schema-linking in text-to-SQL?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-retrieval-over-structured-data-tables-code-json?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-retrieval-over-structured-data-tables-code-json)
 
 ---
 
@@ -579,7 +579,7 @@ An AI agent is an LLM-driven system that can perceive, plan, and act in an envir
 
 **Follow-ups:** What are common failure modes of agents in production?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-what-is-an-ai-agent-vs-a-prompt-vs-a-chain?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-what-is-an-ai-agent-vs-a-prompt-vs-a-chain)
 
 ### 30. The ReAct framework
 
@@ -598,7 +598,7 @@ ReAct (Yao et al., 2022) interleaves Thought -> Action -> Observation steps: the
 
 **Follow-ups:** ReAct vs function-calling? When does pure planning beat step-by-step?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-the-react-framework?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-the-react-framework)
 
 ### 31. Planning and decomposition in multi-step agent tasks
 
@@ -617,7 +617,7 @@ Two main approaches: (1) one-shot plan: have the LLM produce a full DAG of subta
 
 **Follow-ups:** How would you evaluate plan quality? When does one-shot planning beat iterative?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-planning-and-decomposition-in-multi-step-agent-tasks?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-planning-and-decomposition-in-multi-step-agent-tasks)
 
 ### 32. Tools in agentic AI and how agents pick them
 
@@ -636,7 +636,7 @@ Tools are typed functions the agent can invoke: search_web, query_database, send
 
 **Follow-ups:** What is semantic tool retrieval? How do you debug wrong tool calls?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-tools-in-agentic-ai-and-how-agents-pick-them?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-tools-in-agentic-ai-and-how-agents-pick-them)
 
 ### 33. Multi-agent orchestration: when does it help?
 
@@ -655,7 +655,7 @@ Multi-agent systems split work across specialized roles (planner agent, research
 
 **Follow-ups:** How do you design a supervisor agent's protocol?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-multi-agent-orchestration-when-does-it-help?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-multi-agent-orchestration-when-does-it-help)
 
 ### 34. How do you evaluate an agent?
 
@@ -674,7 +674,7 @@ Agent eval has 4 layers: (1) Step-level: did each tool call succeed, was the too
 
 **Follow-ups:** What is tau-bench? How do you build a golden trajectory dataset?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-how-do-you-evaluate-an-agent?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-how-do-you-evaluate-an-agent)
 
 ### 35. Common agent failure modes in production
 
@@ -693,7 +693,7 @@ Top failure modes 2024-2026: (1) tool hallucination: calling wrong tool or with 
 
 **Follow-ups:** How do you do guardrails for tool calls? What is MCP and how does it help?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-common-agent-failure-modes-in-production?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-common-agent-failure-modes-in-production)
 
 ### 36. Guardrails for agents that call external APIs
 
@@ -712,7 +712,7 @@ Guardrail pattern: (1) tool classification: mark each tool as read-only / revers
 
 **Follow-ups:** How do you decide the approval threshold? Where does prompt-injection mitigation live?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-guardrails-for-agents-that-call-external-apis?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-guardrails-for-agents-that-call-external-apis)
 
 ### 37. Agent memory: short-term vs long-term
 
@@ -731,7 +731,7 @@ Three layers: (1) short-term / working memory: the LLM context window holding re
 
 **Follow-ups:** How do you handle stale memories? What is MemGPT?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-agent-memory-short-term-vs-long-term?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-agent-memory-short-term-vs-long-term)
 
 ### 38. Model Context Protocol (MCP)
 
@@ -750,7 +750,7 @@ MCP (Model Context Protocol, Anthropic 2024) is a standardized client-server pro
 
 **Follow-ups:** How does MCP compare to OpenAI's function-calling schema?
 
-**Difficulty:** Mid - Senior
+**Difficulty:** Mid - Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-model-context-protocol-mcp?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-model-context-protocol-mcp)
 
 ---
 
@@ -773,7 +773,7 @@ LLM-as-judge uses a (usually stronger) LLM to score, classify, or compare output
 
 **Follow-ups:** How do you correct for bias? When do you NEED human eval?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-llm-as-judge-when-it-works-when-it-fails?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-llm-as-judge-when-it-works-when-it-fails)
 
 ### 40. LLM observability vs classical ML observability
 
@@ -792,7 +792,7 @@ LLM observability requires: (1) full trajectory logs: prompt, retrieved context,
 
 **Follow-ups:** What tools should you use? Arize Phoenix / Langfuse / Braintrust vs roll-your-own?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-llm-observability-vs-classical-ml-observability?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-llm-observability-vs-classical-ml-observability)
 
 ### 41. Regression testing before model/prompt changes ship
 
@@ -811,7 +811,7 @@ Build a frozen eval set of 200-2000 representative tasks with ground-truth label
 
 **Follow-ups:** How big should the eval set be? What metric thresholds trigger rollback?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-regression-testing-before-modelprompt-changes-ship?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-regression-testing-before-modelprompt-changes-ship)
 
 ### 42. Designing LLM benchmarks: MMLU, GSM8K, HELM
 
@@ -830,7 +830,7 @@ MMLU: 57 multi-domain academic knowledge tests, multi-choice, measures capabilit
 
 **Follow-ups:** What is contamination in benchmarks? How do you track real-world LLM quality?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-designing-llm-benchmarks-mmlu-gsm8k-helm?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-designing-llm-benchmarks-mmlu-gsm8k-helm)
 
 ### 43. Detecting distribution shift in production LLM traffic
 
@@ -849,7 +849,7 @@ Three layers: (1) embedding-based topic shift: sample incoming queries, embed, c
 
 **Follow-ups:** When does drift NOT indicate a real change? What is adversarial drift?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-detecting-distribution-shift-in-production-llm-traffic?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-detecting-distribution-shift-in-production-llm-traffic)
 
 ### 44. Measuring hallucination rate without expensive human eval
 
@@ -868,7 +868,7 @@ Hallucination rate is the fraction of outputs that contain content not supported
 
 **Follow-ups:** How big does your eval set need to be to trust a 1% improvement?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-measuring-hallucination-rate-without-expensive-human-eval?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-measuring-hallucination-rate-without-expensive-human-eval)
 
 ### 45. A/B testing LLM products
 
@@ -887,7 +887,7 @@ Best practice 2025-2026: (1) interleaved A/B testing: randomly assign user reque
 
 **Follow-ups:** How do you handle long-tail / power-user segments?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-ab-testing-llm-products?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-ab-testing-llm-products)
 
 ### 46. Evaluating reasoning models vs chat models
 
@@ -906,7 +906,7 @@ Reasoning models (o1, o3, DeepSeek-R1) generate internal chain-of-thought tokens
 
 **Follow-ups:** What is the "reasoning tax"? When does CoT reasoning hurt?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-evaluating-reasoning-models-vs-chat-models?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-evaluating-reasoning-models-vs-chat-models)
 
 ---
 
@@ -929,7 +929,7 @@ Speculative decoding uses a small "draft" model to generate K candidate tokens a
 
 **Follow-ups:** What's a good draft model? How does Medusa / EAGLE / look-ahead decoding differ?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-speculative-decoding-when-it-helps-when-it-fails?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-speculative-decoding-when-it-helps-when-it-fails)
 
 ### 48. Dynamic batching strategies for LLM inference
 
@@ -948,7 +948,7 @@ LLM decoding is iterative (token-by-token) and requests share structure: they al
 
 **Follow-ups:** Explain TTFT vs TPOT tradeoff.
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-dynamic-batching-strategies-for-llm-inference?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-dynamic-batching-strategies-for-llm-inference)
 
 ### 49. Quantization: INT8, INT4, FP8, AWQ, GPTQ
 
@@ -967,7 +967,7 @@ PTQ (post-training quantization) trades memory and latency for some accuracy los
 
 **Follow-ups:** Why do some layers resist quantization? What is QAT vs PTQ?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-quantization-int8-int4-fp8-awq-gptq?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-quantization-int8-int4-fp8-awq-gptq)
 
 ### 50. Paged attention (vLLM)
 
@@ -986,7 +986,7 @@ Paged attention (Kwon et al., SOSP 2023) borrows virtual-memory paging for KV ca
 
 **Follow-ups:** What is prefix sharing? How do beam search and paged attention interact?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-paged-attention-vllm?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-paged-attention-vllm)
 
 ### 51. Latency vs throughput vs cost: choosing batch sizes
 
@@ -1005,7 +1005,7 @@ Three objectives are typically in tension: (1) p50/p99 latency (TTFT + TPOT) for
 
 **Follow-ups:** When do you prioritize latency over throughput? How does prompt caching factor in?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-latency-vs-throughput-vs-cost-choosing-batch-sizes?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-latency-vs-throughput-vs-cost-choosing-batch-sizes)
 
 ### 52. Scaling LLM inference for traffic spikes
 
@@ -1024,7 +1024,7 @@ Strategy stack 2025-2026: (1) autoscaling GPU pools (Kubernetes + custom metrics
 
 **Follow-ups:** How do you measure SLI / SLO for an LLM app?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-scaling-llm-inference-for-traffic-spikes?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-scaling-llm-inference-for-traffic-spikes)
 
 ### 53. FlashAttention and why it matters
 
@@ -1043,7 +1043,7 @@ FlashAttention (Dao et al., 2022; v2 in 2023; v3 in 2024) is an IO-aware exact a
 
 **Follow-ups:** What is FlashDecoding? How does paged attention compose with FlashAttention?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-flashattention-and-why-it-matters?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-flashattention-and-why-it-matters)
 
 ### 54. Prompt caching and KV cache prefix sharing
 
@@ -1062,7 +1062,7 @@ Many production prompts have large static prefixes (system prompt, tool definiti
 
 **Follow-ups:** How does it interact with retrieval updates? What about RadixAttention?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-prompt-caching-and-kv-cache-prefix-sharing?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-prompt-caching-and-kv-cache-prefix-sharing)
 
 ---
 
@@ -1085,7 +1085,7 @@ Bias is error from wrong assumptions (underfitting); variance is sensitivity to 
 
 **Follow-ups:** How does ensemble learning relate? Why does early stopping reduce variance?
 
-**Difficulty:** Mid - Senior
+**Difficulty:** Mid - Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-bias-variance-tradeoff-practical-rules-of-thumb?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-bias-variance-tradeoff-practical-rules-of-thumb)
 
 ### 56. L1 vs L2 regularization
 
@@ -1104,7 +1104,7 @@ L2 (weight decay) adds a quadratic penalty on weights: lambda * sum(w^2). It shr
 
 **Follow-ups:** What is weight decay vs L2 reg in Adam? Why doesn't L1 work well in NN training?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-l1-vs-l2-regularization?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-l1-vs-l2-regularization)
 
 ### 57. Precision vs recall vs F1 vs AUC
 
@@ -1123,7 +1123,7 @@ Precision = TP/(TP+FP): "of what I predicted positive, how many are right". Reca
 
 **Follow-ups:** What is calibration? Why is ROC-AUC misleading on imbalanced data?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-precision-vs-recall-vs-f1-vs-auc?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-precision-vs-recall-vs-f1-vs-auc)
 
 ### 58. Handling severe class imbalance in production
 
@@ -1142,7 +1142,7 @@ Layered approach: (1) data-level: resampling (oversample minority via SMOTE/ADAS
 
 **Follow-ups:** Why does accuracy break? How does threshold-tuning compare to cost-sensitive learning?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-handling-severe-class-imbalance-in-production?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-handling-severe-class-imbalance-in-production)
 
 ### 59. Word embeddings, from classic to modern retrieval
 
@@ -1161,7 +1161,7 @@ Embeddings are dense vectors representing items (words, sentences, users, produc
 
 **Follow-ups:** What are hard negatives? Why does contrastive learning help embedders?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-word-embeddings-from-classic-to-modern-retrieval?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-word-embeddings-from-classic-to-modern-retrieval)
 
 ### 60. Overfitting: detection and prevention
 
@@ -1180,7 +1180,7 @@ Overfitting = model captures noise/idiosyncrasies in training data, fails to gen
 
 **Follow-ups:** What is double descent? How does dropout regularize?
 
-**Difficulty:** Junior - Mid
+**Difficulty:** Junior - Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-overfitting-detection-and-prevention?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-overfitting-detection-and-prevention)
 
 ### 61. Diagnosing bias vs variance by experiment
 
@@ -1199,7 +1199,7 @@ Workflow: (1) Plot learning curves: train and validation error vs training set s
 
 **Follow-ups:** What is ensemble learning vs stacking? Why does boosting reduce bias and bagging reduce variance?
 
-**Difficulty:** Mid - Senior
+**Difficulty:** Mid - Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-diagnosing-bias-vs-variance-by-experiment?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-diagnosing-bias-vs-variance-by-experiment)
 
 ### 62. Grid search vs random search vs Bayesian optimization
 
@@ -1218,16 +1218,16 @@ Grid search enumerates all combinations over a Cartesian grid: wasteful when mos
 
 **Follow-ups:** What is warm-starting? Why does BO assume smoothness?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/llm-and-ml-concepts-grid-search-vs-random-search-vs-bayesian-optimization?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=llm-and-ml-concepts-grid-search-vs-random-search-vs-bayesian-optimization)
 
 ---
 
 <div align="center">
 
-**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions — plus daily matched AI roles and agent-drafted application answers.**
+**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions, plus daily matched AI roles and agent-drafted application answers.**
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 
-<sub>Every question traces to a public candidate report — sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
+<sub>Every question traces to a public candidate report, sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
 
 </div>

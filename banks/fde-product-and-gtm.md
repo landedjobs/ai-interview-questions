@@ -2,11 +2,11 @@
 
 <div align="center">
 
-# 🤝 FDE, AI Product & GTM Roles — Real Interview Questions
+# 🤝 FDE, AI Product & GTM Roles: Real Interview Questions
 
 ![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/66%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
 
-**Decomposition cases, customer scenarios, and product-sense questions from Palantir, OpenAI, Anthropic, Sierra, Clay and more — reported by real candidates.**
+**Decomposition cases, customer scenarios, and product-sense questions from Palantir, OpenAI, Anthropic, Sierra, Clay and more, reported by real candidates.**
 
 </div>
 
@@ -20,7 +20,7 @@ Per [Sierra's Apr 2026 engineering blog](https://sierra.ai/blog/the-ai-native-in
 
 Per [OpenAI FDE's process write-up (Mar 2026)](https://gaijineer.co/openai-forward-deployed-engineer-interview-process), the OpenAI loop evaluates whether you can "build production AI systems, present them clearly, and design solutions for openness, not just ship a working demo." Coding is present but compressed relative to SWE loops; the bulk of the loop is ownership storytelling, ambiguous-design rounds, and a take-home demo.
 
-Per a [candidate report on r/salesengineers](https://www.reddit.com/r/salesengineers/comments/1iawyr3/databricks_solution_architect_interview/), the Databricks SA loop "tests you hard on Spark internals, debugging customer scenarios, and your ability to communicate complex technical concepts" — a profile that mirrors solutions architect roles at Snowflake and Salesforce.
+Per a [candidate report on r/salesengineers](https://www.reddit.com/r/salesengineers/comments/1iawyr3/databricks_solution_architect_interview/), the Databricks SA loop "tests you hard on Spark internals, debugging customer scenarios, and your ability to communicate complex technical concepts", a profile that mirrors solutions architect roles at Snowflake and Salesforce.
 
 **Takeaway:** where SWE loops weight coding 60-80% of the score, customer-facing loops weight coding 30-50% and shift the remaining 50-70% to (a) customer-scenario sims, (b) AI-specific tech depth (RAG/agents/evals), (c) ownership, and (d) AI-native prototyping. Code is necessary but not sufficient.
 
@@ -31,7 +31,7 @@ Two FDE archetypes emerged in 2025-2026: [FDE Hub's conversation with Kanav Bhat
 ## Per-role prep cheat sheets
 
 <details>
-<summary><b>Forward Deployed Engineer — Palantir · OpenAI · Anthropic · Databricks · Rippling · Glean · Scale · ElevenLabs · Ramp</b></summary>
+<summary><b>Forward Deployed Engineer, Palantir · OpenAI · Anthropic · Databricks · Rippling · Glean · Scale · ElevenLabs · Ramp</b></summary>
 
 1. **Drill decomposition**: memorize [Coditioning's prompts](https://www.coditioning.com/blog/703/palantir-swe-decomposition-interview) (hospital beds, disaster response, supply chain). Practice sketching end-to-end in 40 minutes, saving 10 for failure modes.
 2. **Rehearse client simulations**: open with what you would tell the customer, not what you would build. "The deployment slipped, here's the plan, here is the new commitment, here's what we cut." ([Exponent](https://www.tryexponent.com/blog/forward-deployed-engineer-interview-the-definitive-2026-guide-fde))
@@ -42,7 +42,7 @@ Two FDE archetypes emerged in 2025-2026: [FDE Hub's conversation with Kanav Bhat
 </details>
 
 <details>
-<summary><b>Solutions Engineer / Solutions Architect — Databricks · Snowflake · Salesforce · Glean · Harvey · Anthropic</b></summary>
+<summary><b>Solutions Engineer / Solutions Architect, Databricks · Snowflake · Salesforce · Glean · Harvey · Anthropic</b></summary>
 
 1. **Tech depth on vendor primitives**: Spark, Delta, Snowflake micro-partitions, Salesforce Agentforce Topics/Actions, Anthropic constitutional AI, Glean enterprise search; one deep card on each.
 2. **Discovery before demo**: always ask 4-6 questions before sketching. The vibe check fails when you lead with the demo. ([r/techsales](https://www.reddit.com/r/techsales/comments/1mycg6k/final_stage_at_anthropic_anyone_closed_the/))
@@ -53,18 +53,18 @@ Two FDE archetypes emerged in 2025-2026: [FDE Hub's conversation with Kanav Bhat
 </details>
 
 <details>
-<summary><b>AI Product Engineer — OpenAI · Anthropic · OpenEvidence · Glean · Harvey · Sierra</b></summary>
+<summary><b>AI Product Engineer, OpenAI · Anthropic · OpenEvidence · Glean · Harvey · Sierra</b></summary>
 
 1. **Stack the eval ladder**: offline regression set, online A/B, human-in-the-loop spot-check, red-team set. For every feature, define all four. ([Exponent](https://www.tryexponent.com/blog/forward-deployed-engineer-interview-the-definitive-2026-guide-fde))
 2. **Decompose model vs. product**: be ready for "fix the model vs. fix the product" questions; show you've separated them in prior work. ([LockedIn AI](https://www.lockedinai.com/blog/ai-product-manager-interview-questions))
-3. **Prepare the rollback narrative**: "A new model version launched and quality dropped 1% — what do you do for 10 days?" ([LockedIn AI](https://www.lockedinai.com/blog/ai-product-manager-interview-questions))
+3. **Prepare the rollback narrative**: "A new model version launched and quality dropped 1%, what do you do for 10 days?" ([LockedIn AI](https://www.lockedinai.com/blog/ai-product-manager-interview-questions))
 4. **Pick a domain you know deeply**: if applying to Harvey, know the legal workflow. If OpenAI, know ChatGPT and the developer platform. ([Substack](https://ridhimakhurana.substack.com/p/the-openai-pm-interview-process-what))
 5. **Sketch an AI guardrail UX for one failure mode**: e.g., a hallucinated citation indicator + verifying affordance. ([LockedIn AI](https://www.lockedinai.com/blog/ai-product-manager-interview-questions))
 
 </details>
 
 <details>
-<summary><b>AI PM — OpenAI · Anthropic · OpenEvidence · Sierra · Glean</b></summary>
+<summary><b>AI PM, OpenAI · Anthropic · OpenEvidence · Sierra · Glean</b></summary>
 
 1. **Metric design fluency**: layer-cake metrics with a North Star, leading indicators, guardrails. Always state the rollout (canary % and ramp criteria).
 2. **Eval strategy fluency**: 200-500 hand-labeled examples, AI-judge for scale, weekly human spot-check on a sample. ([LockedIn AI](https://www.lockedinai.com/blog/ai-product-manager-interview-questions))
@@ -75,7 +75,7 @@ Two FDE archetypes emerged in 2025-2026: [FDE Hub's conversation with Kanav Bhat
 </details>
 
 <details>
-<summary><b>GTM Engineer — Clay · 11x · Artisan · Apollo · ZoomInfo</b></summary>
+<summary><b>GTM Engineer, Clay · 11x · Artisan · Apollo · ZoomInfo</b></summary>
 
 1. **Show Clay fluency**: walk through a Clay table you have built, naming the enrichment waterfall provider-by-provider. ([r/Cluely](https://www.reddit.com/r/Cluely/comments/1udkg7s/clay_gtm_engineer_interview_summer_2026/))
 2. **Design the outbound motion end-to-end**: ICP → prospecting → enrichment → personalization → delivery → measurement; name the bottlenecks at each stage.
@@ -121,7 +121,7 @@ Open by restating the problem and asking 3-5 clarifying questions: what is the b
 
 **Follow-ups:** "How do you handle hospital bed diversion during a mass casualty event?" · "Your staging model predicts low demand; an unforeseen event happens. What fails first?" · "How do you explain your dispatcher UI trade-off to a union who fears surveillance?"
 
-**Difficulty:** Mid-to-senior. Signaled as the hardest round for candidates who default to algorithmics rather than discovery.
+**Difficulty:** Mid-to-senior. Signaled as the hardest round for candidates who default to algorithmics rather than discovery. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-reduce-9-1-1-emergency-response-times-in-a-major-city?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-reduce-9-1-1-emergency-response-times-in-a-major-city)
 
 ### 2. Reduce airport security wait times
 
@@ -139,7 +139,7 @@ Frame stakeholders (TSA, airlines, passengers, airport ops). Surfaces (e.g., loa
 
 **Follow-ups:** "A flight is delayed; how does your model propagate?" · "What does success look like at 30 days, 90 days?" · "A passenger opts out of facial recognition; what changes?"
 
-**Difficulty:** Mid. Most candidates fail on prioritization, not on identifying entities.
+**Difficulty:** Mid. Most candidates fail on prioritization, not on identifying entities. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-reduce-airport-security-wait-times?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-reduce-airport-security-wait-times)
 
 ### 3. Design a system for a hospital to allocate beds
 
@@ -157,7 +157,7 @@ Named entities (Patient, Bed, Unit, StaffShift, TransferRequest, SeverityScore).
 
 **Follow-ups:** "Who can override the optimizer?" · "How do you keep PHI out of your logging?" · "A patient needs isolation but no isolation bed is free. Walk me through the decision."
 
-**Difficulty:** Senior. Co-designed with Palantir's Foundry/Hospital offering.
+**Difficulty:** Senior. Co-designed with Palantir's Foundry/Hospital offering. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-a-system-for-a-hospital-to-allocate-beds?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-a-system-for-a-hospital-to-allocate-beds)
 
 ### 4. Design a disaster-response coordination system
 
@@ -175,7 +175,7 @@ Users: incident commander, operations chiefs (fire/police/medical), field respon
 
 **Follow-ups:** "Cell towers are down; what changes?" · "How do you prevent rumor-driven evacuation orders?"
 
-**Difficulty:** Senior. Tests breadth under time pressure.
+**Difficulty:** Senior. Tests breadth under time pressure. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-a-disaster-response-coordination-system?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-a-disaster-response-coordination-system)
 
 ### 5. Model a supply-chain tracking system
 
@@ -193,7 +193,7 @@ Entities: Supplier, SKU, PO, Shipment, Container, Warehouse, CustomsEvent. Event
 
 **Follow-ups:** "How do you prevent duplicated alerts when multiple systems see the same shipment?" · "A regional event causes 50 simultaneous exceptions; walk me through prioritization."
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-model-a-supply-chain-tracking-system?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-model-a-supply-chain-tracking-system)
 
 ### 6. Emergency bed allocation for a 1100-bed hospital (Palantir TGH deployment)
 
@@ -211,7 +211,7 @@ Reference the actual Palantir Foundry pattern (data integration → ontology →
 
 **Follow-ups:** "What would you not build in the first 6 weeks?"
 
-**Difficulty:** Senior (FDE).
+**Difficulty:** Senior (FDE). · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-emergency-bed-allocation-for-a-1100-bed-hospital-palantir-tg?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-emergency-bed-allocation-for-a-1100-bed-hospital-palantir-tg)
 
 ### 7. Rescue a "data quality degrades every Tuesday" pipeline
 
@@ -229,7 +229,7 @@ The weekly Tuesday pattern strongly implies a Monday-night batch job (e.g., invo
 
 **Follow-ups:** "How does your alerting avoid pager fatigue during a known weekend batch?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rescue-a-data-quality-degrades-every-tuesday-pipeline?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rescue-a-data-quality-degrades-every-tuesday-pipeline)
 
 ---
 
@@ -237,7 +237,7 @@ The weekly Tuesday pattern strongly implies a Monday-night batch job (e.g., invo
 
 These rounds simulate a live customer interaction or scenario. The interviewer acts as CIO/CTO/VP and the candidate must scope, push back, translate, and rescue.
 
-### 8. The deployment slipped by three weeks — tell the customer's CTO
+### 8. The deployment slipped by three weeks: tell the customer's CTO
 
 > "The deployment slipped by three weeks. The customer's CTO is on the call. Tell them."
 
@@ -253,9 +253,9 @@ Open with the headline ("I'm calling because the milestone we committed to has s
 
 **Follow-ups:** "What do you say if the CTO asks for a discount?" · "What do you tell your own PM?"
 
-**Difficulty:** Mid. Tests accountability language.
+**Difficulty:** Mid. Tests accountability language. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-the-deployment-slipped-by-three-weeks-tell-the-customers-cto?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-the-deployment-slipped-by-three-weeks-tell-the-customers-cto)
 
-### 9. Customer wants a feature that would compromise data governance — push back
+### 9. Customer wants a feature that would compromise data governance: push back
 
 > "The customer wants a feature that would compromise data governance. Push back without losing the relationship."
 
@@ -271,7 +271,7 @@ Acknowledge the underlying goal ("you want a unified view"). State the specific 
 
 **Follow-ups:** "What if the customer says 'our competitors don't have this limitation'?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-customer-wants-a-feature-that-would-compromise-data-governan?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-customer-wants-a-feature-that-would-compromise-data-governan)
 
 ### 10. Explain why your RAG system can't guarantee 100% accuracy to a non-technical VP
 
@@ -289,7 +289,7 @@ Use a non-software analogy (think of a junior research analyst). State the syste
 
 **Follow-ups:** "What's your eval set size and how did you pick it?" · "If the customer's CSAT is wrong, who owns the recovery?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-explain-why-your-rag-system-cant-guarantee-100-accuracy-to-a?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-explain-why-your-rag-system-cant-guarantee-100-accuracy-to-a)
 
 ### 11. Customer's IT team wants to deploy in their VPC but won't give production credentials
 
@@ -301,13 +301,13 @@ Use a non-software analogy (think of a junior research analyst). State the syste
 
 <details><summary>💡 Strong answer</summary>
 
-Don't fight the constraint — fold it into the design. Propose a deployment model where your team never holds production credentials: deploy via the customer's own Terraform / Pulumi pipeline, run automated integration tests against a sandbox tenant, and ship via a customer-owned CI/CD with break-glass only on the customer's side. Reference any prior deployment experience with restricted-access deployments. Offer to write a "least-privilege access model" document jointly with the customer's security team.
+Don't fight the constraint, fold it into the design. Propose a deployment model where your team never holds production credentials: deploy via the customer's own Terraform / Pulumi pipeline, run automated integration tests against a sandbox tenant, and ship via a customer-owned CI/CD with break-glass only on the customer's side. Reference any prior deployment experience with restricted-access deployments. Offer to write a "least-privilege access model" document jointly with the customer's security team.
 
 </details>
 
 **Follow-ups:** "How do you debug in production if you can't touch prod?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-customers-it-team-wants-to-deploy-in-their-vpc-but-wont-give?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-customers-it-team-wants-to-deploy-in-their-vpc-but-wont-give)
 
 ### 12. Rapid scoping: a company wants to use AI to solve "X business problem"
 
@@ -325,9 +325,9 @@ Spend the first 10-15 minutes asking: who is the user, what is the workflow toda
 
 **Follow-ups:** "How do you decide fine-tune vs. RAG vs. prompt?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rapid-scoping-a-company-wants-to-use-ai-to-solve-x-business-?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rapid-scoping-a-company-wants-to-use-ai-to-solve-x-business-)
 
-### 13. CSM interview — long-term value delivery and expansion
+### 13. CSM interview: long-term value delivery and expansion
 
 > The Anthropic CSM round tests "the candidate's thought process around long-term value delivery; how you handle difficult customer situations and drive expansion revenue." (verbatim intent)
 
@@ -343,9 +343,9 @@ Walk through a real customer where usage plateaued. State what you did to diagno
 
 **Follow-ups:** "What do you do when your VP is asking for an upsell that the user research indicates will hurt adoption?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-csm-interview-long-term-value-delivery-and-expansion?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-csm-interview-long-term-value-delivery-and-expansion)
 
-### 14. Anthropic case study — go-to-market challenge
+### 14. Anthropic case study: go-to-market challenge
 
 > "Approach a complex customer scenario or go-to-market challenge." (verbatim intent)
 
@@ -361,7 +361,7 @@ Use a simple structure: (1) frame the goal and the metric; (2) identify the buye
 
 **Follow-ups:** "How do you de-risk the experiment in week 1?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-anthropic-case-study-go-to-market-challenge?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-anthropic-case-study-go-to-market-challenge)
 
 ### 15. Healthcare client adoption is at 12% after 90 days
 
@@ -373,13 +373,13 @@ Use a simple structure: (1) frame the goal and the metric; (2) identify the buye
 
 <details><summary>💡 Strong answer</summary>
 
-Refuse to take the bait — investigate before drawing conclusions. Data: (a) usage distribution (is 80% of usage from 12% of users?), (b) workflow adherence (are users abandoning the workflow mid-flow?), (c) cohort analysis (which role, site, or team is underperforming?). Talk to actual users, not the IT sponsor. Three buckets emerge: onboarding (training, SSO rollout friction), workflow fit (the feature is built but doesn't fit a daily workflow), and value (the user's manager has not set the expectation). Blame likely splits ~30/30/40 across these. Propose a single action for each.
+Refuse to take the bait, investigate before drawing conclusions. Data: (a) usage distribution (is 80% of usage from 12% of users?), (b) workflow adherence (are users abandoning the workflow mid-flow?), (c) cohort analysis (which role, site, or team is underperforming?). Talk to actual users, not the IT sponsor. Three buckets emerge: onboarding (training, SSO rollout friction), workflow fit (the feature is built but doesn't fit a daily workflow), and value (the user's manager has not set the expectation). Blame likely splits ~30/30/40 across these. Propose a single action for each.
 
 </details>
 
 **Follow-ups:** "How do you message this back to the client without losing trust?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-healthcare-client-adoption-is-at-12-after-90-days?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-healthcare-client-adoption-is-at-12-after-90-days)
 
 ### 16. Logistics firm wants an AI agent for automated shipment rerouting
 
@@ -391,13 +391,13 @@ Refuse to take the bait — investigate before drawing conclusions. Data: (a) us
 
 <details><summary>💡 Strong answer</summary>
 
-Eval framework: (a) a held-out scenario set of historical disruption events (hurricane, port strike, fuel spike) with shipping-cost and SLA outcomes; (b) a synthetic scenario generator for long-tail events; (c) a daily regression suite against live traffic; (d) human spot-checks on the highest-stakes decisions. The eval must measure "would-have-rerouted-to" rather than just "did-route." Multi-objective tradeoff: cost vs. SLA — define a non-dominated frontier; flag any reroute that violates the 99% SLA regardless of cost savings. Iterate the eval alongside the agent monthly.
+Eval framework: (a) a held-out scenario set of historical disruption events (hurricane, port strike, fuel spike) with shipping-cost and SLA outcomes; (b) a synthetic scenario generator for long-tail events; (c) a daily regression suite against live traffic; (d) human spot-checks on the highest-stakes decisions. The eval must measure "would-have-rerouted-to" rather than just "did-route." Multi-objective tradeoff: cost vs. SLA, define a non-dominated frontier; flag any reroute that violates the 99% SLA regardless of cost savings. Iterate the eval alongside the agent monthly.
 
 </details>
 
 **Follow-ups:** "What if the cost savings cause SLA dips in 0.5% of cases that your eval missed?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-logistics-firm-wants-an-ai-agent-for-automated-shipment-rero?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-logistics-firm-wants-an-ai-agent-for-automated-shipment-rero)
 
 ### 17. Rescuing a failing deployment at 2 AM
 
@@ -415,7 +415,7 @@ Eval framework: (a) a held-out scenario set of historical disruption events (hur
 
 **Follow-ups:** "How do you tell the customer the all-hands demo is at risk?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rescuing-a-failing-deployment-at-2-am?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rescuing-a-failing-deployment-at-2-am)
 
 ---
 
@@ -437,7 +437,7 @@ Introduce a thin middleware adapter. Token mapping: OAuth 1.0 signed requests �
 
 **Follow-ups:** "How do you test the integration end-to-end?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-auth-bridge-client-on-oauth-10-your-platform-on-oauth-20?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-auth-bridge-client-on-oauth-10-your-platform-on-oauth-20)
 
 ### 19. AI agent inconsistent in production but worked in staging
 
@@ -449,13 +449,13 @@ Introduce a thin middleware adapter. Token mapping: OAuth 1.0 signed requests �
 
 <details><summary>💡 Strong answer</summary>
 
-Three categories of causes: data drift (input distribution changed — new topic, more punctuation, more non-English), environment (varying temperature, model version, retrieval index snapshot), and upstream API change (model provider changed behavior, embeddings model was swapped, prompt cache invalidation). Mitigation: instrument the input distribution, log every prompt/response with a hashed sample set, correlate inconsistency spikes with upstream API changes, enable a small human-eval queue on production traffic, and add an alerting rule (e.g., inconsistency rate > 5% over 30 min).
+Three categories of causes: data drift (input distribution changed, new topic, more punctuation, more non-English), environment (varying temperature, model version, retrieval index snapshot), and upstream API change (model provider changed behavior, embeddings model was swapped, prompt cache invalidation). Mitigation: instrument the input distribution, log every prompt/response with a hashed sample set, correlate inconsistency spikes with upstream API changes, enable a small human-eval queue on production traffic, and add an alerting rule (e.g., inconsistency rate > 5% over 30 min).
 
 </details>
 
 **Follow-ups:** "Your eval says quality is fine but the customer disagrees. What now?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-ai-agent-inconsistent-in-production-but-worked-in-staging?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-ai-agent-inconsistent-in-production-but-worked-in-staging)
 
 ### 20. Multi-tenant SaaS monitoring with per-client SLAs
 
@@ -473,7 +473,7 @@ Tenant-scoped metrics with label propagation. Dynamic thresholds per tier (gold 
 
 **Follow-ups:** "How do you avoid alert fatigue across 200 enterprise tenants?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-multi-tenant-saas-monitoring-with-per-client-slas?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-multi-tenant-saas-monitoring-with-per-client-slas)
 
 ### 21. Reliable webhook integration with a flapping client
 
@@ -491,7 +491,7 @@ Exponential backoff up to a cap. Idempotent event IDs keyed on client-side event
 
 **Follow-ups:** "What if the client's clock is skewed?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-reliable-webhook-integration-with-a-flapping-client?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-reliable-webhook-integration-with-a-flapping-client)
 
 ### 22. Diagnose high latency in an LLM inference pipeline
 
@@ -509,7 +509,7 @@ Stack-by-stack: TTFT (time to first token) vs. inter-token latency. Bucket by ca
 
 **Follow-ups:** "How do you latency-budget a multi-tenant app where this is one of five model calls?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-diagnose-high-latency-in-an-llm-inference-pipeline?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-diagnose-high-latency-in-an-llm-inference-pipeline)
 
 ### 23. How do you know your AI system is actually working well?
 
@@ -527,7 +527,7 @@ Define eval tiers: (1) unit tests for the prompt system (does the prompt assembl
 
 **Follow-ups:** "What is the difference between offline and online evals, and when do they disagree?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-how-do-you-know-your-ai-system-is-actually-working-well?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-how-do-you-know-your-ai-system-is-actually-working-well)
 
 ### 24. RAG embedding selection, chunking, retrieval, reranking tradeoffs
 
@@ -545,7 +545,7 @@ Chunking: hybrid (recursive char + sentence) with overlap; structure-aware for t
 
 **Follow-ups:** "When would you recommend fine-tuning over RAG?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rag-embedding-selection-chunking-retrieval-reranking-tradeof?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rag-embedding-selection-chunking-retrieval-reranking-tradeof)
 
 ### 25. Fine-tune vs. RAG vs. prompt engineering
 
@@ -563,7 +563,7 @@ Decision tree: out-of-the-box prompt first; then RAG when knowledge is external;
 
 **Follow-ups:** "How do you evaluate after fine-tuning?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-fine-tune-vs-rag-vs-prompt-engineering?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-fine-tune-vs-rag-vs-prompt-engineering)
 
 ### 26. Guardrails for production LLM apps
 
@@ -581,7 +581,7 @@ Input validation (jailbreak detection, PII redaction), output validation (schema
 
 **Follow-ups:** "How do you load test your guardrails?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-guardrails-for-production-llm-apps?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-guardrails-for-production-llm-apps)
 
 ### 27. Constitutional AI, prompt injections, guardrailing (Anthropic SE)
 
@@ -599,7 +599,7 @@ For each, give a 30-second definition + a real-world failure mode + a mitigation
 
 **Follow-ups:** "How do you detect indirect prompt injection from inside retrieved documents?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-constitutional-ai-prompt-injections-guardrailing-anthropic-s?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-constitutional-ai-prompt-injections-guardrailing-anthropic-s)
 
 ### 28. Distributed inference at high request volume
 
@@ -617,7 +617,7 @@ Stateful inference server pool with autoscaling wrapper (HPA on queue depth + GP
 
 **Follow-ups:** "What is the cost roof for a customer at this scale?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-distributed-inference-at-high-request-volume?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-distributed-inference-at-high-request-volume)
 
 ### 29. GPU scheduling and batching for LLM inference workloads
 
@@ -635,7 +635,7 @@ Continuous batching (vs. static), paged attention (vLLM-style), prefix-cache reu
 
 **Follow-ups:** "How do you A/B test a vLLM swap in production?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-gpu-scheduling-and-batching-for-llm-inference-workloads?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-gpu-scheduling-and-batching-for-llm-inference-workloads)
 
 ### 30. Real-time streaming architecture with fault tolerance and observability
 
@@ -653,7 +653,7 @@ Event-driven with backpressure (e.g., Kafka / NATS), idempotent consumers, DLQ, 
 
 **Follow-ups:** "How do you replay a 6-hour outage without re-billing the customer?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-real-time-streaming-architecture-with-fault-tolerance-and-ob?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-real-time-streaming-architecture-with-fault-tolerance-and-ob)
 
 ### 31. Verify the functional correctness of an LLM-based recommendation system
 
@@ -671,7 +671,7 @@ Build a labeling rubric with 4-5 dimensions (relevance, freshness, novelty, dive
 
 **Follow-ups:** "What is your statistical power and how do you avoid false positives?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-verify-the-functional-correctness-of-an-llm-based-recommenda?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-verify-the-functional-correctness-of-an-llm-based-recommenda)
 
 ---
 
@@ -693,7 +693,7 @@ Choose a tight, tasteful use case (e.g., a Slack-integrated "incident postmortem
 
 **Follow-ups (during tech screen, on the take-home):** "Why this chunking strategy? Why not a different retrieval method? What would you change if the dataset was 100x larger?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-openai-fde-take-home-5-hour-build-using-openais-apis?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-openai-fde-take-home-5-hour-build-using-openais-apis)
 
 ### 33. Clay GTM Engineering take-home (20-40 hours)
 
@@ -711,7 +711,7 @@ Choose a Clay-native outbound problem (e.g., inbound company → enriched accoun
 
 **Follow-ups:** "Why this enrichment provider?" · "What is your failure rate?" · "How would this break at 10x scale?"
 
-**Difficulty:** Mid-senior. Reported as a significant time investment.
+**Difficulty:** Mid-senior. Reported as a significant time investment. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-clay-gtm-engineering-take-home-20-40-hours?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-clay-gtm-engineering-take-home-20-40-hours)
 
 ### 34. Sierra AI-native Plan → Build → Review (2-hour build with AI tooling)
 
@@ -729,11 +729,11 @@ Pick a meaningful-but-tractable problem (e.g., a small cohort analysis tool, an 
 
 **Follow-ups:** "How did you decide when to stop iterating?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-sierra-ai-native-plan-build-review-2-hour-build-with-ai-tool?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-sierra-ai-native-plan-build-review-2-hour-build-with-ai-tool)
 
 ### 35. Sierra debugging interview: review and improve a peer's draft PR
 
-> "Given a medium-sized codebase and a draft PR from a colleague that introduces a cross-cutting feature," the task is to "review and improve it — pulling down the code, inspecting the output, and iterating with coding agents to make it better."
+> "Given a medium-sized codebase and a draft PR from a colleague that introduces a cross-cutting feature," the task is to "review and improve it, pulling down the code, inspecting the output, and iterating with coding agents to make it better."
 
 **Sierra · engineering roles · pilot debugging interview** · [source](https://sierra.ai/blog/the-ai-native-interview)
 
@@ -747,7 +747,7 @@ Read the PR top to bottom first. List 4-6 issues (correctness, naming, abstracti
 
 **Follow-ups:** "How do you decide what not to fix?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-sierra-debugging-interview-review-and-improve-a-peers-draft-?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-sierra-debugging-interview-review-and-improve-a-peers-draft-)
 
 ### 36. Salesforce Agentforce demo prep
 
@@ -765,7 +765,7 @@ Build a narrow but realistic use case (e.g., a refund-status conversational agen
 
 **Follow-ups:** "What is the licensing impact of your design?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-salesforce-agentforce-demo-prep?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-salesforce-agentforce-demo-prep)
 
 ### 37. Rapid-prototyping interview: 50-minute build under time pressure
 
@@ -783,7 +783,7 @@ Spend 5 minutes defining the simplest possible success criteria (one input → o
 
 **Follow-ups:** "What would you build next given 3 more hours?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rapid-prototyping-interview-50-minute-build-under-time-press?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rapid-prototyping-interview-50-minute-build-under-time-press)
 
 ---
 
@@ -807,7 +807,7 @@ Use a layer-cake model: top-line North Star (e.g., task completion), supporting 
 
 **Follow-ups:** "If the offline and online metrics disagree, what do you do?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-define-success-metrics-for-a-new-ai-product?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-define-success-metrics-for-a-new-ai-product)
 
 ### 39. Design an eval strategy for a new LLM feature
 
@@ -825,7 +825,7 @@ Start with 200 hand-labeled examples; grow the set from production failures. Def
 
 **Follow-ups:** "How do you detect when your eval set is stale?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-an-eval-strategy-for-a-new-llm-feature?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-an-eval-strategy-for-a-new-llm-feature)
 
 ### 40. Model vs. product tradeoff
 
@@ -843,7 +843,7 @@ Test the model's behavior in a clean, isolated harness first. If the model is wr
 
 **Follow-ups:** "Walk me through an example where you chose product over model."
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-model-vs-product-tradeoff?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-model-vs-product-tradeoff)
 
 ### 41. Bring a new AI feature to market
 
@@ -861,7 +861,7 @@ Frame the user, the value, the cost (compute / engineering), the GTM wedge, the 
 
 **Follow-ups:** "How do you forecast compute costs?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-bring-a-new-ai-feature-to-market?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-bring-a-new-ai-feature-to-market)
 
 ### 42. Launch an AI feature into an existing product
 
@@ -879,7 +879,7 @@ Cohort-by-cohort rollout. Define the canary criteria (eval set, hallucination ra
 
 **Follow-ups:** "How do you handle a model deprecation that breaks a customer?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-launch-an-ai-feature-into-an-existing-product?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-launch-an-ai-feature-into-an-existing-product)
 
 ### 43. Anthropic PM analytical: "How would you measure X?"
 
@@ -897,7 +897,7 @@ Step 1: define the user outcome. Step 2: decompose into a leading indicator (usa
 
 **Follow-ups:** "How do you size the sample?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-anthropic-pm-analytical-how-would-you-measure-x?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-anthropic-pm-analytical-how-would-you-measure-x)
 
 ### 44. Design for a model failure mode
 
@@ -915,7 +915,7 @@ Pick a specific failure mode (e.g., hallucinated citation). Design a UX response
 
 **Follow-ups:** "What's the cost-per-fix envelope?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-for-a-model-failure-mode?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-for-a-model-failure-mode)
 
 ### 45. Design an AI agent for a streaming service
 
@@ -923,7 +923,7 @@ Pick a specific failure mode (e.g., hallucinated citation). Design a UX response
 
 **Sierra · Product Manager / Forward Deployed Engineer · listed in Exponent's Sierra question bank as "Product Manager Software Engineer Forward Deployed Engineer"** · [source](https://www.tryexponent.com/questions?company=sierra-ai)
 
-**What they're testing:** ability to design an AI agent (not a chatbot) — i.e., multi-turn, tool-using, autonomous — for a specific business domain.
+**What they're testing:** ability to design an AI agent (not a chatbot), i.e., multi-turn, tool-using, autonomous, for a specific business domain.
 
 <details><summary>💡 Strong answer</summary>
 
@@ -933,7 +933,7 @@ Define the user's top 3 jobs (e.g., "I want to find a movie the whole family wil
 
 **Follow-ups:** "How do you handle a model that suggests a film the user has already declined?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-an-ai-agent-for-a-streaming-service?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-an-ai-agent-for-a-streaming-service)
 
 ### 46. AI safety tradeoff debate
 
@@ -945,13 +945,13 @@ Define the user's top 3 jobs (e.g., "I want to find a movie the whole family wil
 
 <details><summary>💡 Strong answer</summary>
 
-State the risk explicitly (e.g., "the model can be misused to generate X if we don't add filtering"). State the mitigation (e.g., "we put an output classifier in front of risky content types"). State the residual risk (false positives, false negatives). State the rollback if observed. The point is not to be "safe at all costs" — it's to make the trade-off legible.
+State the risk explicitly (e.g., "the model can be misused to generate X if we don't add filtering"). State the mitigation (e.g., "we put an output classifier in front of risky content types"). State the residual risk (false positives, false negatives). State the rollback if observed. The point is not to be "safe at all costs", it's to make the trade-off legible.
 
 </details>
 
 **Follow-ups:** "What would you do if the customer says our safety measures hurt quality?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-ai-safety-tradeoff-debate?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-ai-safety-tradeoff-debate)
 
 ### 47. Model rollback strategy
 
@@ -969,7 +969,7 @@ Triangulate: is the regression real? (statistical power, segmentation). Is it co
 
 **Follow-ups:** "Who owns the call?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-model-rollback-strategy?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-model-rollback-strategy)
 
 ---
 
@@ -991,7 +991,7 @@ Be specific about a workflow you have built or owned. Name the stages (data inge
 
 **Follow-ups:** "What is your favorite Clay feature?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-clay-first-interview-talk-about-clay-workflow-experience?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-clay-first-interview-talk-about-clay-workflow-experience)
 
 ### 49. Clay hiring manager: GTM workflow design + platform fluency
 
@@ -1009,7 +1009,7 @@ Walk through the take-home linearly. For each major decision, name the alternati
 
 **Follow-ups:** "What would you do if a customer's CRM has rate-limited the API in the middle of a sequence?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-clay-hiring-manager-gtm-workflow-design-platform-fluency?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-clay-hiring-manager-gtm-workflow-design-platform-fluency)
 
 ### 50. Design an enrichment pipeline
 
@@ -1027,7 +1027,7 @@ Treat as a data engineering problem: input → validation → waterfall enrichme
 
 **Follow-ups:** "How do you let reps override black-box decisions without losing training signal?"
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-an-enrichment-pipeline?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-an-enrichment-pipeline)
 
 ### 51. Design an AI-driven outbound motion
 
@@ -1039,13 +1039,13 @@ Treat as a data engineering problem: input → validation → waterfall enrichme
 
 <details><summary>💡 Strong answer</summary>
 
-Start with ICP definition (firmographics, intent signal, technographic). Then prospecting logic (waterfall + intent signal). Then personalization layer (LLM + per-account data; explicit guardrail — low-confidence outputs should ladder to a templated approach). Then delivery (warmup, throttling, inbox rotation). Then measurement (reply rate, meeting set, opt-out rate). Close with risks: spam complaints, brand reputation.
+Start with ICP definition (firmographics, intent signal, technographic). Then prospecting logic (waterfall + intent signal). Then personalization layer (LLM + per-account data; explicit guardrail, low-confidence outputs should ladder to a templated approach). Then delivery (warmup, throttling, inbox rotation). Then measurement (reply rate, meeting set, opt-out rate). Close with risks: spam complaints, brand reputation.
 
 </details>
 
 **Follow-ups:** "How do you detect when your model is generating high-quality personalizations that are still low-converting?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-design-an-ai-driven-outbound-motion?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-design-an-ai-driven-outbound-motion)
 
 ### 52. Clay take-home: purpose and grading
 
@@ -1063,7 +1063,7 @@ A "clean, well-reasoned" submission means: a short brief that names the problem 
 
 **Follow-ups:** "Tell me one thing you considered doing and didn't."
 
-**Difficulty:** Mid-senior.
+**Difficulty:** Mid-senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-clay-take-home-purpose-and-grading?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-clay-take-home-purpose-and-grading)
 
 ### 53. Anthropic GTM: research and persona depth
 
@@ -1081,7 +1081,7 @@ Show 3-5 hours of work in 30 minutes. Pick a target industry (e.g., life science
 
 **Follow-ups:** "What would you do in week 1?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-anthropic-gtm-research-and-persona-depth?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-anthropic-gtm-research-and-persona-depth)
 
 ---
 
@@ -1105,7 +1105,7 @@ Be honest and specific. Cite a time you chose to ship something ugly-but-working
 
 **Follow-ups:** "Tell me about a deployment that didn't go well."
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-why-fde-and-not-regular-swe?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-why-fde-and-not-regular-swe)
 
 ### 55. Most technically challenging project you've owned end-to-end
 
@@ -1113,7 +1113,7 @@ Be honest and specific. Cite a time you chose to ship something ugly-but-working
 
 **FDE employers · Hiring Manager behavioral** · [source](https://www.tryexponent.com/blog/forward-deployed-engineer-interview-the-definitive-2026-guide-fde)
 
-**What they're testing:** end-to-end ownership signals; the candidate's mental model of "end-to-end" — not just shipping code, but understanding the customer, the org, and the failure modes.
+**What they're testing:** end-to-end ownership signals; the candidate's mental model of "end-to-end", not just shipping code, but understanding the customer, the org, and the failure modes.
 
 <details><summary>💡 Strong answer</summary>
 
@@ -1123,7 +1123,7 @@ Pick a project where you crossed multiple boundaries (engineering, customer, ops
 
 **Follow-ups:** "What was hardest to communicate to a stakeholder?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-most-technically-challenging-project-youve-owned-end-to-end?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-most-technically-challenging-project-youve-owned-end-to-end)
 
 ### 56. A deployment that went badly
 
@@ -1135,13 +1135,13 @@ Pick a project where you crossed multiple boundaries (engineering, customer, ops
 
 <details><summary>💡 Strong answer</summary>
 
-Show ownership — not "the QA team missed it." Show what you told the customer and when. Show the action you took (rollback vs. forward fix) and why. Show the durable mitigation.
+Show ownership, not "the QA team missed it." Show what you told the customer and when. Show the action you took (rollback vs. forward fix) and why. Show the durable mitigation.
 
 </details>
 
 **Follow-ups:** "What did you change in your team's process?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-a-deployment-that-went-badly?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-a-deployment-that-went-badly)
 
 ### 57. Delivering bad news to a customer
 
@@ -1159,7 +1159,7 @@ Pick a real example (not "ideally I would..."). Walk through what you said, what
 
 **Follow-ups:** "What did you learn about how you personally handle this?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-delivering-bad-news-to-a-customer?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-delivering-bad-news-to-a-customer)
 
 ### 58. Disagreeing with a customer and holding the line
 
@@ -1177,7 +1177,7 @@ Pick a case where you refused a workaround that would have hurt reliability. Sho
 
 **Follow-ups:** "How did the customer respond?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-disagreeing-with-a-customer-and-holding-the-line?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-disagreeing-with-a-customer-and-holding-the-line)
 
 ### 59. Spotting a pattern across customers and changing how your team worked
 
@@ -1195,7 +1195,7 @@ Name the pattern (e.g., "every regulated customer wanted X within week 2"). Name
 
 **Follow-ups:** "Why didn't anyone else do this sooner?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-spotting-a-pattern-across-customers-and-changing-how-your-te?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-spotting-a-pattern-across-customers-and-changing-how-your-te)
 
 ### 60. Operating in an environment you didn't fully understand
 
@@ -1213,7 +1213,7 @@ Pick an example where you had to absorb a vertical (e.g., supply chain, defense,
 
 **Follow-ups:** "What was the most lasting lesson?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-operating-in-an-environment-you-didnt-fully-understand?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-operating-in-an-environment-you-didnt-fully-understand)
 
 ### 61. A technical decision you reversed
 
@@ -1231,7 +1231,7 @@ Pick a real reversal that hurt (not a fake reversal). Show the original reasonin
 
 **Follow-ups:** "What did you tell the team?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-a-technical-decision-you-reversed?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-a-technical-decision-you-reversed)
 
 ### 62. Your first 30/60/90 days in a new FDE role
 
@@ -1249,7 +1249,7 @@ Pick a real reversal that hurt (not a fake reversal). Show the original reasonin
 
 **Follow-ups:** "What is your biggest risk in ramp?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-your-first-306090-days-in-a-new-fde-role?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-your-first-306090-days-in-a-new-fde-role)
 
 ### 63. Why this company specifically?
 
@@ -1267,7 +1267,7 @@ Cite 2-3 concrete company artifacts (a recent post, a customer outcome, a produc
 
 **Follow-ups:** "What would you want to change about us?"
 
-**Difficulty:** Mid.
+**Difficulty:** Mid. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-why-this-company-specifically?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-why-this-company-specifically)
 
 ### 64. Anthropic Culture round: safety and responsible deployment
 
@@ -1279,15 +1279,15 @@ Cite 2-3 concrete company artifacts (a recent post, a customer outcome, a produc
 
 <details><summary>💡 Strong answer</summary>
 
-Have 2-3 examples where you put safety/ethics ahead of velocity (e.g., chose a slower-but-safer deployment, raised a concern early, refused a use case). Show durability — this is not the first time.
+Have 2-3 examples where you put safety/ethics ahead of velocity (e.g., chose a slower-but-safer deployment, raised a concern early, refused a use case). Show durability, this is not the first time.
 
 </details>
 
 **Follow-ups:** "How would you handle a customer who wants to ship a clearly risky use case?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-anthropic-culture-round-safety-and-responsible-deployment?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-anthropic-culture-round-safety-and-responsible-deployment)
 
-### 65. Rippling allows AI in the technical interview — what that signals
+### 65. Rippling allows AI in the technical interview: what that signals
 
 > The recruiter screen says "this is the first interview which allows AI to be used during the interview process."
 
@@ -1303,7 +1303,7 @@ Show how you used AI as a co-pilot (e.g., to generate candidate approaches to a 
 
 **Follow-ups:** "When do you NOT trust the AI output?"
 
-**Difficulty:** Mid-senior. Important company signal: be ready if more companies follow.
+**Difficulty:** Mid-senior. Important company signal: be ready if more companies follow. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-rippling-allows-ai-in-the-technical-interview-what-that-sign?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-rippling-allows-ai-in-the-technical-interview-what-that-sign)
 
 ### 66. BCG X / QuantumBlack: deploy-consulting case framing
 
@@ -1321,7 +1321,7 @@ Standard consulting casing structure (issue tree, hypothesis tree, where-to-play
 
 **Follow-ups:** "What is the minimum viable pilot?"
 
-**Difficulty:** Senior.
+**Difficulty:** Senior. · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/fde-product-and-gtm-bcg-x-quantumblack-deploy-consulting-case-framing?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=fde-product-and-gtm-bcg-x-quantumblack-deploy-consulting-case-framing)
 
 ---
 
@@ -1370,10 +1370,10 @@ Three failure patterns show up in 2025-2026 reports again and again: (1) jumping
 
 <div align="center">
 
-**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions — plus daily matched AI roles and agent-drafted application answers.**
+**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions, plus daily matched AI roles and agent-drafted application answers.**
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 
-<sub>Every question traces to a public candidate report — sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
+<sub>Every question traces to a public candidate report, sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
 
 </div>

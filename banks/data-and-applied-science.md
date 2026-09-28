@@ -2,11 +2,11 @@
 
 <div align="center">
 
-# 📊 Data Science & Applied Science — Real AI Interview Questions
+# 📊 Data Science & Applied Science: Real AI Interview Questions
 
 ![Updated](https://img.shields.io/badge/updated-2026.07-00A86B?style=flat-square) ![Questions](https://img.shields.io/badge/66%20real%20questions-ff5b29?style=flat-square) ![Sources](https://img.shields.io/badge/every%20question-cited-6C2BD9?style=flat-square)
 
-**ML breadth, experimentation, applied LLM and science-presentation questions from Amazon, Netflix, Stripe, Duolingo and more — reported by real candidates.**
+**ML breadth, experimentation, applied LLM and science-presentation questions from Amazon, Netflix, Stripe, Duolingo and more, reported by real candidates.**
 
 </div>
 
@@ -39,7 +39,7 @@ Expected test error decomposes into irreducible noise plus bias-squared plus var
 
 **Follow-ups:** Bias/variance of bagging vs boosting; how cross-validation interacts with both; why ensembles roughly halve variance but not bias.
 
-**Difficulty:** Phone-screen breadth (L4) to Bar Raiser (L7)
+**Difficulty:** Phone-screen breadth (L4) to Bar Raiser (L7) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-bias-variance-trade-off?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-bias-variance-trade-off)
 
 ### 2. L1 vs L2 regularization
 
@@ -77,7 +77,7 @@ Bagging (e.g., Random Forest) trains M models on bootstrap samples and averages 
 
 **Follow-ups:** What's the variance reduction of bagging? Why doesn't boosting help with high-noise labels? Stacking vs blending.
 
-**Difficulty:** Breadth, mid
+**Difficulty:** Breadth, mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-bagging-vs-boosting-vs-random-forest?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-bagging-vs-boosting-vs-random-forest)
 
 ### 4. Handling imbalanced data
 
@@ -96,7 +96,7 @@ Imbalance isn't a modeling problem until metrics say it is: pick a metric that r
 
 **Follow-ups:** When is PR-AUC misleading? Why focal loss works; effect on calibration.
 
-**Difficulty:** Breadth, mid
+**Difficulty:** Breadth, mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-handling-imbalanced-data?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-handling-imbalanced-data)
 
 ### 5. Metric choice for a 0.1%-positive fraud model
 
@@ -115,7 +115,7 @@ ROC-AUC stays high because the vast negative pool gives easy true-negatives; PR-
 
 **Follow-ups:** Threshold selection under shifting prevalence; calibration with Platt vs isotonic; cost-sensitive learning.
 
-**Difficulty:** Depth (L6)
+**Difficulty:** Depth (L6) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-metric-choice-for-a-01-positive-fraud-model?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-metric-choice-for-a-01-positive-fraud-model)
 
 ### 6. Supervised vs unsupervised vs reinforcement learning
 
@@ -134,7 +134,7 @@ Supervised: paired (x, y) - minimize prediction loss against ground-truth labels
 
 **Follow-ups:** Self-supervised vs unsupervised; offline-RL caveats for personalization.
 
-**Difficulty:** Breadth
+**Difficulty:** Breadth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-supervised-vs-unsupervised-vs-reinforcement-learning?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-supervised-vs-unsupervised-vs-reinforcement-learning)
 
 ### 7. Closed-form linear regression vs gradient descent
 
@@ -153,7 +153,7 @@ Closed-form: beta_hat = (X^T X)^(-1) X^T y. Works when n >> p and X^T X is well-
 
 **Follow-ups:** How to handle ill-conditioning; QR vs SVD; regularization numerical stability.
 
-**Difficulty:** Breadth-mid
+**Difficulty:** Breadth-mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-closed-form-linear-regression-vs-gradient-descent?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-closed-form-linear-regression-vs-gradient-descent)
 
 ### 8. Prove logistic loss has a global minimum
 
@@ -172,7 +172,7 @@ NLL with sigmoid: J(theta) = -sum [y_i log sigma(theta x_i) + (1-y_i) log (1 - s
 
 **Follow-ups:** Why doesn't MSE work? Multinomial extension; connection to cross-entropy.
 
-**Difficulty:** Provenance breadth (L6+)
+**Difficulty:** Provenance breadth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-prove-logistic-loss-has-a-global-minimum?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-prove-logistic-loss-has-a-global-minimum)
 
 ### 9. KL divergence vs cross-entropy
 
@@ -191,7 +191,7 @@ KL(p || q) = sum p log(p/q). Cross-entropy H(p, q) = -sum p log q = H(p) + KL(p 
 
 **Follow-ups:** Forward vs reverse KL and "mode-seeking" vs "mode-covering" behavior.
 
-**Difficulty:** Breadth-mid
+**Difficulty:** Breadth-mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-kl-divergence-vs-cross-entropy?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-kl-divergence-vs-cross-entropy)
 
 ### 10. Dimensionality reduction methods
 
@@ -210,7 +210,7 @@ Linear methods project onto directions of maximal variance (PCA), maximal class 
 
 **Follow-ups:** When does PCA fail? Why UMAP clusters aren't always meaningful; how to validate embeddings.
 
-**Difficulty:** Breadth
+**Difficulty:** Breadth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-dimensionality-reduction-methods?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-dimensionality-reduction-methods)
 
 ### 11. BiLSTM vs Transformer
 
@@ -229,7 +229,7 @@ BiLSTM = two LSTMs run forward and backward over the same sequence; their hidden
 
 **Follow-ups:** Why attention over recurrence? Complexity analyses; KV cache at inference.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-bilstm-vs-transformer?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-bilstm-vs-transformer)
 
 ### 12. Transformer vs gradient-boosted trees on tabular data
 
@@ -248,7 +248,7 @@ On tabular features, default to GBM (LightGBM, XGBoost, CatBoost) - known to dom
 
 **Follow-ups:** When do GBMs underfit? Calibration of NNs; cost-per-decision at serving.
 
-**Difficulty:** Depth
+**Difficulty:** Depth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-transformer-vs-gradient-boosted-trees-on-tabular-data?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-transformer-vs-gradient-boosted-trees-on-tabular-data)
 
 ---
 
@@ -273,7 +273,7 @@ Pick one project where you made non-obvious decisions with measurable impact. Le
 
 **Follow-ups:** "If you had two more weeks, what would you try?" "What would the second-best design have been?" "How did you know the uplift wasn't from another change?"
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-the-project-youre-most-proud-of?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-the-project-youre-most-proud-of)
 
 ### 14. Why that loss function?
 
@@ -292,7 +292,7 @@ Connect loss to the operating decision. Default MSE under symmetric Gaussian noi
 
 **Follow-ups:** Why not MSE for classification; how to recover costs; threshold-free metrics.
 
-**Difficulty:** Depth (L6+)
+**Difficulty:** Depth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-why-that-loss-function?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-why-that-loss-function)
 
 ### 15. Why is a GPU faster than a CPU? Why is NumPy faster than a list?
 
@@ -311,7 +311,7 @@ CPUs execute a small handful of wide threads with deep caches and branch-predict
 
 **Follow-ups:** When CPU beats GPU; why vectorize an inner loop; what cuDNN does for conv2d.
 
-**Difficulty:** Depth (L5+)
+**Difficulty:** Depth (L5+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-why-is-a-gpu-faster-than-a-cpu-why-is-numpy-faster-than?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-why-is-a-gpu-faster-than-a-cpu-why-is-numpy-faster-than)
 
 ### 16. Prove MSE is non-convex for logistic regression
 
@@ -330,7 +330,7 @@ The logistic model is sigma(theta x). The MSE surrogate is J(theta) = 1/2n sum (
 
 **Follow-ups:** What other surrogate losses are non-convex? When might you still use MSE?
 
-**Difficulty:** Depth research (L7+)
+**Difficulty:** Depth research (L7+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-prove-mse-is-non-convex-for-logistic-regression?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-prove-mse-is-non-convex-for-logistic-regression)
 
 ### 17. Prove 1-NN error is at most twice the Bayes error
 
@@ -349,7 +349,7 @@ Cover and Hart (1967). As n -> infinity, the nearest neighbor in metric space co
 
 **Follow-ups:** k-NN extension; curse-of-dimensionality bound; effect of label noise.
 
-**Difficulty:** Depth research (L8)
+**Difficulty:** Depth research (L8) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-prove-1-nn-error-is-at-most-twice-the-bayes-error?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-prove-1-nn-error-is-at-most-twice-the-bayes-error)
 
 ### 18. Code conv2d from scratch
 
@@ -368,7 +368,7 @@ Use a four-loop naive implementation (batch, out-channel, y, x -> sum over in_ch
 
 **Follow-ups:** Vectorize; edge cases; why im2col works.
 
-**Difficulty:** Depth mid-to-senior
+**Difficulty:** Depth mid-to-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-code-conv2d-from-scratch?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-code-conv2d-from-scratch)
 
 ### 19. Design and evaluate a book recommender
 
@@ -387,7 +387,7 @@ Decide the user goal: discovery vs continuation vs cold-start. Architect in two 
 
 **Follow-ups:** Choice of negative sampling; debiasing; position bias.
 
-**Difficulty:** Depth + business (L6)
+**Difficulty:** Depth + business (L6) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-design-and-evaluate-a-book-recommender?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-design-and-evaluate-a-book-recommender)
 
 ### 20. Driver fraud: SQL plus modeling pipeline
 
@@ -406,7 +406,7 @@ SQL: window functions to score each driver's 7-day, 30-day velocity and behavior
 
 **Follow-ups:** Labeling cadence; concept drift; what guardrails matter.
 
-**Difficulty:** Depth (L5+)
+**Difficulty:** Depth (L5+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-driver-fraud-sql-plus-modeling-pipeline?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-driver-fraud-sql-plus-modeling-pipeline)
 
 ### 21. Fine-tune a pre-trained LLM for a product feature
 
@@ -425,7 +425,7 @@ Pick base model by task: encoder (RoBERTa) for classification, encoder-decoder (
 
 **Follow-ups:** PEFT vs full FT; data mixtures; catastrophic forgetting.
 
-**Difficulty:** Depth mid-to-senior
+**Difficulty:** Depth mid-to-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-fine-tune-a-pre-trained-llm-for-a-product-feature?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-fine-tune-a-pre-trained-llm-for-a-product-feature)
 
 ### 22. Your favorite ML paper
 
@@ -444,7 +444,7 @@ Pick a paper with a transferable method (e.g. DPO for preference optimization, L
 
 **Follow-ups:** Reproducibility, hidden gotchas, generalization.
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-your-favorite-ml-paper?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-your-favorite-ml-paper)
 
 ### 23. ML system design in the "MLE 2.0" research-eng round
 
@@ -454,7 +454,7 @@ Pick a paper with a transferable method (e.g. DPO for preference optimization, L
 
 **What they're testing:** Whether you can design the production side of ML: feature freshness, training infra, and serving, not just the model. Yuan Meng documents that she failed a backend-role onsite because they wanted a "backend engineer with ranking knowledge" rather than an ML engineer.
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-ml-system-design-in-the-mle-20-research-eng-round?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-ml-system-design-in-the-mle-20-research-eng-round)
 
 ---
 
@@ -479,7 +479,7 @@ Hypothesize: one-sentence "if-then" prediction of the treatment effect's directi
 
 **Follow-ups:** SRM detection; when to use difference-in-differences; noncompliance handling.
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-design-and-evaluate-an-ab-test?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-design-and-evaluate-an-ab-test)
 
 ### 25. Netflix homepage experiment with conflicting metrics
 
@@ -498,7 +498,7 @@ Primary disagreeing with secondaries (CI crosses zero, p=0.14) means we cannot r
 
 **Follow-ups:** What if sequencing shows TV-only effect? When do you promote a secondary to primary?
 
-**Difficulty:** Depth (L6+)
+**Difficulty:** Depth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-netflix-homepage-experiment-with-conflicting-metrics?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-netflix-homepage-experiment-with-conflicting-metrics)
 
 ### 26. Airbnb checkout nudge: the full A/B design
 
@@ -517,7 +517,7 @@ Estimand: ITT as primary because the business decision is "do we ship?" TOT as s
 
 **Follow-ups:** "If only 60% of the required traffic arrives, what do you do?" "If contamination rises to 5%, do you trust the readout?" "If the nudge renders for only 70% of assigned-treatment guests, how do ITT and TOT diverge, and which one drives the ship decision vs the per-user efficacy story?" "Treatment is positive overall but you suspect harm on low-end devices - how do you detect a harmful subgroup without p-hacking?"
 
-**Difficulty:** Depth (L6+)
+**Difficulty:** Depth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-airbnb-checkout-nudge-the-full-ab-design?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-airbnb-checkout-nudge-the-full-ab-design)
 
 ### 27. Randomization and p-values
 
@@ -536,7 +536,7 @@ Randomization balances observed and unobserved confounders across arms in expect
 
 **Follow-ups:** Type I/II errors and power; why a 0.049 result doesn't replicate on re-running the experiment; multiple-testing correction.
 
-**Difficulty:** Breadth
+**Difficulty:** Breadth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-randomization-and-p-values?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-randomization-and-p-values)
 
 ### 28. Sequential tests and simultaneous experiments
 
@@ -555,7 +555,7 @@ Use mSPRT or Always-Valid Sequential Tests for binary and continuous metrics to 
 
 **Follow-ups:** Always-valid tests vs group-sequential; what do you do when guardrails trip; independence assumption under overlapping arms.
 
-**Difficulty:** Depth (L6+)
+**Difficulty:** Depth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-sequential-tests-and-simultaneous-experiments?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-sequential-tests-and-simultaneous-experiments)
 
 ### 29. Compute the lift, SE and CI: ship or not?
 
@@ -574,7 +574,7 @@ Lift = (0.056 - 0.05)/0.05 = +12% relative. SE_pooled = sqrt(p_pool(1-p_pool)(1/
 
 **Follow-ups:** Heterogeneous effects; what if SE is computed incorrectly (delta method) - what's the natural log alternative?
 
-**Difficulty:** Depth mid-to-senior
+**Difficulty:** Depth mid-to-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-compute-the-lift-se-and-ci-ship-or-not?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-compute-the-lift-se-and-ci-ship-or-not)
 
 ### 30. Statistical methods you've actually used
 
@@ -593,7 +593,7 @@ Walk through a representative arc - "we used mixed-effects models to capture per
 
 **Follow-ups:** When to choose Bayesian vs frequentist; what you'd do differently with more data.
 
-**Difficulty:** Depth
+**Difficulty:** Depth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-statistical-methods-youve-actually-used?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-statistical-methods-youve-actually-used)
 
 ### 31. Causal inference without randomization
 
@@ -612,7 +612,7 @@ ATE = E[Y_post(1) - Y_post(0) | treat]. DiD: ATE = (Y_post, treat - Y_post, cont
 
 **Follow-ups:** Synthetic control method; instrumental variables; double-ML.
 
-**Difficulty:** Depth (L6+)
+**Difficulty:** Depth (L6+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-causal-inference-without-randomization?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-causal-inference-without-randomization)
 
 ---
 
@@ -637,7 +637,7 @@ Fine-tuning adjusts the weights of an existing LLM on a task-specific dataset to
 
 **Follow-ups:** "When would you tune the embedding model?" "How do you evaluate RAG quality?"
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-rag-vs-fine-tuning?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-rag-vs-fine-tuning)
 
 ### 33. Defend your RAG choice and your hallucination eval
 
@@ -656,7 +656,7 @@ Explain that fine-tuning was cost-prohibitive on the dataset, so we used MiniLM 
 
 **Follow-ups:** What about groundedness in borderline cases; when would you switch to FT?
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-defend-your-rag-choice-and-your-hallucination-eval?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-defend-your-rag-choice-and-your-hallucination-eval)
 
 ### 34. Prompt vs fine-tune vs RAG for a search-and-answer system
 
@@ -675,7 +675,7 @@ Architect the funnel: cheap embedding retrieval (top-50) -> rerank with cross-en
 
 **Follow-ups:** When to switch to a smaller fine-tuned model on a slice?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-prompt-vs-fine-tune-vs-rag-for-a-search-and-answer-syst?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-prompt-vs-fine-tune-vs-rag-for-a-search-and-answer-syst)
 
 ### 35. Implement a simple retriever
 
@@ -694,7 +694,7 @@ Naive baseline: TF-IDF with cosine over tokenized docs, returning top-k. Vectori
 
 **Follow-ups:** How would you cache this? Cross-encoder reranking; what about ingest cost?
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-implement-a-simple-retriever?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-implement-a-simple-retriever)
 
 ### 36. Fix a hallucination
 
@@ -713,7 +713,7 @@ Diagnose in three steps: (1) is the retrieval returning the relevant chunk? Insp
 
 **Follow-ups:** How would you monitor continuingly? How would you keep a guardrail?
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-fix-a-hallucination?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-fix-a-hallucination)
 
 ### 37. Cut inference cost by 60%
 
@@ -732,7 +732,7 @@ Architect: simple and short queries routed to phi-3.5-mini on local GPU; long-co
 
 **Follow-ups:** When does this break? Latency budgets; cost-quality Pareto.
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-cut-inference-cost-by-60?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-cut-inference-cost-by-60)
 
 ### 38. What LLM-native companies actually ask
 
@@ -751,7 +751,7 @@ Expect: tokenization & vocab choices; pretraining and continued pretraining trad
 
 **Follow-ups:** Distillation; safety filtering; multi-modal.
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-what-llm-native-companies-actually-ask?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-what-llm-native-companies-actually-ask)
 
 ---
 
@@ -776,7 +776,7 @@ Expect: tokenization & vocab choices; pretraining and continued pretraining trad
 
 **Follow-ups:** Second-order follow-up on user-level history aggregation; using CTEs vs nested subqueries.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-third-transaction-of-every-user-sql?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-third-transaction-of-every-user-sql)
 
 ### 40. Stadium with 3+ consecutive high-attendance days (SQL)
 
@@ -795,7 +795,7 @@ Approach: self-join with day-1 and day-2 to find any day that is the third in a 
 
 **Follow-ups:** Apply to a session-level retention problem.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-stadium-with-3-consecutive-high-attendance-days-sql?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-stadium-with-3-consecutive-high-attendance-days-sql)
 
 ### 41. Top 3 unique salaries per department (SQL)
 
@@ -814,7 +814,7 @@ Approach: self-join with day-1 and day-2 to find any day that is the third in a 
 
 **Follow-ups:** Alternative with RANK vs DENSE_RANK; large-department scale plan.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-top-3-unique-salaries-per-department-sql?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-top-3-unique-salaries-per-department-sql)
 
 ### 42. Push notifications before conversion
 
@@ -833,7 +833,7 @@ LEFT JOIN user_events on (user_id) where event = 'notification' AND ts < convert
 
 **Follow-ups:** Distribution output; cap at P95; sanity check.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-push-notifications-before-conversion?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-push-notifications-before-conversion)
 
 ### 43. Logistic regression from scratch (Python)
 
@@ -852,7 +852,7 @@ LEFT JOIN user_events on (user_id) where event = 'notification' AND ts < convert
 
 **Follow-ups:** Add L1 regularization via proximal gradient; add class weighting; switch to mini-batch SGD.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-logistic-regression-from-scratch-python?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-logistic-regression-from-scratch-python)
 
 ### 44. Cumulative weekly retention (SQL)
 
@@ -871,7 +871,7 @@ GROUP BY cohort_week, then DATE_DIFF('week', cohort_week, activity_week) AS week
 
 **Follow-ups:** How would you handle a stale-account segment?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-cumulative-weekly-retention-sql?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-cumulative-weekly-retention-sql)
 
 ### 45. Cohort funnel in pandas
 
@@ -890,7 +890,7 @@ GROUP BY cohort_week, then DATE_DIFF('week', cohort_week, activity_week) AS week
 
 **Follow-ups:** Pivoting on multiple breakdowns; memory-effective groupby; using Modin/Polars for scale.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-cohort-funnel-in-pandas?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-cohort-funnel-in-pandas)
 
 ### 46. Derive the logistic loss on a whiteboard
 
@@ -909,7 +909,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **Follow-ups:** Convergence guarantees under the constraint.
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-derive-the-logistic-loss-on-a-whiteboard?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-derive-the-logistic-loss-on-a-whiteboard)
 
 ### 47. Merge intervals plus ML fundamentals probe
 
@@ -919,7 +919,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **What they're testing:** LC-style coding under time pressure plus rapid-fire metric fluency in the same call.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-merge-intervals-plus-ml-fundamentals-probe?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-merge-intervals-plus-ml-fundamentals-probe)
 
 ### 48. Two SQL plus one Python on trust & safety data
 
@@ -929,7 +929,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **What they're testing:** Domain-flavored SQL funnels and pandas transforms in one sitting.
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-two-sql-plus-one-python-on-trust-safety-data?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-two-sql-plus-one-python-on-trust-safety-data)
 
 ### 49. Parse data and compute statistics
 
@@ -939,7 +939,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **What they're testing:** Data-wrangling fluency plus PyTorch/LLM debugging (hyperparameters, transformer debugging, data pipeline preprocessing).
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-parse-data-and-compute-statistics?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-parse-data-and-compute-statistics)
 
 ### 50. OOP toy system (MLE 2.0 round)
 
@@ -949,7 +949,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **What they're testing:** Multi-level OOP design under time pressure - a round that now sits alongside LC-style coding in research-eng loops.
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-oop-toy-system-mle-20-round?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-oop-toy-system-mle-20-round)
 
 ### 51. AI-assisted coding (MLE 2.0 round)
 
@@ -959,7 +959,7 @@ State MLE on Bernoulli given sigmoid; write NLL; show equivalence to cross-entro
 
 **What they're testing:** How you drive an LLM as a debugging tool - prompt hygiene, verification discipline, and knowing when the model is wrong.
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-ai-assisted-coding-mle-20-round?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-ai-assisted-coding-mle-20-round)
 
 ---
 
@@ -984,7 +984,7 @@ Pick a project with measurable impact, internal or external. Structure: 1) the b
 
 **Follow-ups (actual reported):** "Why didn't you simply do X?" "What would you do next with 2 more weeks?" "How does this compare to SOTA?"
 
-**Difficulty:** All levels - the rubric is a presentation rubric, not necessarily topic depth
+**Difficulty:** All levels - the rubric is a presentation rubric, not necessarily topic depth · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-the-15-20-minute-science-talk?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-the-15-20-minute-science-talk)
 
 ### 53. How did you debug your ML project?
 
@@ -1003,7 +1003,7 @@ Pick a project with a non-trivial decision timeline: a multi-month ranking model
 
 **Follow-ups (often reported):** "How did you decide the production rollout was safe?" "What would you monitor post-launch?" "What was the biggest mistake?"
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-how-did-you-debug-your-ml-project?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-how-did-you-debug-your-ml-project)
 
 ### 54. Know your own project inside-out
 
@@ -1022,7 +1022,7 @@ Choose a project that had technical risk and a measured outcome. Foreground the 
 
 **Follow-ups:** "If your data shifted 5% tomorrow, what would you re-evaluate first?"
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-know-your-own-project-inside-out?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-know-your-own-project-inside-out)
 
 ---
 
@@ -1045,7 +1045,7 @@ Pair a north-star with hygiene metrics. North-star: weekly active creators with 
 
 **Follow-ups:** How would you avoid Goodhart's law?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-measure-engagement-for-a-productivity-app?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-measure-engagement-for-a-productivity-app)
 
 ### 56. 1M users drop off at 6 months
 
@@ -1064,7 +1064,7 @@ Hypothesis space: (1) user-mix drift (new cohorts are different), (2) experienti
 
 **Follow-ups:** What would you measure for retention re-engagement?
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-1m-users-drop-off-at-6-months?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-1m-users-drop-off-at-6-months)
 
 ### 57. Investigate a 15% CTR drop
 
@@ -1083,7 +1083,7 @@ First, instrument: did the model roll out cleanly to 100%? Did server latency sh
 
 **Follow-ups:** How would you ship a fix without breaking trust in the experimentation platform?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-investigate-a-15-ctr-drop?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-investigate-a-15-ctr-drop)
 
 ### 58. Classify products into categories
 
@@ -1102,7 +1102,7 @@ Two-stage approach: (1) hierarchical zero-shot or few-shot LLM-based candidate c
 
 **Follow-ups:** Multi-label extension; new categories that humans haven't yet labeled.
 
-**Difficulty:** Depth (L5+)
+**Difficulty:** Depth (L5+) · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-classify-products-into-categories?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-classify-products-into-categories)
 
 ---
 
@@ -1127,7 +1127,7 @@ STAR. Situation: a 6-week-each-quarter compliance review was consuming the team.
 
 **Follow-ups:** "What did you give up?" "What got harder?"
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-outside-the-box-simplification-invent-simplify?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-outside-the-box-simplification-invent-simplify)
 
 ### 60. Company vs client interests misaligned
 
@@ -1146,7 +1146,7 @@ STAR. A vendor partner wanted to disproportionately harm a low-margin product li
 
 **Follow-ups:** How would you effect change without authority?
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-company-vs-client-interests-misaligned?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-company-vs-client-interests-misaligned)
 
 ### 61. Delivered something customers didn't know they needed
 
@@ -1165,7 +1165,7 @@ STAR. Buyer-survey data showed repeat-cart abandonment; we hypothesized that pre
 
 **Follow-ups:** How would you de-risk this in a smaller market?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-delivered-something-customers-didnt-know-they-needed?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-delivered-something-customers-didnt-know-they-needed)
 
 ### 62. Missing a long-term commitment (Ownership)
 
@@ -1184,7 +1184,7 @@ STAR. I was the sole owner of an annual forecast rollout; an acquisition delayed
 
 **Follow-ups:** What would you do if the new plan failed?
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-missing-a-long-term-commitment-ownership?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-missing-a-long-term-commitment-ownership)
 
 ### 63. Technical deep-dive on an issue (Dive Deep)
 
@@ -1203,7 +1203,7 @@ STAR. A spike in checkout error rate correlated with an ML feature-version skew.
 
 **Follow-ups:** How did you detect the issue?
 
-**Difficulty:** Senior
+**Difficulty:** Senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-technical-deep-dive-on-an-issue-dive-deep?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-technical-deep-dive-on-an-issue-dive-deep)
 
 ### 64. Urgent decision with incomplete information (Bias for Action)
 
@@ -1222,7 +1222,7 @@ STAR. Trust & Safety spike on a category at 02:00. I convinced on-call to roll b
 
 **Follow-ups:** What would you have done if you'd been wrong?
 
-**Difficulty:** Mid-senior
+**Difficulty:** Mid-senior · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-urgent-decision-with-incomplete-information-bias-for-ac?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-urgent-decision-with-incomplete-information-bias-for-ac)
 
 ### 65. Disagreeing with your manager
 
@@ -1241,7 +1241,7 @@ STAR. Manager proposed A/B-testing a UX rework. I thought the team could learn m
 
 **Follow-ups:** What happens after disagreement if data comes back ambiguous?
 
-**Difficulty:** All levels
+**Difficulty:** All levels · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-disagreeing-with-your-manager?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-disagreeing-with-your-manager)
 
 ### 66. Your ML approach didn't work
 
@@ -1260,7 +1260,7 @@ STAR. Initial XGBoost model on a feature-table hit a plateau near AUC 0.78. I in
 
 **Follow-ups:** "How did you sell the pivot?"
 
-**Difficulty:** Mid
+**Difficulty:** Mid · [Practice it on landed.jobs](https://www.landed.jobs/resources/questions/data-and-applied-science-your-ml-approach-didnt-work?utm_source=github&utm_medium=referral&utm_campaign=github-ai-interview-questions&utm_content=data-and-applied-science-your-ml-approach-didnt-work)
 
 ---
 
@@ -1294,10 +1294,10 @@ Compiled from the same 2024-2026 candidate reports. If a company is absent in a 
 
 <div align="center">
 
-**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions — plus daily matched AI roles and agent-drafted application answers.**
+**Practice these out loud. [Landed](https://landed.jobs) runs voice mock interviews that grill you on exactly these questions, plus daily matched AI roles and agent-drafted application answers.**
 
 [![Get Started](https://img.shields.io/badge/Get%20Started%20Free-→-6C2BD9?style=for-the-badge)](https://landed.jobs)
 
-<sub>Every question traces to a public candidate report — sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
+<sub>Every question traces to a public candidate report, sources inline. Asked something new recently? PRs welcome. · [All banks →](../README.md)</sub>
 
 </div>
